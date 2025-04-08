@@ -1,0 +1,546 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     20813,        536]
+NotebookOptionsPosition[     17106,        456]
+NotebookOutlinePosition[     19345,        513]
+CellTagsIndexPosition[     19260,        508]
+WindowTitle->FindTnuc
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["T BOUNCE SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "a30cf5e2-2c60-49cf-94f7-a4c44e094cea"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "ab868e1b-0b66-4d20-b4d4-a5dabbeee39e"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "f2594a8f-9a7e-4f52-a6e8-b10972297bf2"]
+        }],ExpressionUUID->"92abea03-30c9-45c5-bc0f-4d545bb6c63a"],
+        StripOnInput->False],{
+       "\"TBounce/ref/FindTnuc\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{Cell["TBounce/ref/FindTnuc"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/TBounce/ref/FindTnuc.\
+html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, Visible -> 
+              False]]; SelectionMove[
+           DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[False], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "TBounce/ref/FindTnuc" <> ".html"], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "04c6f977-fc9b-4082-bb9d-8470d71889c1"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "96f9bfb5-444a-404a-a749-302cba5351f0"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"3fc5d43c-0b86-491d-b5e7-de0004fcfc89"],
+
+Cell["TBounce`", "ContextNameCell",ExpressionUUID->"ee7c7eea-2d6d-4729-b494-afc9424b5913"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "FindTnuc", "ObjectName",ExpressionUUID->
+      "7a5ee6a7-780a-4c47-9d7e-8d8c96b66069"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"ce8b8fe2-ffc9-4907-9161-4e06f1102d84"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "830e60f7-5b2e-4e9f-a99b-eb0365c8eb14"]
+    }],ExpressionUUID->"849d9817-8ce2-42c3-9ccb-9d05d1f44d51"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"1ebcd814-ffea-49dc-948c-\
+b18647b870e2"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     "FindTnuc[V,{",
+     Cell[BoxData[
+      TemplateBox[{
+        Cell[
+         TextData["Subscript"]], "paclet:ref/Subscript"},
+       "RefLink",
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "ce545552-d76e-ab44-b2b9-a6cee8830adf"],
+     "[T, min],",
+     Cell[BoxData[
+      TemplateBox[{
+        Cell[
+         TextData["Subscript"]], "paclet:ref/Subscript"},
+       "RefLink",
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "7b2e99ca-20a6-8846-85e9-6a2eb4f1081d"],
+     "[T, max]},{",
+     Cell[BoxData[
+      TemplateBox[{
+        Cell[
+         TextData["Subscript"]], "paclet:ref/Subscript"},
+       "RefLink",
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "f57012b1-1c89-194b-bc74-69b30844e3ec"],
+     "[\[Phi], 1],",
+     Cell[BoxData[
+      TemplateBox[{
+        Cell[
+         TextData["Subscript"]], "paclet:ref/Subscript"},
+       "RefLink",
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "b2c0b18b-afa1-b540-84ef-4f8d7ebb3f74"],
+     "[\[Phi], 2]}] searches for a nucleation temperature in the given range \
+and for the given phases."
+    }],ExpressionUUID->"8f18b009-beb0-4353-881a-c79fe5c5a47e"]}
+  }]], "Usage",
+ CellID->569638990,ExpressionUUID->"a4333bac-cc3e-2f41-b48b-c86392138563"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    DynamicBox[ToBoxes[
+      If[
+       MatchQ[
+        CurrentValue[
+         EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, 
+         Closed], 
+        Alternatives[Open, True]], 
+       Style[
+        Graphics[{
+          Thickness[0.18], 
+          RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+          Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+         PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+        0.68 Inherited], 
+       Rotate[
+        Style[
+         Graphics[{
+           Thickness[0.18], 
+           RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+           Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+          PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+         0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+     ImageSizeCache->{
+      13.600000000000001`, {0.5800000000000001, 13.020000000000001`}}]],
+    ExpressionUUID->"0b04324e-6543-4360-8f7c-3da1b444b384"],
+   Cell[BoxData[
+    TemplateBox[{1},
+     "Spacer1"]],ExpressionUUID->"595f1900-2b22-486a-84f6-998608d31747"],
+   "Details"
+  }], "NotesFrameText",ExpressionUUID->"60449612-d267-4443-a16d-24629a92076b"],
+  Appearance->{Automatic, None, "Normal", Automatic},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->
+   "Preemptive"]],ExpressionUUID->"c133db8d-ecd8-444c-b8d8-17e1978bb83b"]], \
+"NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CacheGraphics->False,
+ CellID->52129077,ExpressionUUID->"12f4e7ff-d1e2-4ce7-be1f-8dd30933c632"],
+
+Cell["The following options can be given: ", "Notes",
+ CellID->100986888,ExpressionUUID->"9cf55bac-3905-c143-9cda-294e2e87ac41"],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "d068a546-3cc5-47b1-ae09-31b6fc8d83a6"], 
+    TemplateBox[{
+      Cell[
+       TextData["AccuracyGoal"]], "paclet:ref/AccuracyGoal"},
+     "RefLink",
+     BaseStyle->{"3ColumnTableMod"}], "1", Cell["\<\
+AccuracyGoal is an option for various numerical operations which specifies \
+how many effective digits of accuracy should be sought in the final result. \
+\>", "TableText",ExpressionUUID->"f3255312-9221-8242-a773-4ce96a073ea2"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "ba3e6104-5e7c-4d7c-ae65-76676835c979"], 
+    TemplateBox[{
+      Cell[
+       TextData["PrecisionGoal"]], "paclet:ref/PrecisionGoal"},
+     "RefLink",
+     BaseStyle->{"3ColumnTableMod"}], 
+    TemplateBox[{
+      Cell[
+       TextData["Infinity"]], "paclet:ref/Infinity"},
+     "RefLink",
+     BaseStyle->{"3ColumnTableMod"}], Cell["\<\
+PrecisionGoal is an option for various numerical operations which specifies \
+how many effective digits of precision should be sought in the final result. \
+\
+\>", "TableText",ExpressionUUID->"d221182f-6d7c-7245-bf63-5a4013fed228"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "d7d2192d-43d3-406f-a24d-7876f642e77c"], 
+    TemplateBox[{
+      Cell[
+       TextData["Return"]], "paclet:ref/Return"},
+     "RefLink",
+     BaseStyle->{"3ColumnTableMod"}], "\"\<TnRule\>\"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"Return", "[", 
+       StyleBox["expr", "TI"], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "4c4d6552-a42a-ba4f-9e2d-3aee9c2f11d3"],
+     " returns the value ",
+     Cell[BoxData[
+      StyleBox["expr", "TI"]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "e0493542-e946-9346-8cc8-be03e0639ef4"],
+     " from a function. \n",
+     Cell[BoxData[
+      RowBox[{"Return", "[", "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "c0d689c4-886a-9a4f-a152-f3d298aa6479"],
+     " returns the value Null. "
+    }], "TableText",ExpressionUUID->"bc611abf-e035-e34a-ac53-81d73402703d"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "b05c6dcb-0ab8-4f0f-ab59-eb727c102ac5"], 
+    TemplateBox[{
+      Cell[
+       TextData["ProgressIndicator"]], "paclet:ref/ProgressIndicator"},
+     "RefLink",
+     BaseStyle->{"3ColumnTableMod"}], 
+    TemplateBox[{
+      Cell[
+       TextData["True"]], "paclet:ref/True"},
+     "RefLink",
+     BaseStyle->{"3ColumnTableMod"}], Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"ProgressIndicator", "[", 
+       StyleBox["x", "TI"], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "ca6f72a3-5685-f442-80d2-9e48ab5b3e86"],
+     " represents a progress indicator with setting ",
+     Cell[BoxData[
+      StyleBox["x", "TI"]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "dc40c14a-84a6-1341-953b-80cf125e2d49"],
+     " in the range 0 to 1. \n",
+     Cell[BoxData[
+      RowBox[{"ProgressIndicator", "[", 
+       RowBox[{"Dynamic", "[", 
+        StyleBox["x", "TI"], "]"}], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "b7a11313-93aa-5145-8d2d-0cea9c22710e"],
+     " takes the setting to be the dynamically updated current value of ",
+     Cell[BoxData[
+      StyleBox["x", "TI"]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "31151eab-e338-a743-a61b-f9be7ff19111"],
+     ". \n",
+     Cell[BoxData[
+      RowBox[{"ProgressIndicator", "[", 
+       RowBox[{
+        StyleBox["x", "TI"], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          SubscriptBox[
+           StyleBox["x", "TI"], 
+           StyleBox["min", "TI"]], ",", 
+          SubscriptBox[
+           StyleBox["x", "TI"], 
+           StyleBox["max", "TI"]]}], "}"}]}], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "16ea9701-0703-8f48-942a-4ab77a253c42"],
+     " represents a progress indicator with range ",
+     Cell[BoxData[
+      SubscriptBox[
+       StyleBox["x", "TI"], 
+       StyleBox["min", "TI"]]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "9e63b0ff-726e-684d-8a22-68d3e158c56e"],
+     " to ",
+     Cell[BoxData[
+      SubscriptBox[
+       StyleBox["x", "TI"], 
+       StyleBox["max", "TI"]]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "6c85d9c8-b566-f341-9977-8ece0778a4a4"],
+     ". \n",
+     Cell[BoxData[
+      RowBox[{"ProgressIndicator", "[", 
+       RowBox[{
+        StyleBox["x", "TI"], ",", "Indeterminate"}], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "120b41e5-7af4-aa4d-9bdc-83b84a9f9e03"],
+     " represents a progress indicator with indeterminate range. "
+    }], "TableText",ExpressionUUID->"8acf08f0-9077-4943-95ce-c60b975517ec"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "d1203b7b-56fc-4a53-ba03-293c36d1e210"], 
+    TemplateBox[{
+      Cell[
+       TextData["Print"]], "paclet:ref/Print"},
+     "RefLink",
+     BaseStyle->{"3ColumnTableMod"}], 
+    TemplateBox[{
+      Cell[
+       TextData["False"]], "paclet:ref/False"},
+     "RefLink",
+     BaseStyle->{"3ColumnTableMod"}], Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"Print", "[", 
+       StyleBox["expr", "TI"], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "c8b3ad70-c33c-e640-8a6d-dd2f8d6d6603"],
+     " prints ",
+     Cell[BoxData[
+      StyleBox["expr", "TI"]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "e8f7722a-e2db-d34c-8308-93285ab8cb12"],
+     " as output. "
+    }], "TableText",ExpressionUUID->"976d4bed-d38a-2f48-9e3f-fbdf59691ae8"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "22833132-234a-4145-823c-261fd0e430e7"], 
+    TemplateBox[{
+      Cell[
+       TextData["BouncePlot"]], "paclet:FindBounce/ref/BouncePlot", 
+      "FindBounce Package Symbol"},
+     "PackageLink",
+     BaseStyle->"3ColumnTableMod"], 
+    TemplateBox[{
+      Cell[
+       TextData["False"]], "paclet:ref/False"},
+     "RefLink",
+     BaseStyle->{"3ColumnTableMod"}], Cell["\<\
+BouncePlot[bf] plots the content of BounceFunction bf.
+BouncePlot[{bf1,bf2}] plots several functions bfi.\
+\>", "TableText",ExpressionUUID->"640dafbd-caef-6147-83f9-bb3be3676657"]}
+  }]], "3ColumnTableMod",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "Rows" -> {None, None, None, None, None, {None}}},
+ GridBoxDividers->{"Rows" -> {{True, True, True, True, True, True, True}}}},
+ CellID->74186664,ExpressionUUID->"6db7c024-ea47-3b41-8075-ec33d2dc0702"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"2b870c22-60e0-4475-aeb1-b26c755bf8e7"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"106e8bb6-5d62-418f-a998-671172b53977"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(0)", "ExampleCount",ExpressionUUID->
+  "98f8ca09-f940-4d10-8189-5d2478cc38f2"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->1577760560,ExpressionUUID->"4c63174c-7342-48ff-87ce-f172329dd65e"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<TBounce`\>\"", "]"}]], "Input", "ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->180175780,ExpressionUUID->"c137c722-4316-9c44-9e6f-8a3eee493ee3"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"d8527ea1-da64-4ed4-8207-\
+0d94825c45c0"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"35994f96-b875-4b6a-a47b-b866b438b120"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 830.25},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"FindTnuc",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "AllOptsTable" -> Closed, "NotesSection" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "RootCaptions" -> 
+  "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 4, 8, 11, 1, 53.188843}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "TBounce`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "T Bounce Symbol", "language" -> "en", "paclet" -> "TBounce", "status" -> 
+    "None", "summary" -> 
+    "FindTnuc[V,{Subscript[T, min],Subscript[T, max]},{Subscript[\\[Phi], \
+1],Subscript[\\[Phi], 2]}] searches for a nucleation temperature in the given \
+range and for the given phases.", "synonyms" -> {}, "tabletags" -> {}, 
+    "title" -> "FindTnuc", "titlemodifier" -> "", "metadescription" -> "", 
+    "windowtitle" -> "FindTnuc", "type" -> "Symbol", "uri" -> 
+    "TBounce/ref/FindTnuc"}},
+CellContext->"Global`",
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "14.0 for Linux x86 (64-bit) (December 12, 2023)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"e1a4bd81-01c7-4081-92e7-401ea2c9f5c5"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[14903, 394, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"4c63174c-7342-48ff-87ce-f172329dd65e",
+   CellTags->"PrimaryExamplesSection",
+   CellID->1577760560]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 19059, 501}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[580, 21, 3269, 77, 70, "AnchorBarGrid",ExpressionUUID->"3fc5d43c-0b86-491d-b5e7-de0004fcfc89",
+ CellID->1],
+Cell[3852, 100, 90, 0, 70, "ContextNameCell",ExpressionUUID->"ee7c7eea-2d6d-4729-b494-afc9424b5913"],
+Cell[CellGroupData[{
+Cell[3967, 104, 551, 14, 70, "ObjectNameGrid",ExpressionUUID->"1ebcd814-ffea-49dc-948c-b18647b870e2"],
+Cell[4521, 120, 1527, 42, 70, "Usage",ExpressionUUID->"a4333bac-cc3e-2f41-b48b-c86392138563",
+ CellID->569638990]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6085, 167, 1906, 48, 70, "NotesSection",ExpressionUUID->"12f4e7ff-d1e2-4ce7-be1f-8dd30933c632",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->52129077],
+Cell[7994, 217, 128, 1, 70, "Notes",ExpressionUUID->"9cf55bac-3905-c143-9cda-294e2e87ac41",
+ CellID->100986888],
+Cell[8125, 220, 6651, 168, 70, "3ColumnTableMod",ExpressionUUID->"6db7c024-ea47-3b41-8075-ec33d2dc0702",
+ CellID->74186664]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
+Cell[CellGroupData[{
+Cell[14903, 394, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"4c63174c-7342-48ff-87ce-f172329dd65e",
+ CellTags->"PrimaryExamplesSection",
+ CellID->1577760560],
+Cell[16327, 433, 196, 3, 70, "Input",ExpressionUUID->"c137c722-4316-9c44-9e6f-8a3eee493ee3",
+ CellID->180175780]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[16641, 441, 380, 11, 70, "SeeAlsoSection",ExpressionUUID->"d8527ea1-da64-4ed4-8207-0d94825c45c0"],
+Cell[17024, 454, 78, 0, 70, "FooterCell",ExpressionUUID->"35994f96-b875-4b6a-a47b-b866b438b120"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

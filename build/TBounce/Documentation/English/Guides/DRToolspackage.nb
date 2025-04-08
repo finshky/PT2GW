@@ -1,0 +1,270 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10031,        260]
+NotebookOptionsPosition[      7608,        207]
+NotebookOutlinePosition[      9102,        245]
+CellTagsIndexPosition[      9059,        242]
+WindowTitle->DRTools package
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["T BOUNCE GUIDE", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "60f0e1c0-fa0b-4d08-90ba-80458962b0a3"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "664fad1d-f5d3-4616-b714-e7fc0e95b779"],
+        Background->RGBColor[0.85098, 0.396078, 0],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[{
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "Functions",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "a305ffd7-2f84-4420-b58d-1085280c7fa4"]
+         }],ExpressionUUID->"aeddcfdc-bc4b-495d-b58e-0836c5972bd2"],
+         StripOnInput->False],{
+        "\"ComputeEffectivePotential\"" :> 
+         Documentation`HelpLookup[
+          "paclet:TBounce/ref/ComputeEffectivePotential"], 
+         "\"StoreDRExpressions\"" :> 
+         Documentation`HelpLookup["paclet:TBounce/ref/StoreDRExpressions"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"GuideFunction"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "73a54db4-58df-4408-911c-ee5ede8435e3"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "URL",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "856da89d-ef7c-4762-a4c9-1ccc126e1f4c"]
+         }],ExpressionUUID->"55e7018f-6560-4a28-bb04-cc435ca7a642"],
+         StripOnInput->False],{
+        "\"TBounce/guide/DRToolspackage\"" :> None, 
+         "\"Copy Wolfram Documentation Center URL\"" :> 
+         Module[{DocumentationSearch`Private`nb$}, 
+           DocumentationSearch`Private`nb$ = 
+            NotebookPut[
+             Notebook[{Cell["TBounce/guide/DRToolspackage"]}, Visible -> 
+               False]]; 
+           SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+           FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+           NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+         "\"Copy web URL\"" :> 
+         Module[{DocumentationSearch`Private`nb$}, 
+           DocumentationSearch`Private`nb$ = 
+            NotebookPut[
+             Notebook[{
+               Cell[BoxData[
+                 MakeBoxes[
+                  Hyperlink[
+                   "http://reference.wolfram.com/language/TBounce/guide/\
+DRToolspackage.html"], StandardForm]], "Input", TextClipboardType -> 
+                 "PlainText"]}, Visible -> False]]; 
+           SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+           FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+           NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+         "\"Go to web URL\"" :> 
+         FrontEndExecute[{
+           NotebookLocate[{
+             URL[If[TrueQ[False], 
+                 "http://reference.wolfram.com/system-modeler/", 
+                 "http://reference.wolfram.com/language/"] <> 
+               "TBounce/guide/DRToolspackage" <> ".html"], None}]}]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"URLMenu"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "7d6957f3-00ca-4871-a1cb-08a034009b4f"]
+    }], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "f156f37d-102a-4038-aec5-4204078f2734"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"430ee510-d3f1-48d5-af2e-018d1e165868"],
+
+Cell[CellGroupData[{
+
+Cell["DRTools package", "GuideTitle",
+ CellID->234915526,ExpressionUUID->"a86d0b5c-229a-484b-8466-64880427c7f8"],
+
+Cell["\[NonBreakingSpace]", "GuideAbstract",
+ CellID->898656333,ExpressionUUID->"ab3d3aa0-2334-446a-b80b-f31f6453d7f6"],
+
+Cell["\t", "GuideDelimiterSubsection",ExpressionUUID->"cadda762-ff90-493b-8dce-c724fb75a1f9"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["StoreDRExpressions"]], "paclet:TBounce/ref/StoreDRExpressions",
+     "TBounce Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"c40ac8e4-27e1-4161-a8df-4d4f38357a23",ExpressionUUID->
+  "5f3d83fb-7db6-274f-830f-d64985eb71bb"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " ",
+ Cell[BoxData[
+  TagBox[
+   TagBox[
+    FrameBox["description"],
+    "GuideTextPlaceholder"],
+   EventHandlerTag[{"MouseClicked" :> SelectionMove[
+       EvaluationCell[], All, Cell], Method -> "Preemptive", PassEventsDown -> 
+     Automatic, PassEventsUp -> True}]]],ExpressionUUID->
+  "f514d3c7-fa46-ad44-998a-4793c2ae6cf9"]
+}], "GuideText",
+ CellID->470871249,ExpressionUUID->"cb7d64e9-e64f-a847-8ac6-01580f1a1399"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["ComputeEffectivePotential"]], 
+    "paclet:TBounce/ref/ComputeEffectivePotential", "TBounce Package Symbol"},
+   
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"c5c6736a-1ff4-4e4e-8fcf-2d9846cbae62",ExpressionUUID->
+  "57727123-52b0-e840-b9e5-57f533d01b11"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " ",
+ Cell[BoxData[
+  TagBox[
+   TagBox[
+    FrameBox["description"],
+    "GuideTextPlaceholder"],
+   EventHandlerTag[{"MouseClicked" :> SelectionMove[
+       EvaluationCell[], All, Cell], Method -> "Preemptive", PassEventsDown -> 
+     Automatic, PassEventsUp -> True}]]],ExpressionUUID->
+  "1b965bcb-c320-8241-9e2b-151628d3d6d6"]
+}], "GuideText",
+ CellID->446658007,ExpressionUUID->"4dd02478-1b47-c148-ab7a-a7e068554157"],
+
+Cell["\t", "GuideDelimiter",
+ CellID->216628447,ExpressionUUID->"968479f0-e24a-5c45-af63-9f063bc204c1"],
+
+Cell[TextData[Cell["\<\
+
+FrameBox[\"\\\"XXXX\\\"\"]\
+\>", "FunctionPlaceholder", \
+"InlineFunctionSansUnlinked",ExpressionUUID->"2ac7c92a-4eeb-4d8c-8f22-\
+c5437fa2e232"]], "InlineGuideFunctionListing",
+ CellID->385325704,ExpressionUUID->"ad6e55bf-6670-954e-abf4-ca37111e1d33"],
+
+Cell[BoxData["Open"], "Input",ExpressionUUID->"040a17b2-a365-4deb-b157-675231c951a9"]
+}, Open  ]]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 592.5},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"DRTools package",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}}, 
+  "NewStyles" -> True, "CitationPopupData" -> {$Failed, ""}, "ShowCitation" -> 
+  False, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 1, 25, 0, 4, 38.501346}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "TBounce`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "T Bounce Guide", "language" -> "en", "paclet" -> "TBounce", "status" -> 
+    "None", "summary" -> "", "synonyms" -> {}, "tabletags" -> {}, "title" -> 
+    "DRTools package", "titlemodifier" -> "", "metadescription" -> "", 
+    "windowtitle" -> "DRTools package", "type" -> "Guide", "uri" -> 
+    "TBounce/guide/DRToolspackage"}},
+CacheGraphics->False,
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"078822b9-57e9-4bd0-8bf3-a7e8e71195ab"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[587, 21, 4497, 109, 57, "AnchorBarGrid",ExpressionUUID->"430ee510-d3f1-48d5-af2e-018d1e165868",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[5109, 134, 112, 1, 61, "GuideTitle",ExpressionUUID->"a86d0b5c-229a-484b-8466-64880427c7f8",
+ CellID->234915526],
+Cell[5224, 137, 119, 1, 39, "GuideAbstract",ExpressionUUID->"ab3d3aa0-2334-446a-b80b-f31f6453d7f6",
+ CellID->898656333],
+Cell[5346, 140, 93, 0, 22, "GuideDelimiterSubsection",ExpressionUUID->"cadda762-ff90-493b-8dce-c724fb75a1f9"],
+Cell[5442, 142, 828, 23, 39, "GuideText",ExpressionUUID->"cb7d64e9-e64f-a847-8ac6-01580f1a1399",
+ CellID->470871249],
+Cell[6273, 167, 846, 24, 39, "GuideText",ExpressionUUID->"4dd02478-1b47-c148-ab7a-a7e068554157",
+ CellID->446658007],
+Cell[7122, 193, 103, 1, 26, "GuideDelimiter",ExpressionUUID->"968479f0-e24a-5c45-af63-9f063bc204c1",
+ CellID->216628447],
+Cell[7228, 196, 276, 6, 57, InheritFromParent,ExpressionUUID->"ad6e55bf-6670-954e-abf4-ca37111e1d33",
+ CellID->385325704],
+Cell[7507, 204, 85, 0, 27, "Input",ExpressionUUID->"040a17b2-a365-4deb-b157-675231c951a9"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

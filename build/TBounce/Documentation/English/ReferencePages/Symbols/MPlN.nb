@@ -1,0 +1,287 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10627,        277]
+NotebookOptionsPosition[      7576,        208]
+NotebookOutlinePosition[      9690,        263]
+CellTagsIndexPosition[      9606,        258]
+WindowTitle->MPlN
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["T BOUNCE SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "939af499-eb13-4110-a6d0-cf3d591d2b3f"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "58e29ae0-6c02-4fd7-b31f-6880455a74d9"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "b2c86897-a9f2-4e0c-984f-4e33537b5eab"]
+        }],ExpressionUUID->"385023d0-d3a6-4856-85aa-955014c7fec0"],
+        StripOnInput->False],{
+       "\"TBounce/ref/MPlN\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{Cell["TBounce/ref/MPlN"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/TBounce/ref/MPlN.\
+html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, Visible -> 
+              False]]; SelectionMove[
+           DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[False], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "TBounce/ref/MPlN" <> ".html"], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "fdf5ac71-37ee-447e-a09a-6c7d2026e2b4"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "bd4620fe-69e9-4f5e-b21c-056ccfa78ead"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"0e66145a-f048-4659-ac26-6ee22cb57760"],
+
+Cell["TBounce`", "ContextNameCell",ExpressionUUID->"cb3e10b0-cbc2-4633-aed4-aec35eaf3e1d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "MPlN", "ObjectName",ExpressionUUID->
+      "f92271b8-6455-43d3-a82e-e7df60ee529f"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"cc4b37b0-f74d-477f-afe7-95df66ba1ad6"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "46d69007-f491-40ad-983b-d8b9ccee7103"]
+    }],ExpressionUUID->"b492d25a-4981-4d00-b161-9dadcd0ff1ba"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"34617821-0b5c-46a3-b48a-\
+34e0cbc32f1c"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData["MPlN"], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "67acc36a-fe60-2c4c-95f5-c963c717fb02"],
+     "\[LineSeparator]is Planck mass numerical value, in the energy unit set \
+by ",
+     Cell[BoxData[
+      RowBox[{
+       TemplateBox[{
+         Cell[
+          TextData["DefineUnits"]], "paclet:TBounce/ref/DefineUnits", 
+         "TBounce Package Symbol"},
+        "PackageLink",
+        BaseStyle->"InlineFormula"], "[", 
+       StyleBox["string", "TI"], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "b91c03fe-3729-bc4d-be6e-d467ac80f7f4"],
+     "."
+    }],ExpressionUUID->"5ddb393a-4df0-49f9-87fa-34c5d923be31"]}
+  }]], "Usage",
+ CellID->56125893,ExpressionUUID->"f8144566-4fbb-6547-bdee-c7fdabf0780d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"e023fd27-82be-422f-8c11-3762a773c746"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"f1eb8d73-13ab-45e5-87fb-ec4ddf0dd6cf"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(0)", "ExampleCount",ExpressionUUID->
+  "29709611-1812-431b-a5b1-60daee5b1d3c"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->1439565123,ExpressionUUID->"a0c87001-805f-43dc-8533-7dba2bf27fe6"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<TBounce`\>\"", "]"}]], "Input", "ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->461518279,ExpressionUUID->"af0f0a33-8897-f14e-a2ad-9dc190f26cc8"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"227f8655-64b1-4a30-aab1-\
+6ba8c6a7fb5a"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"546c1d45-58c3-46e4-890f-66ccd44942c4"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 592.5},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"MPlN",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "AllOptsTable" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "HasOptions" -> 
+  True, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 1, 25, 0, 4, 41.836870}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "TBounce`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "T Bounce Symbol", "language" -> "en", "paclet" -> "TBounce", "status" -> 
+    "None", "summary" -> 
+    "MPlN is Planck mass numerical value, in the energy unit set by \
+DefineUnits[string].", "synonyms" -> {}, "tabletags" -> {}, "title" -> "MPlN",
+     "titlemodifier" -> "", "metadescription" -> "", "windowtitle" -> "MPlN", 
+    "type" -> "Symbol", "uri" -> "TBounce/ref/MPlN"}},
+CellContext->"Global`",
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "14.0 for Linux x86 (64-bit) (December 12, 2023)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"ea319672-8a5a-4737-96d3-1f5771d36459"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[5373, 146, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"a0c87001-805f-43dc-8533-7dba2bf27fe6",
+   CellTags->"PrimaryExamplesSection",
+   CellID->1439565123]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 9406, 251}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[576, 21, 3253, 77, 70, "AnchorBarGrid",ExpressionUUID->"0e66145a-f048-4659-ac26-6ee22cb57760",
+ CellID->1],
+Cell[3832, 100, 90, 0, 70, "ContextNameCell",ExpressionUUID->"cb3e10b0-cbc2-4633-aed4-aec35eaf3e1d"],
+Cell[CellGroupData[{
+Cell[3947, 104, 547, 14, 70, "ObjectNameGrid",ExpressionUUID->"34617821-0b5c-46a3-b48a-34e0cbc32f1c"],
+Cell[4497, 120, 839, 21, 70, "Usage",ExpressionUUID->"f8144566-4fbb-6547-bdee-c7fdabf0780d",
+ CellID->56125893]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5373, 146, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"a0c87001-805f-43dc-8533-7dba2bf27fe6",
+ CellTags->"PrimaryExamplesSection",
+ CellID->1439565123],
+Cell[6797, 185, 196, 3, 70, "Input",ExpressionUUID->"af0f0a33-8897-f14e-a2ad-9dc190f26cc8",
+ CellID->461518279]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[7111, 193, 380, 11, 70, "SeeAlsoSection",ExpressionUUID->"227f8655-64b1-4a30-aab1-6ba8c6a7fb5a"],
+Cell[7494, 206, 78, 0, 70, "FooterCell",ExpressionUUID->"546c1d45-58c3-46e4-890f-66ccd44942c4"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

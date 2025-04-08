@@ -1,0 +1,286 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10685,        276]
+NotebookOptionsPosition[      7564,        205]
+NotebookOutlinePosition[      9749,        262]
+CellTagsIndexPosition[      9665,        257]
+WindowTitle->TranslatedSCubic\:0394
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["T BOUNCE SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "85232374-b60a-1644-89b6-a65cc61ff1b9"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "b35f1cd1-8a19-4347-8070-be7f5bc55b96"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "5b0f7786-6470-cf4b-a457-fbdd06c8dc64"]
+        }],ExpressionUUID->"b4874e5c-2a75-0846-a735-e0745ffbc245"],
+        StripOnInput->False],{
+       "\"TBounce/ref/TranslatedSCubic\[CapitalDelta]\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{Cell["TBounce/ref/TranslatedSCubic\[CapitalDelta]"]}, 
+              Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/TBounce/ref/\
+TranslatedSCubic\[CapitalDelta].html"], StandardForm]], "Input", 
+                TextClipboardType -> "PlainText"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[False], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "TBounce/ref/TranslatedSCubic\[CapitalDelta]" <> ".html"], 
+             None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "2c5d30ac-cf9f-0742-bf1b-a8bc1c04f032"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "e1e4b19a-31df-394e-b57a-65fcfcebca93"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"9fa5505c-1765-fc47-bbc2-d279b486cc4c"],
+
+Cell["TBounce`", "ContextNameCell",ExpressionUUID->"f1e37201-4c1c-0b47-8de0-487bcbc52ed0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "TranslatedSCubic\[CapitalDelta]", "ObjectName",ExpressionUUID->
+      "d9ee2bf2-cd3d-864e-b0ed-1d37a7520b3f"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"a7cecc4e-e3ed-374f-99c9-b97c059c9469"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "f6277de1-c503-e449-b281-029f047c5298"]
+    }],ExpressionUUID->"9a8c0d15-755e-8f45-b728-22afd5d1dc60"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"6b6f4f52-09fc-b64c-872d-\
+1de60b1a0c6b"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{
+       TemplateBox[{
+         Cell[
+          TextData["TranslatedSCubic\[CapitalDelta]"]], 
+         "paclet:TBounce/ref/TranslatedSCubic\[CapitalDelta]", 
+         "TBounce Package Symbol"},
+        "PackageLink",
+        BaseStyle->"InlineFormula"], "[", "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "375a2f26-20a9-3a48-b08e-571dade39237"],
+     "\[LineSeparator]XXXX"
+    }],ExpressionUUID->"59e9e7b6-6294-b544-9f18-50b51facc0a9"]}
+  }]], "Usage",
+ CellID->76397955,ExpressionUUID->"f107fb77-ff6e-5744-a9f5-3ecedb29f1bf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"ce28e5d0-b0d2-9b4c-b1bb-b68c11ab0980"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"eb3d0085-4554-0640-94f2-95b328fb5ad0"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(0)", "ExampleCount",ExpressionUUID->
+  "68213ac8-97de-4446-82f1-01e3295df927"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->596501663,ExpressionUUID->"a1a82592-221a-a54d-9284-4ff469ff5a90"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<TBounce`\>\"", "]"}]], "Input", "ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->568411026,ExpressionUUID->"126675f8-ccc4-d34f-bc72-e67a661bba09"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"dfd9a563-e541-6b4f-bbd9-\
+891e509ab037"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"6beceda3-2021-a84f-98d5-b85b0862ed41"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 604.8},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"TranslatedSCubic\[CapitalDelta]",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "AllOptsTable" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "RootCaptions" -> 
+  "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2024, 9, 13, 15, 32, 44.3904960}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "TBounce`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "T Bounce Symbol", "language" -> "en", "paclet" -> "TBounce", "status" -> 
+    "None", "summary" -> "TranslatedSCubic\\[CapitalDelta][] XXXX", 
+    "synonyms" -> {}, "tabletags" -> {}, "title" -> 
+    "TranslatedSCubic\[CapitalDelta]", "titlemodifier" -> "", 
+    "metadescription" -> "", "windowtitle" -> 
+    "TranslatedSCubic\[CapitalDelta]", "type" -> "Symbol", "uri" -> 
+    "TBounce/ref/TranslatedSCubic\[CapitalDelta]"}},
+CellContext->"Global`",
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> 
+  "14.0 for Microsoft Windows (64-bit) (December 12, 2023)", StyleDefinitions -> 
+  "Default.nb"],
+ExpressionUUID->"98c307b2-6c5d-c54d-95cc-d58d92f96357"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[5362, 143, 1420, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"a1a82592-221a-a54d-9284-4ff469ff5a90",
+   CellTags->"PrimaryExamplesSection",
+   CellID->596501663]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 9466, 250}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[594, 21, 3391, 79, 70, "AnchorBarGrid",ExpressionUUID->"9fa5505c-1765-fc47-bbc2-d279b486cc4c",
+ CellID->1],
+Cell[3988, 102, 90, 0, 70, "ContextNameCell",ExpressionUUID->"f1e37201-4c1c-0b47-8de0-487bcbc52ed0"],
+Cell[CellGroupData[{
+Cell[4103, 106, 574, 14, 70, "ObjectNameGrid",ExpressionUUID->"6b6f4f52-09fc-b64c-872d-1de60b1a0c6b"],
+Cell[4680, 122, 645, 16, 70, "Usage",ExpressionUUID->"f107fb77-ff6e-5744-a9f5-3ecedb29f1bf",
+ CellID->76397955]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5362, 143, 1420, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"a1a82592-221a-a54d-9284-4ff469ff5a90",
+ CellTags->"PrimaryExamplesSection",
+ CellID->596501663],
+Cell[6785, 182, 196, 3, 70, "Input",ExpressionUUID->"126675f8-ccc4-d34f-bc72-e67a661bba09",
+ CellID->568411026]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[7099, 190, 380, 11, 70, "SeeAlsoSection",ExpressionUUID->"dfd9a563-e541-6b4f-bbd9-891e509ab037"],
+Cell[7482, 203, 78, 0, 70, "FooterCell",ExpressionUUID->"6beceda3-2021-a84f-98d5-b85b0862ed41"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

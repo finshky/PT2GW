@@ -1,0 +1,313 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11789,        303]
+NotebookOptionsPosition[      8498,        230]
+NotebookOutlinePosition[     10852,        289]
+CellTagsIndexPosition[     10767,        284]
+WindowTitle->IFV
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["T BOUNCE SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "3440bf33-45ad-4046-8740-97aa8e19f737"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "322d76e8-2cf8-4ff9-973b-0ca3bb23b413"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "2df8fff4-428c-4b98-b1b2-8a10a9475266"]
+        }],ExpressionUUID->"db7a79c2-275d-4d17-8a22-abde2624d0b3"],
+        StripOnInput->False],{
+       "\"TBounce/ref/IFV\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[Notebook[{Cell["TBounce/ref/IFV"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/TBounce/ref/IFV.\
+html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, Visible -> 
+              False]]; SelectionMove[
+           DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[False], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "TBounce/ref/IFV" <> ".html"], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "d761b352-f7f9-4d0e-bd2d-15fae08fcbc7"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "7cb12256-ac65-4f97-8337-00f70a3afadf"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"3efbe9b9-42f6-44de-91c9-169ec2f37f7f"],
+
+Cell["TBounce`", "ContextNameCell",ExpressionUUID->"64d53738-d0df-403b-ad19-1224d351fde2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "IFV", "ObjectName",ExpressionUUID->
+      "edcaf757-a933-4086-87ab-290854c1042d"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"f001c6f4-3be2-4018-92b9-a1335db6041d"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "fd1e6b01-a033-4153-b373-1d2df3b95152"]
+    }],ExpressionUUID->"59438ab2-48fc-49fa-9f5b-70e275e1300e"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"36987def-3a93-46fb-9a16-\
+522ac6884a6b"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     "IFV[ST,T,Tc,\!\(\*",
+     Cell[BoxData[
+      TemplateBox[{
+        Cell[
+         TextData["Subscript"]], "paclet:ref/Subscript"},
+       "RefLink",
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "39ecae85-124a-6248-853c-857bc06b528e"],
+     "Box[\(\[Xi]\), \(w\)]\)] gives the -log(\!\(\*",
+     Cell[BoxData[
+      TemplateBox[{
+        Cell[
+         TextData["Subscript"]], "paclet:ref/Subscript"},
+       "RefLink",
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "45e92fd9-3345-f343-a126-f7ddd9ee66b4"],
+     "Box[\(P\), \(\[ScriptCapitalF]\)]\)), where \!\(\*",
+     Cell[BoxData[
+      TemplateBox[{
+        Cell[
+         TextData["Subscript"]], "paclet:ref/Subscript"},
+       "RefLink",
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "e3349c02-478d-814d-86c5-1196c1c82401"],
+     "Box[\(P\), \(\[ScriptCapitalF]\)]\) is the false vacuum fractional \
+volume. IFV[ST,T,Tc,\!\(\*",
+     Cell[BoxData[
+      TemplateBox[{
+        Cell[
+         TextData["Subscript"]], "paclet:ref/Subscript"},
+       "RefLink",
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "47f93255-ef21-0c40-85ff-617eba2bdc35"],
+     "Box[\(\[Xi]\), \(w\)]\),V,{\!\(\*SubscriptBox[\(\[Phi]\), \(1\)]\),\!\(\
+\*SubscriptBox[\(\[Phi]\), \(2\)]\)}] includes the vacuum contribution \
+\[CapitalDelta]V in the Hubble parameter."
+    }],ExpressionUUID->"849b8aa1-1453-4f9e-86d2-a1c2175e39f7"]}
+  }]], "Usage",
+ CellID->237276455,ExpressionUUID->"8c696915-bf91-1e46-a268-bde93001de39"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"752f0e55-402c-4ac9-8c79-f96f757c9514"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"d50850d8-be10-460e-9af2-2221b8783da9"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(0)", "ExampleCount",ExpressionUUID->
+  "9331bf7d-4749-4c96-af2c-62a43c67a629"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->806053056,ExpressionUUID->"f1874ef6-4df7-413a-825d-bc5ea9c0944f"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<TBounce`\>\"", "]"}]], "Input", "ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->215214336,ExpressionUUID->"eed6c0d5-5c14-a449-9a17-47a453956d12"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"7924d8ed-fce1-4422-a55d-\
+9a9790c9386b"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"e6e800ae-a822-4e30-9068-66b5b407bf61"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 830.25},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"IFV",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "AllOptsTable" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "RootCaptions" -> 
+  "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 4, 8, 11, 1, 55.027947}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "TBounce`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "T Bounce Symbol", "language" -> "en", "paclet" -> "TBounce", "status" -> 
+    "None", "summary" -> 
+    "IFV[ST,T,Tc,SubscriptBox[\\[Xi], w]] gives the -log(SubscriptBox[P, \
+\\[ScriptCapitalF]]), where SubscriptBox[P, \\[ScriptCapitalF]] is the false \
+vacuum fractional volume. IFV[ST,T,Tc,SubscriptBox[\\[Xi], \
+w],V,{SubscriptBox[\\[Phi], 1],SubscriptBox[\\[Phi], 2]}] includes the vacuum \
+contribution \\[CapitalDelta]V in the Hubble parameter.", "synonyms" -> {}, 
+    "tabletags" -> {}, "title" -> "IFV", "titlemodifier" -> "", 
+    "metadescription" -> "", "windowtitle" -> "IFV", "type" -> "Symbol", 
+    "uri" -> "TBounce/ref/IFV"}},
+CellContext->"Global`",
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "14.0 for Linux x86 (64-bit) (December 12, 2023)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"0d6a060f-214e-4e20-898f-f3be41c6086e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[6296, 168, 1420, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"f1874ef6-4df7-413a-825d-bc5ea9c0944f",
+   CellTags->"PrimaryExamplesSection",
+   CellID->806053056]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 10568, 277}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[575, 21, 3236, 76, 70, "AnchorBarGrid",ExpressionUUID->"3efbe9b9-42f6-44de-91c9-169ec2f37f7f",
+ CellID->1],
+Cell[3814, 99, 90, 0, 70, "ContextNameCell",ExpressionUUID->"64d53738-d0df-403b-ad19-1224d351fde2"],
+Cell[CellGroupData[{
+Cell[3929, 103, 546, 14, 70, "ObjectNameGrid",ExpressionUUID->"36987def-3a93-46fb-9a16-522ac6884a6b"],
+Cell[4478, 119, 1781, 44, 70, "Usage",ExpressionUUID->"8c696915-bf91-1e46-a268-bde93001de39",
+ CellID->237276455]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6296, 168, 1420, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"f1874ef6-4df7-413a-825d-bc5ea9c0944f",
+ CellTags->"PrimaryExamplesSection",
+ CellID->806053056],
+Cell[7719, 207, 196, 3, 70, "Input",ExpressionUUID->"eed6c0d5-5c14-a449-9a17-47a453956d12",
+ CellID->215214336]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[8033, 215, 380, 11, 70, "SeeAlsoSection",ExpressionUUID->"7924d8ed-fce1-4422-a55d-9a9790c9386b"],
+Cell[8416, 228, 78, 0, 70, "FooterCell",ExpressionUUID->"e6e800ae-a822-4e30-9068-66b5b407bf61"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

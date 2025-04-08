@@ -1,0 +1,274 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10235,        264]
+NotebookOptionsPosition[      7119,        194]
+NotebookOutlinePosition[      9300,        250]
+CellTagsIndexPosition[      9216,        245]
+WindowTitle->FindTcrit
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["T BOUNCE SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "9efc898b-364e-4eea-a40f-a60e6db232ed"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "05459a2b-1d52-4741-ba8b-9d5d4d1559eb"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "06e05afc-2b60-4508-8644-9aef93e03c10"]
+        }],ExpressionUUID->"1af81413-2916-4712-93f0-ec39d69c3d32"],
+        StripOnInput->False],{
+       "\"TBounce/ref/FindTcrit\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{Cell["TBounce/ref/FindTcrit"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/TBounce/ref/\
+FindTcrit.html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]},
+               Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[False], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "TBounce/ref/FindTcrit" <> ".html"], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "450fbab3-2ecd-48f7-866b-89eb3c16a24c"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "589b082f-27f3-4cb4-a079-46d23fc3f912"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"f5f47345-68a9-44dc-bcd8-7362da0ddb93"],
+
+Cell["TBounce`", "ContextNameCell",ExpressionUUID->"76c5acb6-d71b-478a-97c4-92edfaeda86f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "FindTcrit", "ObjectName",ExpressionUUID->
+      "64f3050f-9314-4832-bea5-d33a2954121f"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"426caa86-5eda-4012-87c8-5b1ce680fbfa"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "60e1ad47-d1d8-4695-a7ae-574511f95766"]
+    }],ExpressionUUID->"7979a8ac-7517-42d2-97dc-df40ad9f3553"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"d835bfd4-b656-4c41-8451-\
+b334bc56cd62"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell["\<\
+FindTcrit[V,{Subscript[\[Phi], 1],Subscript[\[Phi], 2]}] searches for \
+critical temperatures between the phases \!\(\*SubscriptBox[\(\[Phi]\), \(1, \
+2\)]\)(T).\
+\>",ExpressionUUID->"f947ec64-88ef-4dd2-a69b-d6b3ff61d25d"]}
+  }]], "Usage",
+ CellID->379779198,ExpressionUUID->"c722b499-ee1f-2a49-99e8-bd5d1a4f952d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"37f84cd0-82f6-4d02-b3de-147bcb345271"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"82cde4fb-22c5-4732-bd6e-f27658f5f837"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(0)", "ExampleCount",ExpressionUUID->
+  "4bce2dab-a864-4335-8c49-20187d4e4bb0"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->531889145,ExpressionUUID->"77e20c26-c6ec-43b0-933c-594d5ff5901e"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<TBounce`\>\"", "]"}]], "Input", "ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->42874715,ExpressionUUID->"b2af8894-b1ac-464c-bb84-468fd91f7847"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"b3c56d0c-d415-439d-ac9f-\
+8c8b797a9697"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"f85328a2-b087-458b-9501-cfd5292774e4"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 592.5},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"FindTcrit",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "AllOptsTable" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "RootCaptions" -> 
+  "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 4, 8, 11, 1, 52.960336}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "TBounce`", 
+    "keywords" -> {}, "specialkeywords" -> {}, 
+    "tutorialcollectionlinks" -> {}, "index" -> True, "label" -> 
+    "T Bounce Symbol", "language" -> "en", "paclet" -> "TBounce", "status" -> 
+    "None", "summary" -> 
+    "FindTcrit[V,{Subscript[\\[Phi], 1],Subscript[\\[Phi], 2]}] searches for \
+critical temperatures between the phases SubscriptBox[\\[Phi],\\ 1,\\ 2](T).",
+     "synonyms" -> {}, "tabletags" -> {}, "title" -> "FindTcrit", 
+    "titlemodifier" -> "", "metadescription" -> "", "windowtitle" -> 
+    "FindTcrit", "type" -> "Symbol", "uri" -> "TBounce/ref/FindTcrit"}},
+CellContext->"Global`",
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "14.0 for Linux x86 (64-bit) (December 12, 2023)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"45b96c51-2d64-467e-b1d8-734592c6e14c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[4918, 132, 1420, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"77e20c26-c6ec-43b0-933c-594d5ff5901e",
+   CellTags->"PrimaryExamplesSection",
+   CellID->531889145]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 9017, 238}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[581, 21, 3272, 77, 70, "AnchorBarGrid",ExpressionUUID->"f5f47345-68a9-44dc-bcd8-7362da0ddb93",
+ CellID->1],
+Cell[3856, 100, 90, 0, 70, "ContextNameCell",ExpressionUUID->"76c5acb6-d71b-478a-97c4-92edfaeda86f"],
+Cell[CellGroupData[{
+Cell[3971, 104, 552, 14, 70, "ObjectNameGrid",ExpressionUUID->"d835bfd4-b656-4c41-8451-b334bc56cd62"],
+Cell[4526, 120, 355, 7, 70, "Usage",ExpressionUUID->"c722b499-ee1f-2a49-99e8-bd5d1a4f952d",
+ CellID->379779198]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4918, 132, 1420, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"77e20c26-c6ec-43b0-933c-594d5ff5901e",
+ CellTags->"PrimaryExamplesSection",
+ CellID->531889145],
+Cell[6341, 171, 195, 3, 70, "Input",ExpressionUUID->"b2af8894-b1ac-464c-bb84-468fd91f7847",
+ CellID->42874715]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[6654, 179, 380, 11, 70, "SeeAlsoSection",ExpressionUUID->"b3c56d0c-d415-439d-ac9f-8c8b797a9697"],
+Cell[7037, 192, 78, 0, 70, "FooterCell",ExpressionUUID->"f85328a2-b087-458b-9501-cfd5292774e4"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

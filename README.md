@@ -10,3 +10,7 @@ Download the latest .paclet file from the [Releases](https://github.com/finshky/
 with the appropriate path (`path/to/`) and version (`x.y.z`).
 
 Installed versions can be listed by running `PacletFind["PT2GW"]`: Mathematica will always use the latest installed version of the package. You can get more detailed information about the latest version `PacletInformation["PT2GW"]`. All versions can be uninstalled with `PacletUninsall["PT2GW"]`.
+
+For troubleshooting, please open an issue or contact
+- [marco.finetti@hotmail.com](mailto:marco.finetti@hotmail.com)
+- [marco.matteini@ijs.si](mailto:marco.matteini@ijs.si)

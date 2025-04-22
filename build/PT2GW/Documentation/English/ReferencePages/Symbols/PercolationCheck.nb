@@ -1,0 +1,276 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10420,        266]
+NotebookOptionsPosition[      7214,        195]
+NotebookOutlinePosition[      9484,        252]
+CellTagsIndexPosition[      9400,        247]
+WindowTitle->PercolationCheck
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["P T2G W SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "5ccf8978-9dca-4469-a112-588cfda4d209"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "8f953b63-6d65-448a-8890-275efd504140"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "1e0360e4-3969-498d-aa88-0cdb8ab9e3c3"]
+        }],ExpressionUUID->"c131c6d9-66f1-41fd-a561-409fc43d72c0"],
+        StripOnInput->False],{
+       "\"PT2GW/ref/PercolationCheck\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{Cell["PT2GW/ref/PercolationCheck"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/PT2GW/ref/\
+PercolationCheck.html"], StandardForm]], "Input", TextClipboardType -> 
+                "PlainText"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[False], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "PT2GW/ref/PercolationCheck" <> ".html"], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "c513f525-8c04-4e7e-8171-eb6c3a977eeb"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "203ab7d8-c976-4ec3-9c20-d8995554ab85"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"c6ed7014-75f2-4163-ad40-6fd702b21d89"],
+
+Cell["PT2GW`", "ContextNameCell",ExpressionUUID->"167233cd-26d8-4da2-9c28-5bb43fd48b47"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "PercolationCheck", "ObjectName",ExpressionUUID->
+      "1860c717-ecaa-4580-8bac-6f673fdf2ac1"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"5345e9ab-4734-42b6-b193-bbd5a2e4d10e"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "c18d2015-b78f-4ddf-bb96-d579b2bbfa3d"]
+    }],ExpressionUUID->"4ed5ba3d-384a-4c25-ae83-edfe4b37cb49"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"df97924a-f255-4bbe-bca6-\
+36b28523b3cd"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell["\<\
+PercolationCheck[ActionFunction,T,\!\(\*SubscriptBox[\(T\), \
+\(c\)]\),\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\),V,phases] returns a negative \
+number if percolation effectively occured, accounting for the Universe \
+expansion.\
+\>",ExpressionUUID->"6784b8ae-0b6f-4106-8a1e-9d2c38e4d58e"]}
+  }]], "Usage",
+ CellID->977941840,ExpressionUUID->"68771af8-6e8f-4e68-b28a-1ffd9b789f96"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"9f861409-3acc-464a-858f-596ce234a68b"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"89fef304-5e83-4eb0-b1c5-6d6eae71c911"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(0)", "ExampleCount",ExpressionUUID->
+  "c579e476-f168-4dd7-834c-63ca220f401a"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->800093330,ExpressionUUID->"f2fc3bc6-f791-407c-aa49-fe7db559a15a"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PT2GW`\>\"", "]"}]], "Input", "ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->975784426,ExpressionUUID->"17fb0dd6-c18a-4aa5-b8e6-1c5fd8b4fc21"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"9696f60f-bfa5-40c3-be06-\
+f0f724e728e2"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"338eb4cd-245d-473c-ba46-1bd73225c656"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 592.5},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"PercolationCheck",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "AllOptsTable" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "HasOptions" -> 
+  True, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 4, 8, 18, 13, 50.213115}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "PT2GW`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "P T2G W Symbol", "language" -> "en", "paclet" -> "PT2GW", 
+    "status" -> "None", "summary" -> 
+    "PercolationCheck[ActionFunction,T,SubscriptBox[T,\\ \
+c],SubscriptBox[\\[Xi],\\ w],V,phases] returns a negative number if \
+percolation effectively occured, accounting for the Universe expansion.", 
+    "synonyms" -> {}, "tabletags" -> {}, "title" -> "PercolationCheck", 
+    "titlemodifier" -> "", "metadescription" -> "", "windowtitle" -> 
+    "PercolationCheck", "type" -> "Symbol", "uri" -> 
+    "PT2GW/ref/PercolationCheck"}},
+CellContext->"Global`",
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "14.0 for Linux x86 (64-bit) (December 12, 2023)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"8a02183d-c5e1-43a3-b6e2-0d9121dbff4d"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[5014, 133, 1420, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"f2fc3bc6-f791-407c-aa49-fe7db559a15a",
+   CellTags->"PrimaryExamplesSection",
+   CellID->800093330]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 9201, 240}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[588, 21, 3293, 77, 70, "AnchorBarGrid",ExpressionUUID->"c6ed7014-75f2-4163-ad40-6fd702b21d89",
+ CellID->1],
+Cell[3884, 100, 88, 0, 70, "ContextNameCell",ExpressionUUID->"167233cd-26d8-4da2-9c28-5bb43fd48b47"],
+Cell[CellGroupData[{
+Cell[3997, 104, 559, 14, 70, "ObjectNameGrid",ExpressionUUID->"df97924a-f255-4bbe-bca6-36b28523b3cd"],
+Cell[4559, 120, 418, 8, 70, "Usage",ExpressionUUID->"68771af8-6e8f-4e68-b28a-1ffd9b789f96",
+ CellID->977941840]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5014, 133, 1420, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"f2fc3bc6-f791-407c-aa49-fe7db559a15a",
+ CellTags->"PrimaryExamplesSection",
+ CellID->800093330],
+Cell[6437, 172, 194, 3, 70, "Input",ExpressionUUID->"17fb0dd6-c18a-4aa5-b8e6-1c5fd8b4fc21",
+ CellID->975784426]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[6749, 180, 380, 11, 70, "SeeAlsoSection",ExpressionUUID->"9696f60f-bfa5-40c3-be06-f0f724e728e2"],
+Cell[7132, 193, 78, 0, 70, "FooterCell",ExpressionUUID->"338eb4cd-245d-473c-ba46-1bd73225c656"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

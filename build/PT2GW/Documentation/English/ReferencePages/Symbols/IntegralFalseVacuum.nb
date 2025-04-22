@@ -1,0 +1,283 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10922,        273]
+NotebookOptionsPosition[      7500,        199]
+NotebookOutlinePosition[      9983,        259]
+CellTagsIndexPosition[      9899,        254]
+WindowTitle->IntegralFalseVacuum
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["P T2G W SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "44104658-49c6-4800-aeb2-833543cc3ec1"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "78aff60c-e296-48e9-88d4-641c855dee9e"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "a93f839c-b896-4a03-8361-958260178181"]
+        }],ExpressionUUID->"6cec2f06-d6b0-4e33-b84c-86a445908b4e"],
+        StripOnInput->False],{
+       "\"PT2GW/ref/IntegralFalseVacuum\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{Cell["PT2GW/ref/IntegralFalseVacuum"]}, Visible -> 
+              False]]; SelectionMove[
+           DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/PT2GW/ref/\
+IntegralFalseVacuum.html"], StandardForm]], "Input", TextClipboardType -> 
+                "PlainText"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[False], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "PT2GW/ref/IntegralFalseVacuum" <> ".html"], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "31d5c0a6-dd04-423c-8b25-96d0de54b8b5"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "fe79b270-0d91-4b1a-93e0-04f6d2df9f3c"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"91665842-3a3f-40dd-bd76-5842fa01610e"],
+
+Cell["PT2GW`", "ContextNameCell",ExpressionUUID->"89744cb8-d83f-4184-b52e-4f51ce89be56"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "IntegralFalseVacuum", "ObjectName",ExpressionUUID->
+      "bc833c3b-968c-4a6a-8684-0ec2d2b27cdd"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"c38c88ef-b651-4c6e-8cca-f152e90ae416"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "8428c114-fe0a-4c46-9910-efbdd09e926f"]
+    }],ExpressionUUID->"43a8717f-0dc1-4133-8f52-9e980e0bc697"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"a2ce3874-6996-4638-b7cb-\
+b92571b8e1d2"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell["\<\
+IntegralFalseVacuum[action,T,Tc,\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\)] gives \
+-log(\!\(\*SubscriptBox[\(P\), \(\[ScriptCapitalF]\)]\)), where \
+\!\(\*SubscriptBox[\(P\), \(\[ScriptCapitalF]\)]\) is the false vacuum \
+fractional volume. IntegralFalseVacuum[action,T,Tc,\!\(\*SubscriptBox[\(\[Xi]\
+\), \(w\)]\),V,{\!\(\*SubscriptBox[\(\[Phi]\), \(1\)]\),\!\(\*SubscriptBox[\(\
+\[Phi]\), \(2\)]\)}] includes the vacuum contribution \[CapitalDelta]V in the \
+Hubble parameter.\
+\>",ExpressionUUID->"574f6e61-918b-4a84-8af3-12f8a7c3d167"]}
+  }]], "Usage",
+ CellID->1520430376,ExpressionUUID->"f2d89c90-f0d6-40d2-8af1-00523521a68c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"984893ef-f16e-4153-8d9c-f9a4946679bc"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"725a51b2-d114-42ab-9666-a579ee97eaa2"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(0)", "ExampleCount",ExpressionUUID->
+  "40c7be7a-a5e2-4dc2-9135-fe45046506e6"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->2116524280,ExpressionUUID->"7616429d-df90-4108-9cb2-fb8ca49c1aec"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PT2GW`\>\"", "]"}]], "Input", "ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->877671887,ExpressionUUID->"d1302b42-e9c3-4660-b9a3-f7b1715ca266"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"b171920a-6b8a-4a2a-8b24-\
+fac7dc1b6f85"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"144e43a4-2d6e-44b6-8fa7-efd803d77143"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 592.5},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"IntegralFalseVacuum",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "AllOptsTable" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "HasOptions" -> 
+  True, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 4, 8, 18, 13, 47.843177}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "PT2GW`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "P T2G W Symbol", "language" -> "en", "paclet" -> "PT2GW", 
+    "status" -> "None", "summary" -> 
+    "IntegralFalseVacuum[action,T,Tc,SubscriptBox[\\[Xi],\\ w]] gives \
+-log(SubscriptBox[P,\\ \\[ScriptCapitalF]]), where SubscriptBox[P,\\ \
+\\[ScriptCapitalF]] is the false vacuum fractional volume. \
+IntegralFalseVacuum[action,T,Tc,SubscriptBox[\\[Xi],\\ \
+w],V,{SubscriptBox[\\[Phi],\\ 1],SubscriptBox[\\[Phi],\\ 2]}] includes the \
+vacuum contribution \\[CapitalDelta]V in the Hubble parameter.", 
+    "synonyms" -> {}, "tabletags" -> {}, "title" -> "IntegralFalseVacuum", 
+    "titlemodifier" -> "", "metadescription" -> "", "windowtitle" -> 
+    "IntegralFalseVacuum", "type" -> "Symbol", "uri" -> 
+    "PT2GW/ref/IntegralFalseVacuum"}},
+CellContext->"Global`",
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "14.0 for Linux x86 (64-bit) (December 12, 2023)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"0ba9a1ee-a3e8-451a-af7c-d6e8ad786c00"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[5299, 137, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"7616429d-df90-4108-9cb2-fb8ca49c1aec",
+   CellTags->"PrimaryExamplesSection",
+   CellID->2116524280]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 9699, 247}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[591, 21, 3321, 78, 70, "AnchorBarGrid",ExpressionUUID->"91665842-3a3f-40dd-bd76-5842fa01610e",
+ CellID->1],
+Cell[3915, 101, 88, 0, 70, "ContextNameCell",ExpressionUUID->"89744cb8-d83f-4184-b52e-4f51ce89be56"],
+Cell[CellGroupData[{
+Cell[4028, 105, 562, 14, 70, "ObjectNameGrid",ExpressionUUID->"a2ce3874-6996-4638-b7cb-b92571b8e1d2"],
+Cell[4593, 121, 669, 11, 70, "Usage",ExpressionUUID->"f2d89c90-f0d6-40d2-8af1-00523521a68c",
+ CellID->1520430376]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5299, 137, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"7616429d-df90-4108-9cb2-fb8ca49c1aec",
+ CellTags->"PrimaryExamplesSection",
+ CellID->2116524280],
+Cell[6723, 176, 194, 3, 70, "Input",ExpressionUUID->"d1302b42-e9c3-4660-b9a3-f7b1715ca266",
+ CellID->877671887]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[7035, 184, 380, 11, 70, "SeeAlsoSection",ExpressionUUID->"b171920a-6b8a-4a2a-8b24-fac7dc1b6f85"],
+Cell[7418, 197, 78, 0, 70, "FooterCell",ExpressionUUID->"144e43a4-2d6e-44b6-8fa7-efd803d77143"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

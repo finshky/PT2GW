@@ -1,0 +1,273 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10241,        263]
+NotebookOptionsPosition[      7121,        194]
+NotebookOutlinePosition[      9304,        249]
+CellTagsIndexPosition[      9220,        244]
+WindowTitle->KSoundwaves
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["P T2G W SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "ec9d12ad-e298-4a46-9591-775079a8d7bd"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "0e0c4335-41d5-412d-b567-1f0e08e1bc05"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "787d9350-3625-4513-8c95-506b1535a876"]
+        }],ExpressionUUID->"d8e558ec-3144-42fe-b1fb-134fe5f1f9ec"],
+        StripOnInput->False],{
+       "\"PT2GW/ref/KSoundwaves\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{Cell["PT2GW/ref/KSoundwaves"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/PT2GW/ref/\
+KSoundwaves.html"], StandardForm]], "Input", TextClipboardType -> 
+                "PlainText"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[False], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "PT2GW/ref/KSoundwaves" <> ".html"], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "1f84e05d-b98f-4da3-9093-2da53617d645"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "8b96d8a3-ce19-4fb0-a063-a34155d3e7e6"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"ed53ecf8-c854-4528-a2f4-cdf0510e1ba0"],
+
+Cell["PT2GW`", "ContextNameCell",ExpressionUUID->"1f00226f-0149-45e5-924a-aef4efc341ce"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "KSoundwaves", "ObjectName",ExpressionUUID->
+      "743d07ec-1c66-4eb2-97c9-ae714fdcfe4a"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"1bcbd32c-f003-471b-893e-3895483e60ee"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "5cf07e9b-876f-4519-b64e-30d64939cc50"]
+    }],ExpressionUUID->"3139b37f-40dc-4aae-8266-2fe96f8f731b"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"9d33aa41-f34e-4f86-bceb-\
+e99b73377c43"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell["\<\
+KSoundwaves[\[Alpha],\!\(\*SubscriptBox[\(\[Xi]\), \
+\(w\)]\),\!\(\*SubscriptBox[\(c\), \(s\)]\)] gives the fractional energy \
+density available to soundwaves.\
+\>",ExpressionUUID->"18d95f6b-d79c-42a6-9ed6-c51ebeab70bf"]}
+  }]], "Usage",
+ CellID->664245130,ExpressionUUID->"ccb2e722-ff89-40fb-93f3-967fa4147249"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"0359e9ab-367f-4658-99f3-afafb3b3aa83"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"aa2fd5e3-e022-40d2-98b4-cd2c99ecc4be"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(0)", "ExampleCount",ExpressionUUID->
+  "bcdbd45b-3492-4192-b25d-385f5721ddff"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->1945093503,ExpressionUUID->"c123412c-a920-4624-9035-706a3eda2818"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PT2GW`\>\"", "]"}]], "Input", "ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->168084015,ExpressionUUID->"9d875693-2590-4be2-bb71-5ae66403d2bd"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"1722501e-2100-49ea-87ea-\
+2f3e30178ae7"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"498447f9-c6aa-4c5d-a03a-cd46862af4e0"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 592.5},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"KSoundwaves",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "AllOptsTable" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "HasOptions" -> 
+  True, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 4, 8, 18, 13, 48.919408}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "PT2GW`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "P T2G W Symbol", "language" -> "en", "paclet" -> "PT2GW", 
+    "status" -> "None", "summary" -> 
+    "KSoundwaves[\\[Alpha],SubscriptBox[\\[Xi],\\ w],SubscriptBox[c,\\ s]] \
+gives the fractional energy density available to soundwaves.", 
+    "synonyms" -> {}, "tabletags" -> {}, "title" -> "KSoundwaves", 
+    "titlemodifier" -> "", "metadescription" -> "", "windowtitle" -> 
+    "KSoundwaves", "type" -> "Symbol", "uri" -> "PT2GW/ref/KSoundwaves"}},
+CellContext->"Global`",
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "14.0 for Linux x86 (64-bit) (December 12, 2023)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"c26f5d10-24b3-413d-acb1-ed3d9d7edbc9"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[4920, 132, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"c123412c-a920-4624-9035-706a3eda2818",
+   CellTags->"PrimaryExamplesSection",
+   CellID->1945093503]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 9020, 237}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[583, 21, 3273, 77, 70, "AnchorBarGrid",ExpressionUUID->"ed53ecf8-c854-4528-a2f4-cdf0510e1ba0",
+ CellID->1],
+Cell[3859, 100, 88, 0, 70, "ContextNameCell",ExpressionUUID->"1f00226f-0149-45e5-924a-aef4efc341ce"],
+Cell[CellGroupData[{
+Cell[3972, 104, 554, 14, 70, "ObjectNameGrid",ExpressionUUID->"9d33aa41-f34e-4f86-bceb-e99b73377c43"],
+Cell[4529, 120, 354, 7, 70, "Usage",ExpressionUUID->"ccb2e722-ff89-40fb-93f3-967fa4147249",
+ CellID->664245130]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4920, 132, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"c123412c-a920-4624-9035-706a3eda2818",
+ CellTags->"PrimaryExamplesSection",
+ CellID->1945093503],
+Cell[6344, 171, 194, 3, 70, "Input",ExpressionUUID->"9d875693-2590-4be2-bb71-5ae66403d2bd",
+ CellID->168084015]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[6656, 179, 380, 11, 70, "SeeAlsoSection",ExpressionUUID->"1722501e-2100-49ea-87ea-2f3e30178ae7"],
+Cell[7039, 192, 78, 0, 70, "FooterCell",ExpressionUUID->"498447f9-c6aa-4c5d-a03a-cd46862af4e0"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

@@ -1,0 +1,314 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11938,        304]
+NotebookOptionsPosition[      8577,        232]
+NotebookOutlinePosition[     10999,        290]
+CellTagsIndexPosition[     10914,        285]
+WindowTitle->GWSensitivities
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["P T2G W SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "6b095ecc-2325-4cc4-92f5-b72265f38b71"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "0c54a0d9-8b20-4d4c-a280-448a317913a8"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "3dc8a07a-95a4-4bff-8ee8-f9d7f2132e09"]
+        }],ExpressionUUID->"962e49d5-da76-4cb0-b63e-7fc4dbea9a2b"],
+        StripOnInput->False],{
+       "\"PT2GW/ref/GWSensitivities\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{Cell["PT2GW/ref/GWSensitivities"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/PT2GW/ref/\
+GWSensitivities.html"], StandardForm]], "Input", TextClipboardType -> 
+                "PlainText"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[False], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "PT2GW/ref/GWSensitivities" <> ".html"], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "b8b4fa86-a970-4edf-960c-b85b97558fe6"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "0aeec203-544f-4ec2-b6bd-023e93dcc5a1"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"498c0d3e-dbfc-463f-b6d1-0eeed826870b"],
+
+Cell["PT2GW`", "ContextNameCell",ExpressionUUID->"a1d7790b-ae67-41b3-b8c9-24355e998b13"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "GWSensitivities", "ObjectName",ExpressionUUID->
+      "d7b72b0e-f9b9-4d30-8ae4-87ac1ee82b91"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"acda4cea-ff61-49c7-96c2-b901b539ef11"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "f5addf12-9283-4807-95f7-37419be93c85"]
+    }],ExpressionUUID->"b00c1847-3cb8-421c-915e-3ae7888494b9"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"2b484708-756b-44e5-b562-\
+b0bdafda85c4"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{
+       TemplateBox[{
+         Cell[
+          TextData["GWSensitivities"]], "paclet:GW/ref/GWSensitivities", 
+         "GW Package Symbol"},
+        "PackageLink",
+        BaseStyle->"InlineFormula"], "[", 
+       RowBox[{
+        StyleBox["f", "TI"], ",", 
+        "\"\<\!\(\*StyleBox[\"detectorConfiguration\", \"TI\"]\)\>\""}], 
+       "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "f0c55309-e428-4973-b45c-6448af1edf85"],
+     "\[LineSeparator]gives the sensitivity of the specified detector \
+configuration at frequency ",
+     Cell[BoxData[
+      StyleBox["f", "TI"]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "1abfb2cf-d92a-49ff-aa25-d67e5d0fbf72"],
+     ". "
+    }],ExpressionUUID->"2d6b40b2-de30-46af-93c2-f8b1c99eefd3"]},
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{
+       TemplateBox[{
+         Cell[
+          TextData["GWSensitivities"]], "paclet:GW/ref/GWSensitivities", 
+         "GW Package Symbol"},
+        "PackageLink",
+        BaseStyle->"InlineFormula"], "[", 
+       RowBox[{
+        StyleBox["f", "TI"], ",", 
+        "\"\<\!\(\*StyleBox[RowBox[{\"detector\", \" \", \"PISC\"}], \
+\"TI\"]\)\>\"", ",", 
+        RowBox[{"\"\<Source\>\"", "\[Rule]", 
+         StyleBox["source", "TI"]}]}], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "e793c14b-7ffe-4905-993a-c41a260f9c1c"],
+     "\[LineSeparator]specifies the GW source (defaults to \"Soundwaves\"), \
+for peak-integrated sensitivity curves (PISCs)."
+    }],ExpressionUUID->"ec7045ee-9049-4470-a764-6de07195a986"]}
+  }]], "Usage",
+ CellID->856807622,ExpressionUUID->"08655cc3-7220-4180-9bbc-dcabe23f0399"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"519b812e-00ef-43c0-b208-41ff69b749d7"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"2f9bd1af-5043-4f24-b961-d3e6a25252a8"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(0)", "ExampleCount",ExpressionUUID->
+  "a5e80cbd-6dbf-422c-a798-e0c8c6498a98"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->213964966,ExpressionUUID->"720b2e20-417a-4a03-92d4-30b05bd05d79"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PT2GW`\>\"", "]"}]], "Input", "ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->1377562981,ExpressionUUID->"5c294db0-59e0-414c-9db2-9f2609e7556d"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"6cda2a2e-9e05-4ee7-b8b1-\
+cb15b5d555a0"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"e80835bd-57de-4a1c-8fbf-6226fa59166a"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 592.5},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"GWSensitivities",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "AllOptsTable" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "HasOptions" -> 
+  True, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 4, 8, 18, 13, 46.579426}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "PT2GW`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "P T2G W Symbol", "language" -> "en", "paclet" -> "PT2GW", 
+    "status" -> "None", "summary" -> 
+    "GWSensitivities[f, \" detectorConfiguration\"] gives the sensitivity of \
+the specified detector configuration at frequency f. GWSensitivities[f, \" \
+StyleBox[RowBox[{\\\"detector\\\", \\\" \\\", \\\"PISC\\\"}], \\\"TI\\\"]\", \
+\"Source\" -> source] specifies the GW source (defaults to \"Soundwaves\"), \
+for peak-integrated sensitivity curves (PISCs).", "synonyms" -> {}, 
+    "tabletags" -> {}, "title" -> "GWSensitivities", "titlemodifier" -> "", 
+    "metadescription" -> "", "windowtitle" -> "GWSensitivities", "type" -> 
+    "Symbol", "uri" -> "PT2GW/ref/GWSensitivities"}},
+CellContext->"Global`",
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "14.0 for Linux x86 (64-bit) (December 12, 2023)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"8ea91f1c-7e91-4cd8-b43d-a97a42ca128c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[6376, 170, 1420, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"720b2e20-417a-4a03-92d4-30b05bd05d79",
+   CellTags->"PrimaryExamplesSection",
+   CellID->213964966]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 10715, 278}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[587, 21, 3289, 77, 70, "AnchorBarGrid",ExpressionUUID->"498c0d3e-dbfc-463f-b6d1-0eeed826870b",
+ CellID->1],
+Cell[3879, 100, 88, 0, 70, "ContextNameCell",ExpressionUUID->"a1d7790b-ae67-41b3-b8c9-24355e998b13"],
+Cell[CellGroupData[{
+Cell[3992, 104, 558, 14, 70, "ObjectNameGrid",ExpressionUUID->"2b484708-756b-44e5-b562-b0bdafda85c4"],
+Cell[4553, 120, 1786, 45, 70, "Usage",ExpressionUUID->"08655cc3-7220-4180-9bbc-dcabe23f0399",
+ CellID->856807622]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6376, 170, 1420, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"720b2e20-417a-4a03-92d4-30b05bd05d79",
+ CellTags->"PrimaryExamplesSection",
+ CellID->213964966],
+Cell[7799, 209, 195, 3, 70, "Input",ExpressionUUID->"5c294db0-59e0-414c-9db2-9f2609e7556d",
+ CellID->1377562981]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[8112, 217, 380, 11, 70, "SeeAlsoSection",ExpressionUUID->"6cda2a2e-9e05-4ee7-b8b1-cb15b5d555a0"],
+Cell[8495, 230, 78, 0, 70, "FooterCell",ExpressionUUID->"e80835bd-57de-4a1c-8fbf-6226fa59166a"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

@@ -1,0 +1,369 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     14396,        359]
+NotebookOptionsPosition[     10435,        277]
+NotebookOutlinePosition[     12933,        336]
+CellTagsIndexPosition[     12848,        331]
+WindowTitle->PlotAction
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["P T2G W SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "c37d6799-38c2-4f54-a56c-6ef90b331239"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "5a334030-c095-412f-84b6-2e1e28cf76e1"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "a27ba181-c5b8-4fcd-afc0-baf3584f9d61"]
+        }],ExpressionUUID->"4265d576-6e87-4bcb-b69f-6f3c24426cf5"],
+        StripOnInput->False],{
+       "\"PT2GW/ref/PlotAction\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{Cell["PT2GW/ref/PlotAction"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/PT2GW/ref/PlotAction.\
+html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, Visible -> 
+              False]]; SelectionMove[
+           DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[False], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "PT2GW/ref/PlotAction" <> ".html"], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "c9a6bac6-5bce-4ba2-8bc0-99a9e5294ec3"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "7be270b5-3756-4416-bd57-fadf074496ed"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"787ef515-5e24-4ceb-bf82-b3af18216fb4"],
+
+Cell["PT2GW`", "ContextNameCell",ExpressionUUID->"902f73c1-4356-4697-996c-550735d124f1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "PlotAction", "ObjectName",ExpressionUUID->
+      "14325905-2dcf-4f98-9412-87beee5a85af"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"71c47a41-8ce6-4300-9c1d-59cf60a23992"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "efe5e817-52c2-4632-921c-fdaa5d82c23a"]
+    }],ExpressionUUID->"1ece8506-19d2-435d-8322-8a36b404b56c"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"dd55f100-3369-4993-9260-\
+5e454ac35c46"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell["\<\
+PlotAction[ActionFunction,{\!\(\*SubscriptBox[\(T\), \
+\(min\)]\),\!\(\*SubscriptBox[\(T\), \(max\)]\)}] plot the Euclidean action \
+Subscript[S, 3]/T in the given temperature range. PlotAction[ActionFunction] \
+plots the action \!\(\*SubscriptBox[\(S\), \(3\)]\)(T)/T for the given \
+ActionFunction object. PlotAction[Transition] \!\(\*SubscriptBox[\(S\), \
+\(3\)]\)(T)/T for the given Transition object. PlotAction[Associaton] \
+\!\(\*SubscriptBox[\(S\), \(3\)]\)(T)/T for the given Association.\
+\>",ExpressionUUID->"44432840-da6a-4fb3-8ac4-4af6758a8324"]}
+  }]], "Usage",
+ CellID->17251146,ExpressionUUID->"f9ca3793-12bb-4585-bb41-8c45c67377fb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    DynamicBox[ToBoxes[
+      If[
+       MatchQ[
+        CurrentValue[
+         EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, 
+         Closed], 
+        Alternatives[Open, True]], 
+       Style[
+        Graphics[{
+          Thickness[0.18], 
+          RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+          Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+         PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+        0.68 Inherited], 
+       Rotate[
+        Style[
+         Graphics[{
+           Thickness[0.18], 
+           RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+           Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+          PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+         0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+     ImageSizeCache->{
+      13.600000000000001`, {0.5800000000000001, 13.020000000000001`}}]],
+    ExpressionUUID->"104d9ab1-eb7a-4773-81f9-710a8f718374"],
+   Cell[BoxData[
+    TemplateBox[{1},
+     "Spacer1"]],ExpressionUUID->"87cb8659-bdc3-4208-8f18-9ea492096cc2"],
+   "Details and Options"
+  }], "NotesFrameText",ExpressionUUID->"aeb9392c-c806-4c21-9a7c-e493ff29aed2"],
+  Appearance->{Automatic, None, "Normal", Automatic},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->
+   "Preemptive"]],ExpressionUUID->"11031fd5-2ee7-4a57-b016-0d52bbcafd78"]], \
+"NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CacheGraphics->False,
+ CellID->1629202387,ExpressionUUID->"78beb276-2f6e-4e0b-9380-d47bb2ceb396"],
+
+Cell["The following options can be given: ", "Notes",
+ CellID->457180748,ExpressionUUID->"ed8902b1-815b-4f10-9f15-aa9f446a5940"],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "0aef7dec-cd80-4ac8-941f-abdabf4fe572"], 
+    TemplateBox[{
+      Cell[
+       TextData["PlotLegends"]], "paclet:ref/PlotLegends"},
+     "RefLink",
+     BaseStyle->{"3ColumnTableMod"}], 
+    TemplateBox[{
+      Cell[
+       TextData["Automatic"]], "paclet:ref/Automatic"},
+     "RefLink",
+     BaseStyle->{"3ColumnTableMod"}], Cell["\<\
+PlotLegends is an option for plot functions that specifies what legends to \
+use. \
+\>", "TableText",ExpressionUUID->"ec14f1c6-4653-4733-9a5b-0240aa40494a"]}
+  }]], "3ColumnTableMod",
+ GridBoxOptions->{
+ GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {{None}}},
+ GridBoxDividers->{"Rows" -> {{True, True}}}},
+ CellID->77316846,ExpressionUUID->"b12b7c47-56bf-46c6-9bef-ca2d3105022f"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"f481c454-d5f0-4484-a67b-5a2f4952c4c6"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"deae0152-b5ab-4a30-85e3-ae7dc60e21ff"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(0)", "ExampleCount",ExpressionUUID->
+  "210bee9c-7f83-414b-be1d-9e39446866d3"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->504538682,ExpressionUUID->"6c73da9a-a724-4f70-8030-fd7975471d7e"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PT2GW`\>\"", "]"}]], "Input", "ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->2034200940,ExpressionUUID->"6a5bff5a-5674-4d46-8d35-a400a1ca3819"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"babaec72-b051-4297-9bbc-\
+1fafa9239c3a"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"8a529927-f870-4408-a307-74a856a44396"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 592.5},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"PlotAction",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "AllOptsTable" -> Closed, "NotesSection" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "HasOptions" -> 
+  True, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 4, 8, 18, 13, 51.054209}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "PT2GW`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "P T2G W Symbol", "language" -> "en", "paclet" -> "PT2GW", 
+    "status" -> "None", "summary" -> 
+    "PlotAction[ActionFunction,{SubscriptBox[T,\\ min],SubscriptBox[T,\\ \
+max]}] plot the Euclidean action Subscript[S, 3]/T in the given temperature \
+range. PlotAction[ActionFunction] plots the action SubscriptBox[S,\\ 3](T)/T \
+for the given ActionFunction object. PlotAction[Transition] SubscriptBox[S,\\ \
+3](T)/T for the given Transition object. PlotAction[Associaton] \
+SubscriptBox[S,\\ 3](T)/T for the given Association.", "synonyms" -> {}, 
+    "tabletags" -> {}, "title" -> "PlotAction", "titlemodifier" -> "", 
+    "metadescription" -> "", "windowtitle" -> "PlotAction", "type" -> 
+    "Symbol", "uri" -> "PT2GW/ref/PlotAction"}},
+CellContext->"Global`",
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "14.0 for Linux x86 (64-bit) (December 12, 2023)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"6bc38a83-053c-4330-8032-e2e6dd43933a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[8234, 215, 1420, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"6c73da9a-a724-4f70-8030-fd7975471d7e",
+   CellTags->"PrimaryExamplesSection",
+   CellID->504538682]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 12649, 324}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[582, 21, 3268, 77, 70, "AnchorBarGrid",ExpressionUUID->"787ef515-5e24-4ceb-bf82-b3af18216fb4",
+ CellID->1],
+Cell[3853, 100, 88, 0, 70, "ContextNameCell",ExpressionUUID->"902f73c1-4356-4697-996c-550735d124f1"],
+Cell[CellGroupData[{
+Cell[3966, 104, 553, 14, 70, "ObjectNameGrid",ExpressionUUID->"dd55f100-3369-4993-9260-5e454ac35c46"],
+Cell[4522, 120, 690, 11, 70, "Usage",ExpressionUUID->"f9ca3793-12bb-4585-bb41-8c45c67377fb",
+ CellID->17251146]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5249, 136, 1920, 48, 70, "NotesSection",ExpressionUUID->"78beb276-2f6e-4e0b-9380-d47bb2ceb396",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->1629202387],
+Cell[7172, 186, 128, 1, 70, "Notes",ExpressionUUID->"ed8902b1-815b-4f10-9f15-aa9f446a5940",
+ CellID->457180748],
+Cell[7303, 189, 804, 20, 70, "3ColumnTableMod",ExpressionUUID->"b12b7c47-56bf-46c6-9bef-ca2d3105022f",
+ CellID->77316846]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
+Cell[CellGroupData[{
+Cell[8234, 215, 1420, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"6c73da9a-a724-4f70-8030-fd7975471d7e",
+ CellTags->"PrimaryExamplesSection",
+ CellID->504538682],
+Cell[9657, 254, 195, 3, 70, "Input",ExpressionUUID->"6a5bff5a-5674-4d46-8d35-a400a1ca3819",
+ CellID->2034200940]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[9970, 262, 380, 11, 70, "SeeAlsoSection",ExpressionUUID->"babaec72-b051-4297-9bbc-1fafa9239c3a"],
+Cell[10353, 275, 78, 0, 70, "FooterCell",ExpressionUUID->"8a529927-f870-4408-a307-74a856a44396"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

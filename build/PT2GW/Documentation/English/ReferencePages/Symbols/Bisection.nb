@@ -1,0 +1,412 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15779,        402]
+NotebookOptionsPosition[     12163,        325]
+NotebookOutlinePosition[     14309,        379]
+CellTagsIndexPosition[     14224,        374]
+WindowTitle->Bisection
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["P T2G W SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "46b5cec7-fdeb-4701-8780-f9fb9af4cfbd"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "c8888b36-9160-4ada-830b-a7a3d061d037"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "eba8c82c-63fe-44eb-8c94-98be8baa13de"]
+        }],ExpressionUUID->"76f3c79a-9e3d-4a63-8f7f-3c1302349231"],
+        StripOnInput->False],{
+       "\"PT2GW/ref/Bisection\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{Cell["PT2GW/ref/Bisection"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/PT2GW/ref/Bisection.\
+html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, Visible -> 
+              False]]; SelectionMove[
+           DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[False], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "PT2GW/ref/Bisection" <> ".html"], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "7047a006-2647-409d-8a0f-d137a877fe1f"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "ada21c05-e0cc-43a2-b8e6-dacf3d8e310a"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"576be4df-54f4-4f1c-9e71-e14ce27a6576"],
+
+Cell["PT2GW`", "ContextNameCell",ExpressionUUID->"6a3708c1-88f0-48e0-8163-ebcbe57361e1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "Bisection", "ObjectName",ExpressionUUID->
+      "cc18fd25-51a5-4b3d-8ae5-77004736d6d4"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"4b25f052-7020-4b8b-8dbc-48f80c7f6d3a"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "a482c0a1-960d-4e9e-8221-68d54018c739"]
+    }],ExpressionUUID->"9119130d-1a34-4b30-880d-bed6bf4040e3"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"52b5dc01-ed62-4a82-b461-\
+3c445dc927bb"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{
+       TemplateBox[{
+         Cell[
+          TextData["Bisection"]], "paclet:PT2GW/ref/Bisection", 
+         "PT2GW Package Symbol"},
+        "PackageLink",
+        BaseStyle->"InlineFormula"], "[", 
+       RowBox[{
+        StyleBox["f", "TI"], ",", 
+        StyleBox["range", "TI"], ",", 
+        StyleBox["xTol", "TI"], ",", 
+        StyleBox["yTol", "TI"]}], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "cad4bbae-1acd-4da7-99e2-b52bc5038172"],
+     "\[LineSeparator]is a root solver based on the bisection method."
+    }],ExpressionUUID->"89b4e1a4-7b2d-4833-81fd-cd6a13676564"]}
+  }]], "Usage",
+ CellID->357125502,ExpressionUUID->"0f6915cd-0f3d-43ce-9e3b-2419278e2096"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    DynamicBox[ToBoxes[
+      If[
+       MatchQ[
+        CurrentValue[
+         EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, 
+         Closed], 
+        Alternatives[Open, True]], 
+       Style[
+        Graphics[{
+          Thickness[0.18], 
+          RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+          Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+         PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+        0.68 Inherited], 
+       Rotate[
+        Style[
+         Graphics[{
+           Thickness[0.18], 
+           RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+           Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+          PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+         0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+     ImageSizeCache->{
+      13.600000000000001`, {0.5800000000000001, 13.020000000000001`}}]],
+    ExpressionUUID->"2199e58c-6d7a-4862-a652-e7b2ef19146f"],
+   Cell[BoxData[
+    TemplateBox[{1},
+     "Spacer1"]],ExpressionUUID->"1eb4ae5f-5c6b-4e48-b17e-618dc9d5d5d0"],
+   "Details and Options"
+  }], "NotesFrameText",ExpressionUUID->"c04d612d-98e0-42a4-aec0-d6882df31314"],
+  Appearance->{Automatic, None, "Normal", Automatic},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->
+   "Preemptive"]],ExpressionUUID->"472a003c-3f9f-4e6f-bd4b-0ba1ced3d71a"]], \
+"NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CacheGraphics->False,
+ CellID->247685957,ExpressionUUID->"62469114-71de-42f8-96bc-e23f6c9112c5"],
+
+Cell["The following options can be given: ", "Notes",
+ CellID->1626744660,ExpressionUUID->"658e7c3f-9bf3-4c6d-a1cf-f74356333e0e"],
+
+Cell[BoxData[GridBox[{
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "6f035ceb-0263-40b0-b945-947d51e811f3"], 
+    TemplateBox[{
+      Cell[
+       TextData["MaxIterations"]], "paclet:ref/MaxIterations"},
+     "RefLink",
+     BaseStyle->{"3ColumnTableMod"}], 
+    TemplateBox[{
+      Cell[
+       TextData["Infinity"]], "paclet:ref/Infinity"},
+     "RefLink",
+     BaseStyle->{"3ColumnTableMod"}], Cell["\<\
+MaxIterations is an option that specifies the maximum number of iterations \
+that should be tried in various built-in functions and algorithms.\
+\>", "TableText",ExpressionUUID->"c056e076-366a-4ce6-bca2-a067c773f8f1"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "2d4baf33-83b0-450e-8d19-f927e692bcf3"], 
+    TemplateBox[{
+      Cell[
+       TextData["Direction"]], "paclet:ref/Direction"},
+     "RefLink",
+     BaseStyle->{"3ColumnTableMod"}], 
+    TemplateBox[{
+      Cell[
+       TextData["Up"]], "paclet:ref/Up"},
+     "RefLink",
+     BaseStyle->{"3ColumnTableMod"}], Cell["\<\
+Direction is an option for Limit and related functions that specifies the \
+direction in which the limit is taken.\
+\>", "TableText",ExpressionUUID->"addf6590-95c3-404a-8458-15ecefc1ec92"]},
+   {Cell["      ", "TableRowIcon",ExpressionUUID->
+     "824a6178-c7da-4dc4-8732-e6da85704b82"], 
+    TemplateBox[{
+      Cell[
+       TextData["Return"]], "paclet:ref/Return"},
+     "RefLink",
+     BaseStyle->{"3ColumnTableMod"}], "\"\<x\>\"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"Return", "[", 
+       StyleBox["expr", "TI"], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "bb24fb94-1a71-44b8-a118-f2db0fbb3d30"],
+     " returns the value ",
+     Cell[BoxData[
+      StyleBox["expr", "TI"]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "95969491-3ae6-47cf-8fa7-c80317168182"],
+     " from a function. \n",
+     Cell[BoxData[
+      RowBox[{"Return", "[", "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "a5d723d0-8434-401b-bdcf-152795aa007f"],
+     " returns the value Null. "
+    }], "TableText",ExpressionUUID->"5d48ee5b-0819-4db5-b6a5-ee516a4ca0e6"]}
+  }]], "3ColumnTableMod",
+ GridBoxOptions->{
+ GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {None, None, {None}}},
+ GridBoxDividers->{"Rows" -> {{True, True, True, True}}}},
+ CellID->2104840720,ExpressionUUID->"890ba208-da08-48da-8702-078c5cf1e590"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"71884d2a-7b38-478a-9d60-4e9e483dfa34"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"f84f3cf2-baf6-474b-b1b1-4e9712cf84bf"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(0)", "ExampleCount",ExpressionUUID->
+  "94da2753-9f67-4555-8d05-4261362ec267"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->1423194148,ExpressionUUID->"28809783-6a67-4514-a507-c4e66074335d"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PT2GW`\>\"", "]"}]], "Input", "ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->1032789277,ExpressionUUID->"c4efe80d-ea33-4970-b3e2-77c3cd7c0fa3"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"f34bd1b3-0a36-4b73-9d08-\
+aa9ab4e31175"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"c638a3b3-7e36-4b65-80c8-d35be3b05438"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 592.5},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"Bisection",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "AllOptsTable" -> Closed, "NotesSection" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "HasOptions" -> 
+  True, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 4, 8, 18, 13, 42.934812}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "PT2GW`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "P T2G W Symbol", "language" -> "en", "paclet" -> "PT2GW", 
+    "status" -> "None", "summary" -> 
+    "Bisection[f, range, xTol, yTol] is a root solver based on the bisection \
+method.", "synonyms" -> {}, "tabletags" -> {}, "title" -> "Bisection", 
+    "titlemodifier" -> "", "metadescription" -> "", "windowtitle" -> 
+    "Bisection", "type" -> "Symbol", "uri" -> "PT2GW/ref/Bisection"}},
+CellContext->"Global`",
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "14.0 for Linux x86 (64-bit) (December 12, 2023)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"179ed9ec-0dae-46a5-9d9d-c2f06e7c410a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[9961, 263, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"28809783-6a67-4514-a507-c4e66074335d",
+   CellTags->"PrimaryExamplesSection",
+   CellID->1423194148]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 14024, 367}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[581, 21, 3264, 77, 70, "AnchorBarGrid",ExpressionUUID->"576be4df-54f4-4f1c-9e71-e14ce27a6576",
+ CellID->1],
+Cell[3848, 100, 88, 0, 70, "ContextNameCell",ExpressionUUID->"6a3708c1-88f0-48e0-8163-ebcbe57361e1"],
+Cell[CellGroupData[{
+Cell[3961, 104, 552, 14, 70, "ObjectNameGrid",ExpressionUUID->"52b5dc01-ed62-4a82-b461-3c445dc927bb"],
+Cell[4516, 120, 794, 20, 70, "Usage",ExpressionUUID->"0f6915cd-0f3d-43ce-9e3b-2419278e2096",
+ CellID->357125502]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5347, 145, 1919, 48, 70, "NotesSection",ExpressionUUID->"62469114-71de-42f8-96bc-e23f6c9112c5",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->247685957],
+Cell[7269, 195, 129, 1, 70, "Notes",ExpressionUUID->"658e7c3f-9bf3-4c6d-a1cf-f74356333e0e",
+ CellID->1626744660],
+Cell[7401, 198, 2433, 59, 70, "3ColumnTableMod",ExpressionUUID->"890ba208-da08-48da-8702-078c5cf1e590",
+ CellID->2104840720]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
+Cell[CellGroupData[{
+Cell[9961, 263, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"28809783-6a67-4514-a507-c4e66074335d",
+ CellTags->"PrimaryExamplesSection",
+ CellID->1423194148],
+Cell[11385, 302, 195, 3, 70, "Input",ExpressionUUID->"c4efe80d-ea33-4970-b3e2-77c3cd7c0fa3",
+ CellID->1032789277]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[11698, 310, 380, 11, 70, "SeeAlsoSection",ExpressionUUID->"f34bd1b3-0a36-4b73-9d08-aa9ab4e31175"],
+Cell[12081, 323, 78, 0, 70, "FooterCell",ExpressionUUID->"c638a3b3-7e36-4b65-80c8-d35be3b05438"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

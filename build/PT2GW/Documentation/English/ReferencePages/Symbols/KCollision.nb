@@ -1,0 +1,272 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10140,        262]
+NotebookOptionsPosition[      7055,        193]
+NotebookOutlinePosition[      9204,        248]
+CellTagsIndexPosition[      9120,        243]
+WindowTitle->KCollision
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["P T2G W SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "840d0b57-7d79-4539-a01f-ed0c264adf4d"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "54d7dc31-d376-4d07-95c5-55d0b69ce3d6"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "39976286-b52b-436f-9706-8d4b2d093e11"]
+        }],ExpressionUUID->"26b71924-161e-4939-a807-c7bad2db9f5a"],
+        StripOnInput->False],{
+       "\"PT2GW/ref/KCollision\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{Cell["PT2GW/ref/KCollision"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/PT2GW/ref/KCollision.\
+html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, Visible -> 
+              False]]; SelectionMove[
+           DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[False], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "PT2GW/ref/KCollision" <> ".html"], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "ed9c841e-3341-408f-a033-1421c2808b32"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "51a8bc74-6147-4cb0-abff-96fd296faae8"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"32cf09cd-7f95-43ae-9b4e-7b22aa6ff115"],
+
+Cell["PT2GW`", "ContextNameCell",ExpressionUUID->"e7a8bcdc-379f-428d-ba6e-da4b5c14b1d5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "KCollision", "ObjectName",ExpressionUUID->
+      "72558436-f9d3-40cb-99e9-d03ad295c84a"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"66ef902a-2ed6-4344-8475-24aeacfe6b62"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "04d2c5d7-5f69-48ce-9cec-444ad2cf895f"]
+    }],ExpressionUUID->"6a862198-98b6-4f0b-9efc-e9cc22b319e8"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"44d5cbfe-69c9-4466-9cb6-\
+9a925c9dc038"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell["\<\
+kappaCollision[\[Alpha],\[Kappa]col] gives the fractional energy density for \
+bubble wall collisions.\
+\>",ExpressionUUID->"5f8a25f8-5a00-4915-b2d8-1ce95960be8c"]}
+  }]], "Usage",
+ CellID->1398409266,ExpressionUUID->"868627b4-c330-41f1-adab-dca22ab28798"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"489b4faa-7d8b-4ace-98c0-58ba68b05167"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"72d3562a-712c-4ef9-957f-c59ef8a21993"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(0)", "ExampleCount",ExpressionUUID->
+  "f7dc6dfb-2318-405a-a9a5-b033841cc0ae"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->3396514,ExpressionUUID->"4d54055e-4f01-4d55-8928-86779d850214"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PT2GW`\>\"", "]"}]], "Input", "ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->1781040894,ExpressionUUID->"fce76284-9c87-42ac-a436-49822dd394b5"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"d1969c37-14dc-4ae8-939b-\
+b2c5be492c2a"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"4e30a878-6c27-4726-bf30-d2a8366129b5"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 830.25},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"KCollision",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "AllOptsTable" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "HasOptions" -> 
+  True, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 4, 8, 18, 13, 48.702507}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "PT2GW`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "P T2G W Symbol", "language" -> "en", "paclet" -> "PT2GW", 
+    "status" -> "None", "summary" -> 
+    "kappaCollision[\\[Alpha],\\[Kappa]col] gives the fractional energy \
+density for bubble wall collisions.", "synonyms" -> {}, "tabletags" -> {}, 
+    "title" -> "KCollision", "titlemodifier" -> "", "metadescription" -> "", 
+    "windowtitle" -> "KCollision", "type" -> "Symbol", "uri" -> 
+    "PT2GW/ref/KCollision"}},
+CellContext->"Global`",
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "14.0 for Linux x86 (64-bit) (December 12, 2023)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"a9337256-ebf4-49eb-9bb6-1bdc511637d7"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[4856, 131, 1418, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"4d54055e-4f01-4d55-8928-86779d850214",
+   CellTags->"PrimaryExamplesSection",
+   CellID->3396514]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 8923, 236}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[582, 21, 3268, 77, 70, "AnchorBarGrid",ExpressionUUID->"32cf09cd-7f95-43ae-9b4e-7b22aa6ff115",
+ CellID->1],
+Cell[3853, 100, 88, 0, 70, "ContextNameCell",ExpressionUUID->"e7a8bcdc-379f-428d-ba6e-da4b5c14b1d5"],
+Cell[CellGroupData[{
+Cell[3966, 104, 553, 14, 70, "ObjectNameGrid",ExpressionUUID->"44d5cbfe-69c9-4466-9cb6-9a925c9dc038"],
+Cell[4522, 120, 297, 6, 70, "Usage",ExpressionUUID->"868627b4-c330-41f1-adab-dca22ab28798",
+ CellID->1398409266]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4856, 131, 1418, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"4d54055e-4f01-4d55-8928-86779d850214",
+ CellTags->"PrimaryExamplesSection",
+ CellID->3396514],
+Cell[6277, 170, 195, 3, 70, "Input",ExpressionUUID->"fce76284-9c87-42ac-a436-49822dd394b5",
+ CellID->1781040894]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[6590, 178, 380, 11, 70, "SeeAlsoSection",ExpressionUUID->"d1969c37-14dc-4ae8-939b-b2c5be492c2a"],
+Cell[6973, 191, 78, 0, 70, "FooterCell",ExpressionUUID->"4e30a878-6c27-4726-bf30-d2a8366129b5"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

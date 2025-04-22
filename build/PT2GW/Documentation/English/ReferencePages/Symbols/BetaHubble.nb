@@ -1,0 +1,289 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10756,        279]
+NotebookOptionsPosition[      7660,        210]
+NotebookOutlinePosition[      9817,        265]
+CellTagsIndexPosition[      9733,        260]
+WindowTitle->BetaHubble
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["P T2G W SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "76e2e65d-4556-4b03-97ca-7ed71a0ad6e8"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "603abc32-fcb1-4d84-a774-3ef4adf1883c"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "600d7a6a-dac7-4bf4-8e71-d8332db2133d"]
+        }],ExpressionUUID->"76275b6b-6dbb-42a5-b7ad-5a32cbdb9380"],
+        StripOnInput->False],{
+       "\"PT2GW/ref/BetaHubble\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{Cell["PT2GW/ref/BetaHubble"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/PT2GW/ref/BetaHubble.\
+html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, Visible -> 
+              False]]; SelectionMove[
+           DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[False], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "PT2GW/ref/BetaHubble" <> ".html"], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "512da4b6-c453-4e8b-a9e7-2f0da356a803"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "462ef750-5058-4ba2-9e6b-a6f1367b6610"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"a4490608-8dc7-4590-89cf-f1d6e416f421"],
+
+Cell["PT2GW`", "ContextNameCell",ExpressionUUID->"e5664d9a-68f5-481a-887f-bbbad248c7ad"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "BetaHubble", "ObjectName",ExpressionUUID->
+      "41c1b153-850a-4817-803f-c30d905ccd34"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"5ccdf32d-35c7-4d77-a847-604d2959b6dd"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "ce01d842-b0b1-4be0-a6d7-d62d1d0ff319"]
+    }],ExpressionUUID->"ccdb6a06-7d0b-49d1-9774-7119635c5062"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"8a01b527-dbf8-4439-969b-\
+7277f3753d7d"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{
+       TemplateBox[{
+         Cell[
+          TextData["BetaHubble"]], "paclet:GW/ref/BetaHubble", 
+         "GW Package Symbol"},
+        "PackageLink",
+        BaseStyle->"InlineFormula"], "[", 
+       RowBox[{"T", ",", 
+        TemplateBox[{
+          Cell[
+           TextData["ActionFunction"]], "paclet:PT2GW/ref/ActionFunction", 
+          "PT2GW Package Symbol"},
+         "PackageLink",
+         BaseStyle->"InlineFormula"]}], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "ecf0a3c9-e854-4edb-aa36-99ceb06c8b30"],
+     "\[LineSeparator]gives the inverse duration in Hubble units of a \
+first-order phase transition."
+    }],ExpressionUUID->"fe19ee30-1181-46ac-bb5e-d5f9a1046f89"]}
+  }]], "Usage",
+ CellID->1631290624,ExpressionUUID->"904def7f-5392-4674-a526-fe7286922703"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"41ccfe6f-337c-4600-96c2-70c7ba0fc3a4"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"2fed8d39-bc92-43d4-b1c6-b593b73d8048"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(0)", "ExampleCount",ExpressionUUID->
+  "1102b922-49be-46c9-b296-f077afbbec34"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->1715543939,ExpressionUUID->"594a69d8-a14e-401d-9bb4-1fe93256ed3a"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PT2GW`\>\"", "]"}]], "Input", "ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->275809595,ExpressionUUID->"df599ee3-3ebd-4086-99a1-176665f98bbc"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"95be76aa-46cc-47a5-b8f2-\
+1de6c09a18b3"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"e77db7e7-4a05-495c-8846-8bc64e679631"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 830.25},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"BetaHubble",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "AllOptsTable" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "HasOptions" -> 
+  True, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 4, 8, 18, 13, 42.625117}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "PT2GW`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "P T2G W Symbol", "language" -> "en", "paclet" -> "PT2GW", 
+    "status" -> "None", "summary" -> 
+    "BetaHubble[T, ActionFunction] gives the inverse duration in Hubble units \
+of a first-order phase transition.", "synonyms" -> {}, "tabletags" -> {}, 
+    "title" -> "BetaHubble", "titlemodifier" -> "", "metadescription" -> "", 
+    "windowtitle" -> "BetaHubble", "type" -> "Symbol", "uri" -> 
+    "PT2GW/ref/BetaHubble"}},
+CellContext->"Global`",
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "14.0 for Linux x86 (64-bit) (December 12, 2023)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"9c0d31a6-4b52-4eea-88e5-c51a0389b9dd"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[5459, 148, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"594a69d8-a14e-401d-9bb4-1fe93256ed3a",
+   CellTags->"PrimaryExamplesSection",
+   CellID->1715543939]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 9533, 253}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[582, 21, 3268, 77, 70, "AnchorBarGrid",ExpressionUUID->"a4490608-8dc7-4590-89cf-f1d6e416f421",
+ CellID->1],
+Cell[3853, 100, 88, 0, 70, "ContextNameCell",ExpressionUUID->"e5664d9a-68f5-481a-887f-bbbad248c7ad"],
+Cell[CellGroupData[{
+Cell[3966, 104, 553, 14, 70, "ObjectNameGrid",ExpressionUUID->"8a01b527-dbf8-4439-969b-7277f3753d7d"],
+Cell[4522, 120, 900, 23, 70, "Usage",ExpressionUUID->"904def7f-5392-4674-a526-fe7286922703",
+ CellID->1631290624]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5459, 148, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"594a69d8-a14e-401d-9bb4-1fe93256ed3a",
+ CellTags->"PrimaryExamplesSection",
+ CellID->1715543939],
+Cell[6883, 187, 194, 3, 70, "Input",ExpressionUUID->"df599ee3-3ebd-4086-99a1-176665f98bbc",
+ CellID->275809595]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[7195, 195, 380, 11, 70, "SeeAlsoSection",ExpressionUUID->"95be76aa-46cc-47a5-b8f2-1de6c09a18b3"],
+Cell[7578, 208, 78, 0, 70, "FooterCell",ExpressionUUID->"e77db7e7-4a05-495c-8846-8bc64e679631"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

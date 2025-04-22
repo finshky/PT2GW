@@ -1,0 +1,272 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10153,        262]
+NotebookOptionsPosition[      7074,        193]
+NotebookOutlinePosition[      9216,        248]
+CellTagsIndexPosition[      9132,        243]
+WindowTitle->RelativisticDOF
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["P T2G W SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "149c4722-a95f-4e74-8ef8-60103ec043f3"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "11375531-b6d0-4c45-b061-aeac25b50662"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "d6110a87-8b34-405e-8777-8d595c5c0926"]
+        }],ExpressionUUID->"e2158e55-9291-46bb-b8cd-f101b4258637"],
+        StripOnInput->False],{
+       "\"PT2GW/ref/RelativisticDOF\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{Cell["PT2GW/ref/RelativisticDOF"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/PT2GW/ref/\
+RelativisticDOF.html"], StandardForm]], "Input", TextClipboardType -> 
+                "PlainText"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[False], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "PT2GW/ref/RelativisticDOF" <> ".html"], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "8c087667-633e-4430-aea9-ccfcc09804ca"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "3dabb6ef-90f6-4f27-a0ab-f1af97d58768"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"58d713c7-af7d-4558-9866-e38b3b88d7fb"],
+
+Cell["PT2GW`", "ContextNameCell",ExpressionUUID->"49b987fa-80b7-436c-a301-cab6d3f3eb85"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "RelativisticDOF", "ObjectName",ExpressionUUID->
+      "6620ab96-4c5c-4ca9-b7e9-304e819b52b1"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"aae98d71-0890-45ec-ba09-8207ee3c201a"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "e5f34e2f-44b1-4d71-914f-aca182fca90b"]
+    }],ExpressionUUID->"be71766b-e18f-4b80-b4d8-a3168b18c87d"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"2bad78fc-7653-4920-895c-\
+f90ea8a58806"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell["\<\
+Effective number of relativistic degrees of freedom \!\(\*SubscriptBox[\(g\), \
+\(*\)]\).\
+\>",ExpressionUUID->"397b51f9-f3f3-4810-89dd-794b3735a732"]}
+  }]], "Usage",
+ CellID->1001664069,ExpressionUUID->"6e3d8857-792b-4fcd-8a8c-7c65a7c69341"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"714cb22d-b64e-4941-bf26-b75c52b203ec"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"bdedc745-7e53-412b-b655-76bbd7b2e3fe"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(0)", "ExampleCount",ExpressionUUID->
+  "1844dce5-4e0c-4a04-906c-35f7f5764ef5"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->732784589,ExpressionUUID->"dcdd6af5-2172-461f-8bf6-b18f87286c36"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PT2GW`\>\"", "]"}]], "Input", "ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->461382934,ExpressionUUID->"7fec29d0-dc04-4a39-858b-4c56d46d002d"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"01647b89-54f9-49c3-875c-\
+d65061b3ce99"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"54889fef-fc5d-401c-860e-ba5048b6465b"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 830.25},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"RelativisticDOF",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "AllOptsTable" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "HasOptions" -> 
+  True, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 4, 8, 18, 13, 53.420306}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "PT2GW`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "P T2G W Symbol", "language" -> "en", "paclet" -> "PT2GW", 
+    "status" -> "None", "summary" -> 
+    "Effective number of relativistic degrees of freedom SubscriptBox[g,\\ \
+*].", "synonyms" -> {}, "tabletags" -> {}, "title" -> "RelativisticDOF", 
+    "titlemodifier" -> "", "metadescription" -> "", "windowtitle" -> 
+    "RelativisticDOF", "type" -> "Symbol", "uri" -> 
+    "PT2GW/ref/RelativisticDOF"}},
+CellContext->"Global`",
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "14.0 for Linux x86 (64-bit) (December 12, 2023)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"deafde9a-39dc-4f3a-b7fc-6745b1b0061f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[4874, 131, 1420, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"dcdd6af5-2172-461f-8bf6-b18f87286c36",
+   CellTags->"PrimaryExamplesSection",
+   CellID->732784589]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 8933, 236}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[587, 21, 3289, 77, 70, "AnchorBarGrid",ExpressionUUID->"58d713c7-af7d-4558-9866-e38b3b88d7fb",
+ CellID->1],
+Cell[3879, 100, 88, 0, 70, "ContextNameCell",ExpressionUUID->"49b987fa-80b7-436c-a301-cab6d3f3eb85"],
+Cell[CellGroupData[{
+Cell[3992, 104, 558, 14, 70, "ObjectNameGrid",ExpressionUUID->"2bad78fc-7653-4920-895c-f90ea8a58806"],
+Cell[4553, 120, 284, 6, 70, "Usage",ExpressionUUID->"6e3d8857-792b-4fcd-8a8c-7c65a7c69341",
+ CellID->1001664069]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4874, 131, 1420, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"dcdd6af5-2172-461f-8bf6-b18f87286c36",
+ CellTags->"PrimaryExamplesSection",
+ CellID->732784589],
+Cell[6297, 170, 194, 3, 70, "Input",ExpressionUUID->"7fec29d0-dc04-4a39-858b-4c56d46d002d",
+ CellID->461382934]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[6609, 178, 380, 11, 70, "SeeAlsoSection",ExpressionUUID->"01647b89-54f9-49c3-875c-d65061b3ce99"],
+Cell[6992, 191, 78, 0, 70, "FooterCell",ExpressionUUID->"54889fef-fc5d-401c-860e-ba5048b6465b"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

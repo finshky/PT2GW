@@ -1,0 +1,277 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10464,        267]
+NotebookOptionsPosition[      7230,        196]
+NotebookOutlinePosition[      9526,        253]
+CellTagsIndexPosition[      9442,        248]
+WindowTitle->DecayRate
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["P T2G W SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "15b9a2b0-87fd-44d4-9662-9a9a4707c838"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "82b246e1-577a-4e88-9295-2fb5fffcdcc8"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "28390f99-e385-4f8d-b288-1e414ab886ca"]
+        }],ExpressionUUID->"027dfd85-6ab1-4e83-88b9-4d9e1557f19d"],
+        StripOnInput->False],{
+       "\"PT2GW/ref/DecayRate\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{Cell["PT2GW/ref/DecayRate"]}, Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/PT2GW/ref/DecayRate.\
+html"], StandardForm]], "Input", TextClipboardType -> "PlainText"]}, Visible -> 
+              False]]; SelectionMove[
+           DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[False], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "PT2GW/ref/DecayRate" <> ".html"], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "1ef8be9e-72c6-4e87-8392-34b348c7c93d"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "72f3e501-5c1e-438a-af0e-17dda46553ad"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"74029d85-96f2-4da3-bdcc-cf7d1579e51f"],
+
+Cell["PT2GW`", "ContextNameCell",ExpressionUUID->"eed62ec9-198c-4a3b-9aad-57a4e01a971c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "DecayRate", "ObjectName",ExpressionUUID->
+      "c77a3796-f865-4f34-a513-23b6d765ed72"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"39d43c59-f3c2-41d5-acc5-1154ae8e5d91"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "5989ab22-298e-43a6-a492-8cea8cbb02cb"]
+    }],ExpressionUUID->"5b03bc51-5bc7-4aa1-a5bb-5fd344803174"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"b76d8c9c-0c9f-40b2-a6c7-\
+0e473a2bcea6"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell["\<\
+DecayRate[T,ActionFunction] gives the vacuum decay rate. \
+DecayRate[T,ActionValue] gives the vacuum decay rate. \
+DecayRate[T,V,{\!\(\*SubscriptBox[\(\[Phi]\), \(1\)]\),\!\(\*SubscriptBox[\(\
+\[Phi]\), \(2\)]\)}] includes the vacuum energy contribution to the Hubble \
+parameter. \
+\>",ExpressionUUID->"c324c7c6-cc04-4f6e-b6ff-a7e56998cf4f"]}
+  }]], "Usage",
+ CellID->345683508,ExpressionUUID->"eea80c89-f603-47e2-9f32-eae91b55f173"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"325800e5-8c37-4e60-825d-d368edf530a0"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"1e223f48-8287-45eb-8cc3-ed655641dae2"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(0)", "ExampleCount",ExpressionUUID->
+  "0af9db47-0abe-41b8-8eac-339ea228ea41"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->1365442578,ExpressionUUID->"98d68c28-9d7a-4ff6-9ec7-2a3e24a8006f"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<PT2GW`\>\"", "]"}]], "Input", "ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->1488953385,ExpressionUUID->"8f83b51c-659a-432c-9e76-6e9df2ac462c"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"e3e4e7af-0869-4856-8d41-\
+ccdca1fb7e98"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"05255fca-7b9a-4faf-8e3e-5b2be2dbd46d"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 592.5},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"DecayRate",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "AllOptsTable" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "HasOptions" -> 
+  True, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 4, 8, 18, 13, 43.993657}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "PT2GW`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "P T2G W Symbol", "language" -> "en", "paclet" -> "PT2GW", 
+    "status" -> "None", "summary" -> 
+    "DecayRate[T,ActionFunction] gives the vacuum decay rate. \
+DecayRate[T,ActionValue] gives the vacuum decay rate. \
+DecayRate[T,V,{SubscriptBox[\\[Phi],\\ 1],SubscriptBox[\\[Phi],\\ 2]}] \
+includes the vacuum energy contribution to the Hubble parameter. ", 
+    "synonyms" -> {}, "tabletags" -> {}, "title" -> "DecayRate", 
+    "titlemodifier" -> "", "metadescription" -> "", "windowtitle" -> 
+    "DecayRate", "type" -> "Symbol", "uri" -> "PT2GW/ref/DecayRate"}},
+CellContext->"Global`",
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "14.0 for Linux x86 (64-bit) (December 12, 2023)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"be420770-c096-4303-a30d-07daa70c3884"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[5028, 134, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"98d68c28-9d7a-4ff6-9ec7-2a3e24a8006f",
+   CellTags->"PrimaryExamplesSection",
+   CellID->1365442578]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 9242, 241}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[581, 21, 3264, 77, 70, "AnchorBarGrid",ExpressionUUID->"74029d85-96f2-4da3-bdcc-cf7d1579e51f",
+ CellID->1],
+Cell[3848, 100, 88, 0, 70, "ContextNameCell",ExpressionUUID->"eed62ec9-198c-4a3b-9aad-57a4e01a971c"],
+Cell[CellGroupData[{
+Cell[3961, 104, 552, 14, 70, "ObjectNameGrid",ExpressionUUID->"b76d8c9c-0c9f-40b2-a6c7-0e473a2bcea6"],
+Cell[4516, 120, 475, 9, 70, "Usage",ExpressionUUID->"eea80c89-f603-47e2-9f32-eae91b55f173",
+ CellID->345683508]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5028, 134, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"98d68c28-9d7a-4ff6-9ec7-2a3e24a8006f",
+ CellTags->"PrimaryExamplesSection",
+ CellID->1365442578],
+Cell[6452, 173, 195, 3, 70, "Input",ExpressionUUID->"8f83b51c-659a-432c-9e76-6e9df2ac462c",
+ CellID->1488953385]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[6765, 181, 380, 11, 70, "SeeAlsoSection",ExpressionUUID->"e3e4e7af-0869-4856-8d41-ccdca1fb7e98"],
+Cell[7148, 194, 78, 0, 70, "FooterCell",ExpressionUUID->"05255fca-7b9a-4faf-8e3e-5b2be2dbd46d"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

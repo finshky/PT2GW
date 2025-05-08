@@ -3,7 +3,7 @@ The package relies on [FindBounce](https://github.com/vguada/FindBounce) to comp
 To construct effective potential in the dimensional reduction approach, a simple interface with [DRalgo](https://github.com/DR-algo/DRalgo) is provided.
 
 # Installation
-Download the latest .paclet file from the [Releases](https://github.com/finshky/PT2GW/releases) repository. To permanently install to the `$UserBasePacletsDirectory`, evaluate the folloging command in Mathematica:
+Download the latest `.paclet` file from the [Releases](https://github.com/finshky/PT2GW/releases) repository. To permanently install to the `$UserBasePacletsDirectory`, evaluate the folloging command in Mathematica:
 
 ```PacletInstall["path/to/PT2GW.paclet-x.y.z"]```
 

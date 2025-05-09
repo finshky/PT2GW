@@ -11,12 +11,12 @@
 (* ::Text:: *)
 (*Example notebook for the coupled fluid-scalar field (CFF) model defined by the potential*)
 (*	V(\[Phi],T) =  \[Gamma]/2 (T^2-T0^2) \[Phi]^2 - A/3 T \[Phi]^3 + \[Lambda]/4 \[Phi]^4 .*)
-(*The model is widely used for numerical simulations of cosmological phase transitions, see arXives 1504.03291, 9309059, and references therein.*)
+(*The model is widely used for numerical simulations of cosmological phase transitions, see arXives 1504.03291 (https://arxiv.org/abs/1504.03291), 9309059 (https://arxiv.org/abs/astro-ph/9309059), and references therein.*)
 (*After loading an instance of the CFF model, this notebook illustrates a quick implementation of PT2GW's  wrapping function SearchPotential.*)
 (*We then elaborate on its internal functions and the GW sub-package, computing gravitational wave spectra.*)
 (*Finally, we implement a simple parameter-scan and illustrate how to save/load benchmarks and transitions.*)
 (**)
-(*Please cite XXXX if the analysis you perform with PT2GWFinder results in a publication.*)
+(*Please cite arXiv 2505.04744 if the analysis you perform with PT2GWFinder results in a publication.*)
 
 
 (* ::Input::Initialization::Plain:: *)
@@ -28,7 +28,7 @@ pacletDir="/home/marco/Aveiro/Nerdy/Mathematica nbs/PTFB/PT2GW/";
 PacletDirectoryLoad[pacletDir];
 
 
-(* ::Section:: *)
+(* ::Section::Closed:: *)
 (*Initialize*)
 
 
@@ -533,7 +533,7 @@ tr=CFFModel[idx,"Transition"]
 AutoComplete[tr];
 
 
-(* ::Subsection:: *)
+(* ::Subsection::Closed:: *)
 (*Compute GW spectra*)
 
 
@@ -630,7 +630,7 @@ data=Append[KeyDrop[tr[Association],"\[Kappa]col"],colData~Join~{"Potential"->V}
 kappaCollision[data,Return->{"\[Kappa]col","Data"}]//Dataset
 
 
-(* ::Subsection:: *)
+(* ::Subsection::Closed:: *)
 (*Detector sensitivities*)
 
 
@@ -652,7 +652,7 @@ GWSensitivities[f_,"myDetector",OptionsPattern[]]:=10^-23 (10^3 f^3+10^-3 f^-3)
 PlotGW[tr,"Detectors"->{"LISA PISC","myDetector"}]
 
 
-(* ::Section:: *)
+(* ::Section::Closed:: *)
 (*Parameter scan*)
 
 
@@ -757,86 +757,77 @@ PlotGW[tr,"Detectors"->{"LISA PISC","myDetector"}]
 (*First, let's set up the parallel kernels*)
 
 
-(* ::Code:: *)
-(*ParallelNeeds["PT2GW"]*)
+ParallelNeeds["PT2GW`"]
 
 
-(* ::Code:: *)
-(*(* load PT2GW and the Examples on all kernels *)*)
-(*ParallelEvaluate[*)
-(*	<<PT2GW/Models.m;*)
-(*	$PT2GWPrint=False;*)
-(*	];*)
+(* load PT2GW and the Examples on all kernels *)
+ParallelEvaluate[
+	<<PT2GW/Models.m;
+	$PT2GWPrint=False;
+	];
 
 
-(* ::Code:: *)
-(*(* share between kernels the Dataset container for the transitions *)*)
-(*SetSharedVariable[DS]*)
+(* share between kernels the Dataset container for the transitions *)
+SetSharedVariable[DS]
 
 
-(* ::Code:: *)
-(*(* define a grid of scanning parameters *)*)
-(*scanParameters=With[{n=5},*)
-(*	Table[<|"T0"->140.,"\[Gamma]"->1/9.,"A"->A,"\[Lambda]"->\[Lambda],"RelativisticDOF"->RelativisticDOF,"WallVelocity"->0.95|>,*)
-(*		{A,E^Subdivide[Log@0.02,Log@0.4,n]},*)
-(*		{\[Lambda],E^Subdivide[Log@0.01,Log@0.25,n]}*)
-(*	]]//Flatten;*)
+(* define a grid of scanning parameters *)
+scanParameters=With[{n=5},
+	Table[<|"T0"->140.,"\[Gamma]"->1/9.,"A"->A,"\[Lambda]"->\[Lambda],"RelativisticDOF"->RelativisticDOF,"WallVelocity"->0.95|>,
+		{A,E^Subdivide[Log@0.02,Log@0.4,n]},
+		{\[Lambda],E^Subdivide[Log@0.01,Log@0.25,n]}
+	]]//Flatten;
 
 
-(* ::Code:: *)
-(*(* run parameters in parallel *)*)
-(*Parallelize@Scan[Quiet[run[#,Print->False,EchoTiming->False]]&,*)
-(*	scanParameters*)
-(*	]//EchoTiming;*)
+(* run parameters in parallel *)
+(*Parallelize@Scan[Quiet[run[#,Print->False,EchoTiming->False]]&,
+	scanParameters
+	]//EchoTiming;*)
 
 
-(* ::Code:: *)
-(*(* save/load Dataset *)*)
-(*(*SetDirectory[NotebookDirectory[]];*)
-(*Compress[DS]>>CFF_Dataset.m*)*)
-(*(*Uncompress[<<CFF_Dataset.m]*)*)
+(* save/load Dataset *)
+(*SetDirectory[NotebookDirectory[]];
+Compress[DS]>>CFF_Dataset.m*)
+(*Uncompress[<<CFF_Dataset.m]*)
 
 
 (* ::Text:: *)
 (*Visualize scan results *)
 
 
-(* ::Code:: *)
-(*(* view Dataset *)*)
-(*DS*)
+(* view Dataset *)
+DS
 
 
-(* ::Code:: *)
-(*(* plot the scanning and transition parameters *)*)
-(*With[{scanParams={"\[Lambda]","A"},tranParams={"\[Alpha]","\[Beta]/H"}},*)
-(*	PointValuePlot[(scanParams->Log10[tranParams])/.Normal[DS],*)
-(*		{1->"Color",2->"Size"},*)
-(*		ScalingFunctions->{"Log","Log"},*)
-(*		PlotLegends->Automatic,*)
-(*		FrameLabel->scanParams*)
-(*		]/.BarLegend[x___]:>BarLegend[x,LegendLabel->StringTemplate["log(``)"]@tranParams[[1]]]*)
-(*	]*)
+(* plot the scanning and transition parameters *)
+With[{scanParams={"\[Lambda]","A"},tranParams={"\[Alpha]","\[Beta]/H"}},
+	PointValuePlot[(scanParams->Log10[tranParams])/.Normal[DS],
+		{1->"Color",2->"Size"},
+		ScalingFunctions->{"Log","Log"},
+		PlotLegends->Automatic,
+		FrameLabel->scanParams
+		]/.BarLegend[x___]:>BarLegend[x,LegendLabel->StringTemplate["log(``)"]@tranParams[[1]]]
+	]
 
 
-(* ::Code:: *)
-(*(* reproduce plot from the paper *)*)
-(*(*Module[{scanParams={"\[Lambda]","A"},tranParams={"\[Alpha]","\[Beta]/H"},grid=Automatic,font={FontSize->8,FontFamily->"Latin Modern Math"}},*)
-(*	grid=DeleteDuplicates[DS[All,#]//Normal]&/@scanParams;*)
-(*	Row[PointValuePlot[(scanParams->Log10[#])/.Normal[DS],*)
-(*		{1->"Color",2->"Size"},*)
-(*		PlotRangePadding->{{.2,.4},{.15,.35}},*)
-(*		PlotStyle->PointSize[.04],*)
-(*		ScalingFunctions->{"Log","Log"},*)
-(*		ColorFunction->(#/.{"\[Alpha]"->ColorData[{"RedBlueTones","Reverse"}],_->"RedBlueTones"}),*)
-(*		PlotLegends->Automatic,*)
-(*		ImageSize->300,*)
-(*		GridLines->grid,*)
-(*		Frame->True,*)
-(*		AspectRatio->1,*)
-(*		FrameLabel->scanParams*)
-(*		]/.BarLegend[x___]:>BarLegend[x,LegendLabel->*)
-(*		StringTemplate["\!\(\*SubscriptBox[\(log\), \(10\)]\) ``"][#]]&/@tranParams[[All]],*)
-(*		Spacer[0]]]*)*)
+(* reproduce plot from the paper *)
+(*Module[{scanParams={"\[Lambda]","A"},tranParams={"\[Alpha]","\[Beta]/H"},grid=Automatic,font={FontSize->8,FontFamily->"Latin Modern Math"}},
+	grid=DeleteDuplicates[DS[All,#]//Normal]&/@scanParams;
+	Row[PointValuePlot[(scanParams->Log10[#])/.Normal[DS],
+		{1->"Color",2->"Size"},
+		PlotRangePadding->{{.2,.4},{.15,.35}},
+		PlotStyle->PointSize[.04],
+		ScalingFunctions->{"Log","Log"},
+		ColorFunction->(#/.{"\[Alpha]"->ColorData[{"RedBlueTones","Reverse"}],_->"RedBlueTones"}),
+		PlotLegends->Automatic,
+		ImageSize->300,
+		GridLines->grid,
+		Frame->True,
+		AspectRatio->1,
+		FrameLabel->scanParams
+		]/.BarLegend[x___]:>BarLegend[x,LegendLabel->
+		StringTemplate["\!\(\*SubscriptBox[\(log\), \(10\)]\) ``"][#]]&/@tranParams[[All]],
+		Spacer[0]]]*)
 
 
 (* ::Section::Closed:: *)

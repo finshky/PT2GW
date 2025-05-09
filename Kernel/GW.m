@@ -7,7 +7,7 @@
 BeginPackage["GW`"]
 
 
-(* ::Subsection:: *)
+(* ::Subsection::Closed:: *)
 (*Available public Symbols*)
 
 
@@ -24,7 +24,7 @@ GWSensitivities; (* generic sensitivity function *)
 
 
 (* phase transition parameters *)
-{\[CapitalDelta]m2Fun,g2\[CapitalDelta]mvFun,\[Alpha]\[Infinity]Fun,\[Alpha]eqFun,\[Gamma]eqFun,\[Gamma]starFun,E0VFun,R0Fun,RFun}; (* for testing purposes only *)
+(*{\[CapitalDelta]m2Fun,g2\[CapitalDelta]mvFun,\[Alpha]\[Infinity]Fun,\[Alpha]eqFun,\[Gamma]eqFun,\[Gamma]starFun,E0VFun,R0Fun,RFun};*) (* for testing purposes only *)
 kappaCollision;
 KCollision;
 kappaSoundwaves;
@@ -41,8 +41,10 @@ $FrequencyUnit;
 
 (* public PT2GW` symbols *)
 H;
+DecayRate;
 BetaHubble;
 RadiationEnergyDensity;
+IntegralFalseVacuum;
 $PT2GWPrint;
 
 
@@ -53,7 +55,7 @@ $PT2GWPrint;
 Begin["Private`"]
 
 
-(* ::Subsection:: *)
+(* ::Subsection::Closed:: *)
 (*Utilities*)
 
 
@@ -115,7 +117,7 @@ AutoComplete[sym_Symbol,functions_List]:=Module[
 If[!MatchQ[GWData,_Association],GWData=<||>];
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Messages*)
 
 
@@ -132,7 +134,7 @@ msg["noDetector"]=StringTemplate["Missing \!\(\*StyleBox[\"`1`\",StripOnInput->F
 msg["noDetectorConf"]=StringTemplate["Missing \!\(\*StyleBox[\"`1`\",StripOnInput->False,LineColor->RGBColor[1, 0, 0],FrontFaceColor->RGBColor[1, 0, 0],BackFaceColor->RGBColor[1, 0, 0],GraphicsColor->RGBColor[1, 0, 0],FontColor->RGBColor[1, 0, 0]]\). Available detector configurations are\n`2`"];
 
 
-(* ::Subsection:: *)
+(* ::Subsection::Closed:: *)
 (*Constants*)
 
 
@@ -142,32 +144,40 @@ $FrequencyUnit="Hz";
 $SpeedOfSound=1/Sqrt[3]; (* radiation sound speed *)
 
 
-(* ::Subsection:: *)
+(* ::Subsection::Closed:: *)
 (*Phase transition parameters*)
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Bubble radius & number density*)
 
 
 (* bubble number density *)
-nBFun[ST_Function|ST_Symbol,T_?NumericQ,Tc_,vw_,opt:OptionsPattern[]]:=T^3 NIntegrate[\[CapitalGamma][\[ScriptCapitalT],ST,opt]E^-IFV[ST,\[ScriptCapitalT],Tc,vw]/(\[ScriptCapitalT]^4 H[T]),{\[ScriptCapitalT],T,Tc}]
-nBFun[ST_Function|ST_Symbol,T_?NumericQ,Tc_,vw_,V_,phases_,opt:OptionsPattern[]]:=T^3 NIntegrate[\[CapitalGamma][\[ScriptCapitalT],ST,opt]E^-IFV[ST,\[ScriptCapitalT],Tc,vw]/(\[ScriptCapitalT]^4 H[\[ScriptCapitalT],V,phases]),{\[ScriptCapitalT],T,Tc}]
+nBFun::usage="nBFun[ActionFunction,T,\!\(\*SubscriptBox[\(T\), \(c\)]\),\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\)] estimates the density of bubbles at a given temperature.
+nBFun[ActionFunction,T,\!\(\*SubscriptBox[\(T\), \(c\)]\),\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\),V,{\!\(\*SubscriptBox[\(\[Phi]\), \(1\)]\),\!\(\*SubscriptBox[\(\[Phi]\), \(2\)]\)}] includes the vacuum energy contribution to the Hubble parameter.";
+nBFun[ST_Function|ST_Symbol,T_?NumericQ,Tc_,vw_,opt:OptionsPattern[]]:=T^3 NIntegrate[DecayRate[\[ScriptCapitalT],ST,opt]E^-IntegralFalseVacuum[ST,\[ScriptCapitalT],Tc,vw]/(\[ScriptCapitalT]^4 H[T]),{\[ScriptCapitalT],T,Tc}]
+nBFun[ST_Function|ST_Symbol,T_?NumericQ,Tc_,vw_,V_,phases_,opt:OptionsPattern[]]:=T^3 NIntegrate[DecayRate[\[ScriptCapitalT],ST,opt]E^-IntegralFalseVacuum[ST,\[ScriptCapitalT],Tc,vw]/(\[ScriptCapitalT]^4 H[\[ScriptCapitalT],V,phases]),{\[ScriptCapitalT],T,Tc}]
 (*Rstar[ST_Function|ST_Symbol,T_?NumericQ,Tc_,vw_,opt:OptionsPattern[]]:=nBFun[ST,T,Tc,vw,opt]^(-1/3)*)
+HRFun::usage="HRFun[actionFunction,T,\!\(\*SubscriptBox[\(T\), \(c\)]\),\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\)] computes \!\(\*SubscriptBox[\(H\), \(*\)]\)\!\(\*SubscriptBox[\(R\), \(*\)]\), the average bubble radius times the Hubble parameter at a given temperature.
+HRFun[actionFunction,T,\!\(\*SubscriptBox[\(T\), \(c\)]\),\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\),V,phases] includes the vacuum energy contribution to the Hubble parameter.";
 HRFun[ST_Function|ST_Symbol,T_?NumericQ,Tc_,vw_,opt:OptionsPattern[]]:=H[T]nBFun[ST,T,Tc,vw,opt]^(-1/3)
 HRFun[ST_Function|ST_Symbol,T_?NumericQ,Tc_,vw_,V_,phases_,opt:OptionsPattern[]]:=H[T,V,phases]nBFun[ST,T,Tc,vw,V,phases,opt]^(-1/3)
+HRFromBetaH::usage="HRFromBetaH[\"\[Beta]/H\",\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\),\!\(\*SubscriptBox[\(c\), \(s\)]\)] estimates HR from the inverse duration \[Beta]/H.";
 HRFromBetaH[\[Beta]H_?NumericQ,vw_,cs_:$SpeedOfSound]:=(8\[Pi])^(1/3)Max[vw,cs]/\[Beta]H
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*\[Beta]/H*)
 
 
+BetaHFromHR::usage="BetaHFromHR[HR,\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\),\!\(\*SubscriptBox[\(c\), \(s\)]\)] estimates the inverse duration (in Hubble units) of a transition from H\[CenterDot]R.
+BetaHFromHR[ActionFunction,T,\!\(\*SubscriptBox[\(T\), \(c\)]\),\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\),\!\(\*SubscriptBox[\(c\), \(s\)]\)] computes internally H\[CenterDot]R.
+";
 BetaHFromHR[HR_?NumericQ,vw_?NumericQ,cs_:$SpeedOfSound]:=(8\[Pi])^(1/3) Max[vw,cs]/HR
 BetaHFromHR[ST_Function|ST_Symbol,T_?NumericQ,Tc_,vw_,cs_:$SpeedOfSound,opt:OptionsPattern[]]:=(8\[Pi])^(1/3) Max[vw,cs]/HRFun[ST,T,Tc,vw,opt]
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Strengths \[Alpha]*)
 
 
@@ -200,7 +210,7 @@ RFun[T_,action_,V_,phases_,\[Xi]w_,cs_:$SpeedOfSound]:=(8\[Pi])^(1/3)Max[\[Xi]w,
 (* T0 is the temperature that gives the initial radius R0. Here we'll take it to be T nucleation, which should be okay if no supercooling *)
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*K, \[Kappa] - efficiency*)
 
 
@@ -312,7 +322,8 @@ KCollision[\[Alpha]_,\[Kappa]col_]:=\[Kappa]col \[Alpha]/(1+\[Alpha]) (* fractio
 (* soundwaves *)
 AlphaEffective[\[Alpha]_,\[Kappa]col_?NumericQ]:=(1-\[Kappa]col)\[Alpha]
 AlphaEffective[\[Alpha]_,\[Kappa]col_]:=\[Alpha]    (* explicitly: AlphaEffective[\[Alpha]_,\[Kappa]col_?(Not@*NumericQ)]:=\[Alpha] *)
-kappaSoundwaves::usage="kappaSoundwaves[\[Alpha],\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\),\!\(\*SubscriptBox[\(c\), \(s\)]\)] gives the efficiency coefficient for soundwaves.";
+kappaSoundwaves::usage="kappaSoundwaves[\[Alpha],\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\),\!\(\*SubscriptBox[\(c\), \(s\)]\)] gives the efficiency coefficient for soundwaves.
+kappaSoundwaves[\[Alpha],\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\)] assumes a speed of sound \!\(\*SubscriptBox[\(c\), \(s\)]\)=1/\!\(\*SqrtBox[\(3\)]\) for the false-vacuum phase.";
 kappaSoundwaves[\[Alpha]_,vw_,cs_:$SpeedOfSound]:=Module[{vJ,\[Kappa]A,\[Kappa]B,\[Kappa]C,\[Kappa]D,\[Delta]\[Kappa]},
 	vJ=(Sqrt[2/3\[Alpha]+\[Alpha]^2]+1/Sqrt[3])/(1+\[Alpha]);
 	\[Kappa]A=vw^(6/5) 6.9\[Alpha]/(1.36-0.037Sqrt[\[Alpha]]+\[Alpha]);
@@ -330,11 +341,12 @@ kappaSoundwaves[\[Alpha]_,vw_,cs_:$SpeedOfSound]:=Module[{vJ,\[Kappa]A,\[Kappa]B
 (*kappaSoundwaves[\[Alpha]_]:=\[Alpha]/(0.73+0.083Sqrt[\[Alpha]]+\[Alpha])*) (* 2403.03723v1, for vw\[TildeTilde]1 *)
 (*kappaSoundwaves[\[Alpha]_]:=(1/(1+0.715\[Alpha]))(0.715\[Alpha]+(4/27)\[Sqrt]((3/2)\[Alpha]))*)
 (*kappaSoundwaves[\[Alpha]eff_,\[Kappa]col_]:=((1-\[Kappa]col)\[Alpha]eff)/(0.73+0.083 Sqrt[\[Alpha]eff]+\[Alpha]eff)*) (* 1903.09642 (3.1): for very relativistic walls *)
-KSoundwaves::usage="KSoundwaves[\[Alpha],\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\),\!\(\*SubscriptBox[\(c\), \(s\)]\)] gives the fractional energy density available to soundwaves.";
+KSoundwaves::usage="KSoundwaves[\[Alpha],\!\(\*SubscriptBox[\(\[Kappa]\), \(sw\)]\),\[Delta]] gives the fractional energy density available to soundwaves.
+KSoundwaves[\[Alpha],\!\(\*SubscriptBox[\(\[Kappa]\), \(sw\)]\)] assumes \[Delta]=0, proper to the bag E.o.S.";
 KSoundwaves[\[Alpha]_,\[Kappa]_,\[Delta]_:0]:=0.6 \[Kappa] \[Alpha]/(1+\[Alpha]+\[Delta]) (* fractional kinetic energy density for soundwaves and turbulence. \[Delta]=0 in the bag E.O.S. *)
 
 
-(* ::Subsection:: *)
+(* ::Subsection::Closed:: *)
 (*GW Amplitude*)
 
 
@@ -427,7 +439,7 @@ h2\[CapitalOmega]mhd[f_,{f1_,f2_},Treh_,\[ScriptCapitalA]mhd_,\[CapitalOmega]\[S
 	]
 
 
-(* ::Subsection:: *)
+(* ::Subsection::Closed:: *)
 (*h^2 \[CapitalOmega]*)
 
 
@@ -446,7 +458,7 @@ h2Omega[f\[ScriptP]_,{f1sw_,f2sw_},{f1mhd_,f2mhd_},Kcol_,\[Beta]H_,Treh_,Ksw_,HR
 		|>
 
 
-(* ::Subsection:: *)
+(* ::Subsection::Closed:: *)
 (*Compute SGWB*)
 
 
@@ -528,7 +540,7 @@ ComputeGW[tr_Transition,opt:OptionsPattern[]]:=ComputeGW[tr[Association],opt]
 AutoComplete[ComputeGW];
 
 
-(* ::Subsection:: *)
+(* ::Subsection::Closed:: *)
 (*Sensitivities*)
 
 
@@ -713,7 +725,7 @@ GWSensitivities["List"]=$DetectorSensitivities;
 addCodeCompletion["GWSensitivities"][{"List"},$DetectorSensitivities,{"Source"}];
 
 
-(* ::Section:: *)
+(* ::Section::Closed:: *)
 (*End Package*)
 
 

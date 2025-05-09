@@ -1,0 +1,476 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     18244,        466]
+NotebookOptionsPosition[     14177,        383]
+NotebookOutlinePosition[     15840,        423]
+CellTagsIndexPosition[     15797,        420]
+WindowTitle->Gravitational Wave Template
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["P T2G W GUIDE", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "ab28559d-43a6-4e5a-88b1-f168c3352ca9"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "87faeef3-8688-4f8d-8d7b-7ca144d0c481"],
+        Background->RGBColor[0.85098, 0.396078, 0],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[{
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "Functions",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "ff02a196-dabc-481a-a777-a8f168ba7d89"]
+         }],ExpressionUUID->"01ea3d04-1f77-407d-8e5a-d7dc8a35dede"],
+         StripOnInput->False],{
+        "\"BetaHFromHR\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/BetaHFromHR"], 
+         "\"ComputeGW\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/ComputeGW"], "\"GWData\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/GWData"], 
+         "\"GWSensitivities\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/GWSensitivities"], 
+         "\"HRFromBetaH\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/HRFromBetaH"], 
+         "\"HRFun\"" :> Documentation`HelpLookup["paclet:PT2GW/ref/HRFun"], 
+         "\"kappaSoundwaves\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/kappaSoundwaves"], 
+         "\"KCollision\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/KCollision"], 
+         "\"KSoundwaves\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/KSoundwaves"], "\"PISC\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/PISC"], "\"PLISC\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/PLISC"], 
+         "\"PlotGWSensitivities\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/PlotGWSensitivities"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"GuideFunction"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "a49ec729-fd1e-4a9b-b826-bb24d8b078bf"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "URL",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "05d91ab2-b1db-4b9a-a091-0f14276e133a"]
+         }],ExpressionUUID->"129036ed-70b2-4fac-b43a-5b5cf07b95a3"],
+         StripOnInput->False],{
+        "\"PT2GW/guide/GravitationalWaveTemplate\"" :> None, 
+         "\"Copy Wolfram Documentation Center URL\"" :> 
+         Module[{DocumentationSearch`Private`nb$}, 
+           DocumentationSearch`Private`nb$ = 
+            NotebookPut[
+             Notebook[{Cell["PT2GW/guide/GravitationalWaveTemplate"]}, 
+               Visible -> False]]; 
+           SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+           FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+           NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+         "\"Copy web URL\"" :> 
+         Module[{DocumentationSearch`Private`nb$}, 
+           DocumentationSearch`Private`nb$ = 
+            NotebookPut[
+             Notebook[{
+               Cell[BoxData[
+                 MakeBoxes[
+                  Hyperlink[
+                   "http://reference.wolfram.com/language/PT2GW/guide/\
+GravitationalWaveTemplate.html"], StandardForm]], "Input", TextClipboardType -> 
+                 "PlainText"]}, Visible -> False]]; 
+           SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+           FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+           NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+         "\"Go to web URL\"" :> 
+         FrontEndExecute[{
+           NotebookLocate[{
+             URL[If[TrueQ[False], 
+                 "http://reference.wolfram.com/system-modeler/", 
+                 "http://reference.wolfram.com/language/"] <> 
+               "PT2GW/guide/GravitationalWaveTemplate" <> ".html"], None}]}]},
+        
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"URLMenu"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "6a3ca664-6e5f-4a45-94ff-686045bbeddb"]
+    }], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "07aaa0ec-255e-42d9-9ac6-0f59d5da2764"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"197afae8-15a1-4842-acb8-45282d8e526e"],
+
+Cell[CellGroupData[{
+
+Cell["Gravitational Wave Template", "GuideTitle",
+ CellID->1229551112,ExpressionUUID->"903017f4-e973-47ed-a4d2-e2a2a8a00497"],
+
+Cell[TextData[{
+ "The ",
+ ButtonBox["GW",
+  BaseStyle->"Link",
+  ButtonData->"paclet:PT2GW/guide/GravitationalWaveTemplate"],
+ " package implements the gravitational wave spectral templates for phase \
+transitions described in arXiv ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["2403.03723"]], "https://arxiv.org/abs/2403.03723"},
+   "WebLink",
+   BaseStyle->{"GuideAbstract"}]],ExpressionUUID->
+  "70e20446-db40-4118-8801-bc2a0c2f64ab"],
+ "."
+}], "GuideAbstract",
+ CellID->1048219379,ExpressionUUID->"cb0b1109-12b6-4ec9-b904-1c3869720aca"],
+
+Cell["\<\
+It features double broken power laws for the gravitational wave spectra \
+generated by soundwaves and MHD turbulence.\
+\>", "GuideAbstract",
+ CellID->87233152,ExpressionUUID->"5c053086-bcf8-8b43-aa73-faa7d0574620"],
+
+Cell["\<\
+A broken power law characterizes the gravitational wave spectrum generated by \
+bubble wall collisions.\
+\>", "GuideAbstract",
+ CellID->488887085,ExpressionUUID->"70267be2-5145-f245-8d04-5e2bc8743083"],
+
+Cell["\t", "GuideDelimiterSubsection",ExpressionUUID->"95de2742-7bf0-4875-889f-f56190efa5db"],
+
+Cell[CellGroupData[{
+
+Cell["Main function", "GuideFunctionsSubsection",
+ CellID->145209181,ExpressionUUID->"f871d8a8-dda5-1240-817a-6432419821c4"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["ComputeGW"]], "paclet:PT2GW/ref/ComputeGW", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"c40ac8e4-27e1-4161-a8df-4d4f38357a23",ExpressionUUID->
+  "8a648c04-ac16-4257-94a3-d796f4eb83f8"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " the main function, returning an association of gravitational wave spectra \
+and the relative parameters"
+}], "GuideText",
+ CellID->1469844519,ExpressionUUID->"ff72764c-7fee-43e9-9acb-635b19505db0"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["GWData"]], "paclet:PT2GW/ref/GWData", "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"c5c6736a-1ff4-4e4e-8fcf-2d9846cbae62",ExpressionUUID->
+  "dac8d553-bc3f-4076-94f8-786baee63be4"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " a symbol storing the results from ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["ComputeGW"]], "paclet:PT2GW/ref/ComputeGW", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "62d193c0-5bfd-d647-84a0-aa4bfd8dfe3d"]
+}], "GuideText",
+ CellID->100575950,ExpressionUUID->"f61a8533-dac9-4b09-804c-3050251c5f14"],
+
+Cell["\t", "GuideDelimiterSubsection",
+ CellID->504811310,ExpressionUUID->"e03e8de9-1273-4447-8c62-285acd5d8ee1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Thermodynamics", "GuideFunctionsSubsection",
+ CellID->70492240,ExpressionUUID->"7d026dc3-18b6-6e46-b0d6-bd19b05acc62"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["BetaHFromHR"]], "paclet:PT2GW/ref/BetaHFromHR", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "e4033061-e3b7-4e4c-af3a-549d7448eee7"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["HRFromBetaH"]], "paclet:PT2GW/ref/HRFromBetaH", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"c57ed038-54cf-43c8-99f4-c595f041bfa1",ExpressionUUID->
+  "da5f4aa1-0711-2e4a-bd87-49268074bc88"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["HRFun"]], "paclet:PT2GW/ref/HRFun", "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"123bfb8d-a55f-4c5f-866c-f7d8280602ae",ExpressionUUID->
+  "64dac190-a7b3-b04d-beed-b90d09484f6a"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData[
+      StyleBox["nBFun", FontSlant -> "Plain"]]], "paclet:PT2GW/ref/nBFun", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->{
+    "InlineFunctionSans", "TI2", FontFamily -> "Consolas", FontWeight -> 
+     "Bold"}]], "InlineFunctionSans",
+  CellTags->"6b1baa1f-a05a-4fe1-96cb-ed6a16fbe4e6",ExpressionUUID->
+  "4d11dce1-4937-504c-b46e-6315144a637e"]
+}], "InlineGuideFunctionListing",
+ CellID->528228968,ExpressionUUID->"13e9e00f-b438-3f48-8d9e-919bd0a2bd95"],
+
+Cell["\t", "GuideDelimiterSubsection",
+ CellID->712831421,ExpressionUUID->"afe6ea05-e074-0d41-b49a-947a4394ee0b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Efficiencies", "GuideFunctionsSubsection",
+ CellID->155483165,ExpressionUUID->"c8d18c9c-1357-9f46-93ce-1607e8fe72ea"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData[
+      StyleBox[
+      "kappaCollision", FontFamily -> "Consolas", FontWeight -> "Bold", 
+       FontSlant -> "Plain"]]], "paclet:PT2GW/ref/kappaCollision"},
+   "RefLink",
+   BaseStyle->{"InlineFunctionSans", "TI2"}]], "InlineGuideFunction",
+  ExpressionUUID->"0e0acbd6-a4c7-3144-b387-3217b4f186d5"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KCollision"]], "paclet:PT2GW/ref/KCollision", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "bb5d29c8-a3f3-c949-8eef-ab5f1f0da966"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["kappaSoundwaves"]], "paclet:PT2GW/ref/kappaSoundwaves", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "ebe3a2ad-4dcc-4f44-a74f-1034e32938be"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["KSoundwaves"]], "paclet:PT2GW/ref/KSoundwaves", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "9fc9216a-7edb-7645-8636-9fed7b80464d"]
+}], "InlineGuideFunctionListing",
+ CellID->331010578,ExpressionUUID->"76f61f1f-38f9-494a-af52-75341966c7cd"],
+
+Cell["\t", "GuideDelimiterSubsection",
+ CellID->224254478,ExpressionUUID->"5d09f58e-22e2-c043-80ae-834fd6805459"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Detectors", "GuideFunctionsSubsection",
+ CellID->377649825,ExpressionUUID->"722b3bde-2986-a646-a551-7eb5f72a3f0a"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["GWSensitivities"]], "paclet:PT2GW/ref/GWSensitivities", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "f089be96-044e-b246-82bc-94c9f9bcbdf8"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["PISC"]], "paclet:PT2GW/ref/PISC", "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "0c62c3cf-04cf-1942-9bf2-ffa29c7d4b78"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["PLISC"]], "paclet:PT2GW/ref/PLISC", "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "94f8cf86-24db-5345-a7c2-a41007c37f57"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["PlotGWSensitivities"]], "paclet:PT2GW/ref/PlotGWSensitivities",
+     "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "bcb23990-6112-5345-9372-69c7bbc351a3"]
+}], "InlineGuideFunctionListing",
+ CellID->267675198,ExpressionUUID->"36ea87ce-7547-2c49-8800-9b629c772243"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[" ", "FooterCell",ExpressionUUID->"56a64516-9191-4ea4-8373-6e0c38c48c17"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 830.25},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"Gravitational Wave Template",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}}, 
+  "NewStyles" -> True, "CitationPopupData" -> {$Failed, ""}, "ShowCitation" -> 
+  False, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 5, 8, 12, 42, 15.921053}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "PT2GW`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "P T2G W Guide", "language" -> "en", "paclet" -> "PT2GW", 
+    "status" -> "None", "summary" -> 
+    "The GW package implements the gravitational wave spectral templates for \
+phase transitions described in arXiv 2403.03723.", "synonyms" -> {}, 
+    "tabletags" -> {}, "title" -> "Gravitational Wave Template", 
+    "titlemodifier" -> "", "metadescription" -> "", "windowtitle" -> 
+    "Gravitational Wave Template", "type" -> "Guide", "uri" -> 
+    "PT2GW/guide/GravitationalWaveTemplate"}},
+CacheGraphics->False,
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"435c6d9f-a81e-4f50-8c65-fddfff2982c1"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[599, 21, 5412, 125, 70, "AnchorBarGrid",ExpressionUUID->"197afae8-15a1-4842-acb8-45282d8e526e",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[6036, 150, 125, 1, 70, "GuideTitle",ExpressionUUID->"903017f4-e973-47ed-a4d2-e2a2a8a00497",
+ CellID->1229551112],
+Cell[6164, 153, 553, 16, 70, "GuideAbstract",ExpressionUUID->"cb0b1109-12b6-4ec9-b904-1c3869720aca",
+ CellID->1048219379],
+Cell[6720, 171, 224, 4, 70, "GuideAbstract",ExpressionUUID->"5c053086-bcf8-8b43-aa73-faa7d0574620",
+ CellID->87233152],
+Cell[6947, 177, 211, 4, 70, "GuideAbstract",ExpressionUUID->"70267be2-5145-f245-8d04-5e2bc8743083",
+ CellID->488887085],
+Cell[7161, 183, 93, 0, 70, "GuideDelimiterSubsection",ExpressionUUID->"95de2742-7bf0-4875-889f-f56190efa5db"],
+Cell[CellGroupData[{
+Cell[7279, 187, 124, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"f871d8a8-dda5-1240-817a-6432419821c4",
+ CellID->145209181],
+Cell[7406, 190, 582, 15, 70, "GuideText",ExpressionUUID->"ff72764c-7fee-43e9-9acb-635b19505db0",
+ CellID->1469844519],
+Cell[7991, 207, 768, 21, 70, "GuideText",ExpressionUUID->"f61a8533-dac9-4b09-804c-3050251c5f14",
+ CellID->100575950],
+Cell[8762, 230, 113, 1, 70, "GuideDelimiterSubsection",ExpressionUUID->"e03e8de9-1273-4447-8c62-285acd5d8ee1",
+ CellID->504811310]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8912, 236, 124, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"7d026dc3-18b6-6e46-b0d6-bd19b05acc62",
+ CellID->70492240],
+Cell[9039, 239, 1621, 42, 70, "InlineGuideFunctionListing",ExpressionUUID->"13e9e00f-b438-3f48-8d9e-919bd0a2bd95",
+ CellID->528228968],
+Cell[10663, 283, 113, 1, 70, "GuideDelimiterSubsection",ExpressionUUID->"afe6ea05-e074-0d41-b49a-947a4394ee0b",
+ CellID->712831421]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10813, 289, 123, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"c8d18c9c-1357-9f46-93ce-1607e8fe72ea",
+ CellID->155483165],
+Cell[10939, 292, 1478, 39, 70, "InlineGuideFunctionListing",ExpressionUUID->"76f61f1f-38f9-494a-af52-75341966c7cd",
+ CellID->331010578],
+Cell[12420, 333, 113, 1, 70, "GuideDelimiterSubsection",ExpressionUUID->"5d09f58e-22e2-c043-80ae-834fd6805459",
+ CellID->224254478]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12570, 339, 120, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"722b3bde-2986-a646-a551-7eb5f72a3f0a",
+ CellID->377649825],
+Cell[12693, 342, 1375, 35, 70, "InlineGuideFunctionListing",ExpressionUUID->"36ea87ce-7547-2c49-8800-9b629c772243",
+ CellID->267675198]
+}, Open  ]]
+}, Open  ]],
+Cell[14095, 381, 78, 0, 70, "FooterCell",ExpressionUUID->"56a64516-9191-4ea4-8373-6e0c38c48c17"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

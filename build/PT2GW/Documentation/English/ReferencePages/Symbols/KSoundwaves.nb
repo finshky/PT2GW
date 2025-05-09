@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     10241,        263]
-NotebookOptionsPosition[      7121,        194]
-NotebookOutlinePosition[      9304,        249]
-CellTagsIndexPosition[      9220,        244]
+NotebookDataLength[     55360,       1252]
+NotebookOptionsPosition[     49880,       1141]
+NotebookOutlinePosition[     52155,       1197]
+CellTagsIndexPosition[     52069,       1192]
 WindowTitle->KSoundwaves
 WindowFrame->Normal*)
 
@@ -27,78 +27,169 @@ Cell[BoxData[GridBox[{
           TemplateBox[{12},
            "Spacer1"], Cell["P T2G W SYMBOL", "PacletNameCell",
            TextAlignment->Center,ExpressionUUID->
-           "ec9d12ad-e298-4a46-9591-775079a8d7bd"], 
+           "4ff2e6c7-e10e-4e71-849b-0adafb516b61"], 
           TemplateBox[{8},
            "Spacer1"]}]],
          TextAlignment->Center,ExpressionUUID->
-         "0e0c4335-41d5-412d-b567-1f0e08e1bc05"],
+         "504ac19c-3aa8-4e6d-8552-a89c1ea15c53"],
         Background->RGBColor[0.490196, 0.576471, 0.690196],
         ItemSize->Full], ""}
      },
      GridBoxAlignment->{"Rows" -> {{Center}}},
      GridBoxItemSize->{"Columns" -> {Full, 
-         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
-     TagBox[
-      ActionMenuBox[
-       FrameBox[Cell[TextData[{
-         "URL",
-         " ",
-         Cell[BoxData[
-          GraphicsBox[
-           {GrayLevel[0.66667], Thickness[0.13], 
-            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
-           AspectRatio->1,
-           ImageSize->20,
-           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
-          "787d9350-3625-4513-8c95-506b1535a876"]
-        }],ExpressionUUID->"d8e558ec-3144-42fe-b1fb-134fe5f1f9ec"],
-        StripOnInput->False],{
-       "\"PT2GW/ref/KSoundwaves\"" :> None, 
-        "\"Copy Wolfram Documentation Center URL\"" :> 
-        Module[{DocumentationSearch`Private`nb$}, 
-          DocumentationSearch`Private`nb$ = 
-           NotebookPut[
-            Notebook[{Cell["PT2GW/ref/KSoundwaves"]}, Visible -> False]]; 
-          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
-          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
-          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
-        "\"Copy web URL\"" :> 
-        Module[{DocumentationSearch`Private`nb$}, 
-          DocumentationSearch`Private`nb$ = 
-           NotebookPut[
-            Notebook[{
-              Cell[BoxData[
-                MakeBoxes[
-                 Hyperlink[
-                  "http://reference.wolfram.com/language/PT2GW/ref/\
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[{
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "See Also",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "92dcda5a-b2f3-4e78-a7f9-d6a406228967"]
+         }],ExpressionUUID->"82d8a84d-9df7-4d93-a981-67983e4968ae"],
+         StripOnInput->False],{
+        "\"kappaSoundwaves\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/kappaSoundwaves"], 
+         "\"ComputeGW\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/ComputeGW"], 
+         "\"kappaCollision\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/kappaCollision"], 
+         "\"KCollision\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/KCollision"], "\"HRFun\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/HRFun"], "\"nBFun\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/nBFun"], 
+         "\"HRFromBetaH\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/HRFromBetaH"], 
+         "\"BetaHFromHR\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/BetaHFromHR"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"SeeAlso"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "622625c5-e764-4f02-924a-6945c747eb41"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "Related Guides",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "1922a531-9873-47c7-9cbd-021a144288c4"]
+         }],ExpressionUUID->"3ef6eaaa-0125-4d45-9eab-03fc6e3e04ad"],
+         StripOnInput->False],{
+        "\"Gravitational Wave Template\"" :> 
+         Documentation`HelpLookup[
+          "paclet:PT2GW/guide/GravitationalWaveTemplate"], "\"PT2GWFinder\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/guide/PT2GWFinder"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"MoreAbout"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "7908fa09-f278-4c6d-8daa-4625dd1d7797"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "Tech Notes",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "0d2c07ea-8875-47a3-9a4d-ab67098d0c68"]
+         }],ExpressionUUID->"28cac38c-7c17-4723-8a9d-6841c7a4ffde"],
+         StripOnInput->False],{
+        "\"Coupled Fluid-Field Model\"" :> 
+         Documentation`HelpLookup[
+          "paclet:PT2GW/tutorial/CoupledFluid-FieldModel"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"Tutorials"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "85840f25-1ad0-4c05-a9d0-6d3ae5dd2b30"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "URL",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "2ea7d984-50a2-4d40-a8f5-28f313974ef0"]
+         }],ExpressionUUID->"bc210db6-a12e-42ea-8220-3251740cf60f"],
+         StripOnInput->False],{
+        "\"PT2GW/ref/KSoundwaves\"" :> None, 
+         "\"Copy Wolfram Documentation Center URL\"" :> 
+         Module[{DocumentationSearch`Private`nb$}, 
+           DocumentationSearch`Private`nb$ = 
+            NotebookPut[
+             Notebook[{Cell["PT2GW/ref/KSoundwaves"]}, Visible -> False]]; 
+           SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+           FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+           NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+         "\"Copy web URL\"" :> 
+         Module[{DocumentationSearch`Private`nb$}, 
+           DocumentationSearch`Private`nb$ = 
+            NotebookPut[
+             Notebook[{
+               Cell[BoxData[
+                 MakeBoxes[
+                  Hyperlink[
+                   "http://reference.wolfram.com/language/PT2GW/ref/\
 KSoundwaves.html"], StandardForm]], "Input", TextClipboardType -> 
-                "PlainText"]}, Visible -> False]]; 
-          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
-          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
-          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
-        "\"Go to web URL\"" :> 
-        FrontEndExecute[{
-          NotebookLocate[{
-            URL[If[TrueQ[False], 
-                "http://reference.wolfram.com/system-modeler/", 
-                "http://reference.wolfram.com/language/"] <> 
-              "PT2GW/ref/KSoundwaves" <> ".html"], None}]}]},
-       Appearance->None,
-       MenuAppearance->Automatic,
-       MenuStyle->"URLMenu"],
-      MouseAppearanceTag["LinkHand"]]],
-     LineSpacing->{1.4, 0},ExpressionUUID->
-     "1f84e05d-b98f-4da3-9093-2da53617d645"]], "AnchorBar",
+                 "PlainText"]}, Visible -> False]]; 
+           SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+           FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+           NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+         "\"Go to web URL\"" :> 
+         FrontEndExecute[{
+           NotebookLocate[{
+             URL[If[TrueQ[False], 
+                 "http://reference.wolfram.com/system-modeler/", 
+                 "http://reference.wolfram.com/language/"] <> 
+               "PT2GW/ref/KSoundwaves" <> ".html"], None}]}]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"URLMenu"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "2bcf9818-840f-4f86-b817-3bcc1f687c26"]
+    }], "AnchorBar",
      CacheGraphics->False,ExpressionUUID->
-     "8b96d8a3-ce19-4fb0-a063-a34155d3e7e6"]}
+     "7590308c-3887-4f4e-b209-ad7fc6b372f7"]}
   }]], "AnchorBarGrid",
- GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
-     Scaled[0.65], {
-      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
-   "RowsIndexed" -> {}}},
- CellID->1,ExpressionUUID->"ed53ecf8-c854-4528-a2f4-cdf0510e1ba0"],
+ CellID->1,ExpressionUUID->"654ee874-6402-47b4-835d-c9752f3383ef"],
 
-Cell["PT2GW`", "ContextNameCell",ExpressionUUID->"1f00226f-0149-45e5-924a-aef4efc341ce"],
+Cell["PT2GW`", "ContextNameCell",ExpressionUUID->"7ff26234-0b2c-498d-a703-2fc535859c8c"],
 
 Cell[CellGroupData[{
 
@@ -106,27 +197,138 @@ Cell[BoxData[GridBox[{
    {Cell[TextData[{
      Cell[
      "KSoundwaves", "ObjectName",ExpressionUUID->
-      "743d07ec-1c66-4eb2-97c9-ae714fdcfe4a"],
+      "b0b46933-440b-4d2b-9e85-5ef43fa9db2b"],
      Cell[BoxData[
       TemplateBox[{8},
-       "Spacer1"]],ExpressionUUID->"1bcbd32c-f003-471b-893e-3895483e60ee"],
+       "Spacer1"]],ExpressionUUID->"f241fcfd-e934-4439-80cc-acf4fc078b47"],
      Cell[BoxData[
      ""], "ObjectNameTranslation",ExpressionUUID->
-      "5cf07e9b-876f-4519-b64e-30d64939cc50"]
-    }],ExpressionUUID->"3139b37f-40dc-4aae-8266-2fe96f8f731b"], 
+      "a382519a-1c05-4e8e-aeeb-0723ca7061e0"]
+    }],ExpressionUUID->"e873a03b-f6cd-429a-a957-ecd4f918fdf8"], 
     "\[SpanFromLeft]"}
-  }]], "ObjectNameGrid",ExpressionUUID->"9d33aa41-f34e-4f86-bceb-\
-e99b73377c43"],
+  }]], "ObjectNameGrid",ExpressionUUID->"01c47270-a31e-4a51-8765-\
+671833fb7bbc"],
 
 Cell[BoxData[GridBox[{
-   {"", Cell["\<\
-KSoundwaves[\[Alpha],\!\(\*SubscriptBox[\(\[Xi]\), \
-\(w\)]\),\!\(\*SubscriptBox[\(c\), \(s\)]\)] gives the fractional energy \
-density available to soundwaves.\
-\>",ExpressionUUID->"18d95f6b-d79c-42a6-9ed6-c51ebeab70bf"]}
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"KSoundwaves", "[", 
+       RowBox[{"\[Alpha]", ",", 
+        SubscriptBox["\[Kappa]", "sw"], ",", "\[Delta]"}], "]"}]], 
+      "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "927cdc3b-28f4-402e-bc4b-d5475383efa0"],
+     "\[LineSeparator]gives the fractional energy density available to \
+soundwaves."
+    }],ExpressionUUID->"ec41554a-177a-47f6-aaf1-6b6102477d83"]},
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{"KSoundwaves", "[", 
+       RowBox[{"\[Alpha]", ",", 
+        SubscriptBox["\[Kappa]", "sw"]}], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "30f938e4-b842-43ca-8c42-5e8a8ecc6b3e"],
+     "\[LineSeparator]assumes ",
+     Cell[BoxData[
+      RowBox[{"\[Delta]", "=", "0"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "0e7d75b0-d288-44d5-80e3-7c60dc4eb3d5"],
+     ", proper to the ",
+     StyleBox["bag E.o.S",
+      FontSlant->"Italic"],
+     "."
+    }],ExpressionUUID->"a5b53b1a-9f7d-45c1-8771-52b37afdbb3c"]}
   }]], "Usage",
  CellID->664245130,ExpressionUUID->"ccb2e722-ff89-40fb-93f3-967fa4147249"]
 }, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    DynamicBox[ToBoxes[
+      If[
+       MatchQ[
+        CurrentValue[
+         EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, 
+         Closed], 
+        Alternatives[Open, True]], 
+       Style[
+        Graphics[{
+          Thickness[0.18], 
+          RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+          Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+         PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+        0.68 Inherited], 
+       Rotate[
+        Style[
+         Graphics[{
+           Thickness[0.18], 
+           RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+           Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+          PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+         0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+     ImageSizeCache->{
+      13.600000000000001`, {0.5800000000000001, 13.020000000000001`}}]],
+    ExpressionUUID->"34fc21ec-e9a4-4da6-8d02-f4c67433c6af"],
+   Cell[BoxData[
+    TemplateBox[{1},
+     "Spacer1"]],ExpressionUUID->"c8d3053e-67df-41b4-a861-cdab3a47d02a"],
+   "Details and Options"
+  }], "NotesFrameText",ExpressionUUID->"b897e4c8-8b1a-47a1-893e-8ef05a294e72"],
+  Appearance->{Automatic, None, "Normal", Automatic},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->
+   "Preemptive"]],ExpressionUUID->"6e232fd5-8039-45f0-9b19-a0f506bbeed5"]], \
+"NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CacheGraphics->False,
+ CellID->286820504,ExpressionUUID->"836efdaf-7853-41fc-a2cb-011bbc5078e1"],
+
+Cell[TextData[{
+ "KSoundwaves implements the relation ",
+ Cell[BoxData[
+  RowBox[{
+   SubscriptBox["K", "sw"], "=", 
+   RowBox[{"0.6", 
+    SubscriptBox["\[Kappa]", "sw"], " ", 
+    FractionBox["\[Alpha]", 
+     RowBox[{"1", "+", "\[Alpha]"}]]}]}]], "InlineFormula",
+  FontFamily->"Source Sans Pro",ExpressionUUID->
+  "7a7f3b64-b0b3-4a3c-ab26-601e6df213ee"],
+ "."
+}], "Notes",
+ CellID->910044408,ExpressionUUID->"432dd1ca-99dd-4008-bd6b-0a9792ccef4f"],
+
+Cell[TextData[{
+ "The efficiency coefficient ",
+ Cell[BoxData[
+  SubscriptBox["\[Kappa]", "sw"]], "InlineFormula",
+  FontFamily->"Source Sans Pro",ExpressionUUID->
+  "a9234bbb-5785-432b-a0fa-276d99816430"],
+ " can be computed with ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["kappaSoundwaves"]], "paclet:PT2GW/ref/kappaSoundwaves"},
+   "RefLink",
+   BaseStyle->{"InlineFormula", "TI"}]], "InlineFormula",
+  FontFamily->"Source Sans Pro",ExpressionUUID->
+  "7de437b9-b172-454d-beda-f40a97ea79e0"],
+ "."
+}], "Notes",
+ CellID->857016407,ExpressionUUID->"a4c31a9a-38e2-4fdc-b9b5-09e7bb63b1f2"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
 
 Cell[CellGroupData[{
 
@@ -155,24 +357,608 @@ Cell[TextData[{
         PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
        0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
    ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
-  ExpressionUUID->"0359e9ab-367f-4658-99f3-afafb3b3aa83"],
+  ExpressionUUID->"7e7f20fe-20f5-462b-b69f-c3ddd8591d3b"],
  Cell[BoxData[
   TemplateBox[{1},
-   "Spacer1"]],ExpressionUUID->"aa2fd5e3-e022-40d2-98b4-cd2c99ecc4be"],
+   "Spacer1"]],ExpressionUUID->"86a6afee-9bdb-473e-8b43-5f68849cfb65"],
  "Examples",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(0)", "ExampleCount",ExpressionUUID->
-  "bcdbd45b-3492-4192-b25d-385f5721ddff"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "1d186ffa-c115-4919-a923-cfc5adfe02ed"]
 }], "PrimaryExamplesSection",
  WholeCellGroupOpener->True,
  CacheGraphics->False,
  CellTags->"PrimaryExamplesSection",
- CellID->1945093503,ExpressionUUID->"c123412c-a920-4624-9035-706a3eda2818"],
+ CellID->1188910059,ExpressionUUID->"a571c1cd-1b93-4105-97f1-b68174708a0d"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<PT2GW`\>\"", "]"}]], "Input", "ExampleInitialization",
  CellLabel->"In[1]:=",
- CellID->168084015,ExpressionUUID->"9d875693-2590-4be2-bb71-5ae66403d2bd"]
+ CellID->168084015,ExpressionUUID->"9d875693-2590-4be2-bb71-5ae66403d2bd"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"},
+        Closed], 
+      Alternatives[Open, True]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"2e1a173d-84bb-4499-bca5-cb5f89b6df3f"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"3f6c2830-5977-41be-8fd8-3041c26a6650"],
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "eeae7a9f-5b84-4f2c-bd84-6706c53d3ba1"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellID->208949784,ExpressionUUID->"8ff5a52b-54ce-40ee-ba68-fc41f6441a0f"],
+
+Cell["Load a transition from the Models package:", "ExampleText",
+ CellID->1420648156,ExpressionUUID->"dafc4834-ad38-4c8a-b1ae-cd8da9c04acd"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"<<", "PT2GW/Models.m"}], "\[IndentingNewLine]", 
+ RowBox[{"tr", "=", 
+  RowBox[{"CFFModel", "[", 
+   RowBox[{"1", ",", "\"\<Transition\>\""}], "]"}]}]}], "Input",
+ CellProlog:>Needs["PT2GW`"],
+ CellLabel->"In[1]:=",
+ CellID->436753814,ExpressionUUID->"cc449723-63ca-43b2-b468-73f2df3885d5"],
+
+Cell[BoxData["\<\"\[Checkmark] Imported \
+\\!\\(\\*StyleBox[\\\"Models`\\\",\\nFontWeight->\\\"Bold\\\"]\\)\"\>"], \
+"Print",
+ CellLabel->"During evaluation of In[74]:=",
+ CellID->1219804566,ExpressionUUID->"2f0ca6d1-067f-4be3-a283-838e5ddf68ef"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["Transition",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            TagBox[
+             GraphicsBox[{{{{}, {}, 
+                 TagBox[{
+                   Directive[
+                    Opacity[1.], 
+                    AbsoluteThickness[2], 
+                    Hue[0.5, 0.5, 0.4]], 
+                   LineBox[CompressedData["
+1:eJxTTMoPSmViYGCQBWIQnbH9ekxLQ6IDAxQs+Cu3TPUDgh84f3fMtNgkOJ/z
+Xdhm3ysIftH7T3clnJPh/Edze1do7UbwTy+vfcBtmALnp6bkvWGYj+CznYud
+YSOWCudHvvKV6GlF8FWSJrOu/oTgf2u7PkkgMw3Or4yT+dJ5HcFnfhz/1dM/
+HWH+4R/JN48g+LtCJy2rMcqA80unanWmrUTwH7Uftk+RyITzQ9Wjp62YgOA7
+KnlE7WHLgvPvnzf99LgEwW/WUtIKeoPgZ2+RvSr6C8EPtpNsuMmeDecrBwlc
+S1BG8LnvcDeqGCL4n1PZdV7YIfi33zNdX+2D4B+u/NeYH4XgAwC092lp
+                    "]]}, Annotation[#, "Charting`Private`Tag#1"]& ], 
+                 TagBox[{
+                   Directive[
+                    Opacity[1.], 
+                    AbsoluteThickness[2], 
+                    Hue[0.08, 0.9, 0.8]], 
+                   LineBox[CompressedData["
+1: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
+PTLshiPxf5xslVE=
+                    "]]}, Annotation[#, "Charting`Private`Tag#2"]& ]}}, {}}, {
+              DisplayFunction -> Identity, Ticks -> {Automatic, Automatic}, 
+               AxesOrigin -> {132.83398951148357`, 0}, 
+               FrameTicks -> {{{}, {}}, {{}, {}}}, GridLines -> {None, None}, 
+               DisplayFunction -> Identity, PlotRangePadding -> {{
+                  Scaled[0.02], 
+                  Scaled[0.02]}, {
+                  Scaled[0.05], 
+                  Scaled[0.05]}}, PlotRangeClipping -> True, ImagePadding -> 
+               All, DisplayFunction -> Identity, AspectRatio -> 
+               NCache[GoldenRatio^(-1), 0.6180339887498948], 
+               Axes -> {False, False}, AxesLabel -> {None, None}, 
+               AxesOrigin -> {132.83398951148328`, 0}, Background -> 
+               GrayLevel[1], DisplayFunction :> Identity, Epilog -> {
+                 Arrowheads[Small], 
+                 
+                 ArrowBox[{{170.05229281884584`, 0}, {168.3654445326382, 
+                   400.5652336457855}}]}, 
+               Frame -> {{True, True}, {True, True}}, 
+               FrameLabel -> {{None, None}, {None, None}}, 
+               FrameTicks -> {{None, None}, {None, None}}, 
+               GridLines -> {None, None}, GridLinesStyle -> Directive[
+                 GrayLevel[0.5, 0.4]], ImageSize -> 
+               Dynamic[{
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}], 
+               Method -> {
+                "DefaultBoundaryStyle" -> Automatic, 
+                 "DefaultGraphicsInteraction" -> {
+                  "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+                   "Effects" -> {
+                    "Highlight" -> {"ratio" -> 2}, 
+                    "HighlightPoint" -> {"ratio" -> 2}, 
+                    "Droplines" -> {
+                    "freeformCursorMode" -> True, 
+                    "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+                 "DefaultMeshStyle" -> AbsolutePointSize[6], 
+                 "ScalingFunctions" -> None, 
+                 "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+                    (Identity[#]& )[
+                    Part[#, 1]], 
+                    (Identity[#]& )[
+                    Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                    (Identity[#]& )[
+                    Part[#, 1]], 
+                    (Identity[#]& )[
+                    Part[#, 2]]}& )}}, 
+               PlotRange -> {{132.83398951148328`, 218.82611537368396`}, {0., 
+                401.5968064268551}}, PlotRangeClipping -> True, 
+               PlotRangePadding -> {{
+                  Scaled[0.02], 
+                  Scaled[0.02]}, {
+                  Scaled[0.02], 
+                  Scaled[0.02]}}, Ticks -> {Automatic, Automatic}}], Deploy, 
+             DefaultBaseStyle -> "Deploy"], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"\[Alpha]: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["0.00154778937383443`", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"\[Beta]/H: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["1677.1033887941285`", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            TagBox[
+             GraphicsBox[{{{{}, {}, 
+                 TagBox[{
+                   Directive[
+                    Opacity[1.], 
+                    AbsoluteThickness[2], 
+                    Hue[0.5, 0.5, 0.4]], 
+                   LineBox[CompressedData["
+1:eJxTTMoPSmViYGCQBWIQnbH9ekxLQ6IDAxQs+Cu3TPUDgh84f3fMtNgkOJ/z
+Xdhm3ysIftH7T3clnJPh/Edze1do7UbwTy+vfcBtmALnp6bkvWGYj+CznYud
+YSOWCudHvvKV6GlF8FWSJrOu/oTgf2u7PkkgMw3Or4yT+dJ5HcFnfhz/1dM/
+HWH+4R/JN48g+LtCJy2rMcqA80unanWmrUTwH7Uftk+RyITzQ9Wjp62YgOA7
+KnlE7WHLgvPvnzf99LgEwW/WUtIKeoPgZ2+RvSr6C8EPtpNsuMmeDecrBwlc
+S1BG8LnvcDeqGCL4n1PZdV7YIfi33zNdX+2D4B+u/NeYH4XgAwC092lp
+                    "]]}, Annotation[#, "Charting`Private`Tag#1"]& ], 
+                 TagBox[{
+                   Directive[
+                    Opacity[1.], 
+                    AbsoluteThickness[2], 
+                    Hue[0.08, 0.9, 0.8]], 
+                   LineBox[CompressedData["
+1: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
+PTLshiPxf5xslVE=
+                    "]]}, Annotation[#, "Charting`Private`Tag#2"]& ]}}, {}}, {
+              DisplayFunction -> Identity, Ticks -> {Automatic, Automatic}, 
+               AxesOrigin -> {132.83398951148357`, 0}, 
+               FrameTicks -> {{{}, {}}, {{}, {}}}, GridLines -> {None, None}, 
+               DisplayFunction -> Identity, PlotRangePadding -> {{
+                  Scaled[0.02], 
+                  Scaled[0.02]}, {
+                  Scaled[0.05], 
+                  Scaled[0.05]}}, PlotRangeClipping -> True, ImagePadding -> 
+               All, DisplayFunction -> Identity, AspectRatio -> 
+               NCache[GoldenRatio^(-1), 0.6180339887498948], 
+               Axes -> {False, False}, AxesLabel -> {None, None}, 
+               AxesOrigin -> {132.83398951148328`, 0}, Background -> 
+               GrayLevel[1], DisplayFunction :> Identity, Epilog -> {
+                 Arrowheads[Small], 
+                 
+                 ArrowBox[{{170.05229281884584`, 0}, {168.3654445326382, 
+                   400.5652336457855}}]}, 
+               Frame -> {{True, True}, {True, True}}, 
+               FrameLabel -> {{None, None}, {None, None}}, 
+               FrameTicks -> {{None, None}, {None, None}}, 
+               GridLines -> {None, None}, GridLinesStyle -> Directive[
+                 GrayLevel[0.5, 0.4]], ImageSize -> 
+               Dynamic[{
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}], 
+               Method -> {
+                "DefaultBoundaryStyle" -> Automatic, 
+                 "DefaultGraphicsInteraction" -> {
+                  "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+                   "Effects" -> {
+                    "Highlight" -> {"ratio" -> 2}, 
+                    "HighlightPoint" -> {"ratio" -> 2}, 
+                    "Droplines" -> {
+                    "freeformCursorMode" -> True, 
+                    "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+                 "DefaultMeshStyle" -> AbsolutePointSize[6], 
+                 "ScalingFunctions" -> None, 
+                 "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+                    (Identity[#]& )[
+                    Part[#, 1]], 
+                    (Identity[#]& )[
+                    Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                    (Identity[#]& )[
+                    Part[#, 1]], 
+                    (Identity[#]& )[
+                    Part[#, 2]]}& )}}, 
+               PlotRange -> {{132.83398951148328`, 218.82611537368396`}, {0., 
+                401.5968064268551}}, PlotRangeClipping -> True, 
+               PlotRangePadding -> {{
+                  Scaled[0.02], 
+                  Scaled[0.02]}, {
+                  Scaled[0.02], 
+                  Scaled[0.02]}}, Ticks -> {Automatic, Automatic}}], Deploy, 
+             DefaultBaseStyle -> "Deploy"], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"\[Alpha]: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["0.00154778937383443`", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"\[Beta]/H: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["1677.1033887941285`", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                 "\"\\!\\(\\*SubscriptBox[\\(T\\), \\(p\\)]\\): \"", 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  
+                  TemplateBox[{
+                   "168.3654445326382`", "\"GeV\"", "gigaelectronvolts", 
+                    "\"Gigaelectronvolts\""}, "Quantity", SyntaxForm -> Mod], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                 "\"\\!\\(\\*SubsuperscriptBox[\\(f\\), \\(GW\\), \\(peak\\)]\
+\\): \"", "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  
+                  TemplateBox[{
+                   "0.01935341596339277`", "\"Hz\"", "hertz", "\"Hertz\""}, 
+                   "Quantity", SyntaxForm -> Mod], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                 "\"\\!\\(\\*SuperscriptBox[\\(h\\), \
+\\(2\\)]\\)\\!\\(\\*SubsuperscriptBox[\\(\[CapitalOmega]\\), \\(GW\\), \
+\\(peak\\)]\\): \"", "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox["1.116492577627163`*^-20", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  PT2GW`Transition[<|
+   "T0" -> 140, "\[Gamma]" -> Rational[1, 18], "A" -> 
+    Rational[1, 36] Rational[5, 2]^Rational[1, 2], "\[Lambda]" -> 
+    Rational[5, 324], "Unit" -> "GeV", "RelativisticDOF" -> 106.75, "Phases" -> {
+      Function[Private`T, 
+       ConditionalExpression[0, 
+        Or[
+         Inequality[140., Less, Private`T, Less, 211.66010488516724`], 
+         Private`T > 211.66010488516724`]]], 
+      Function[Private`T, 
+       ConditionalExpression[
+       1.4230249470757705` Private`T + 
+        2.44377347361018*^-9 (1.1815080348299888`*^22 - 2.637294720602654*^17 
+           Private`T^2)^Rational[1, 2], 
+        Or[
+         Inequality[0, Less, Private`T, Less, 140.], 
+         Inequality[140., Less, Private`T, Less, 211.66010488516724`]]]]}, 
+    "WallVelocity" -> 0.9, "Tc" -> 197.98989873223329`, "TnEstimate" -> 
+    170.70272073686266`, "ActionFunction" -> 
+    PT2GW`ActionFunction[<|"Function" -> Function[PT2GW`Private`T$, 
+         Piecewise[{{-2575.5437645177385` + 
+            1.226627592440911*^-8 (197.98989873223329` - 
+               PT2GW`Private`T$)^(-2) + 
+            27915.49663902605/(197.98989873223329` - PT2GW`Private`T$) + 
+            51.02078917607874 (197.98989873223329` - PT2GW`Private`T$), 
+            Inequality[
+            192.53246313315915`, LessEqual, PT2GW`Private`T$, Less, 
+             197.98989873223329`]}, {
+            
+            InterpolatingFunction[{{148.87297834056616`, 
+             192.53246313315915`}}, {
+             5, 39, 0, {32}, {4}, 0, 0, 0, 0, Automatic, {}, {}, False}, {{
+             148.87297834056616`, 150.2813488177466, 151.68971929492702`, 
+             153.09808977210741`, 154.50646024928784`, 155.91483072646827`, 
+             157.3232012036487, 158.7315716808291, 160.13994215800952`, 
+             161.54831263518992`, 162.95668311237034`, 164.36505358955077`, 
+             165.7734240667312, 167.18179454391162`, 168.59016502109205`, 
+             169.99853549827245`, 171.40690597545287`, 172.81527645263327`, 
+             174.2236469298137, 175.63201740699412`, 177.04038788417455`, 
+             178.44875836135498`, 179.85712883853537`, 181.2654993157158, 
+             182.67386979289623`, 184.08224027007662`, 185.49061074725708`, 
+             186.89898122443748`, 188.30735170161788`, 189.71572217879833`, 
+             191.12409265597873`, 192.53246313315915`}}, {
+              BSplineFunction[
+              1, {{148.87297834056616`, 192.53246313315915`}}, {3}, {
+               False}, {{14.957201344024103`, 17.82425275366827, 
+                21.47614997171516, 28.360922648861965`, 33.30631939356383, 
+                39.59440158899992, 44.97946833696151, 52.01367891857808, 
+                59.904862796254854`, 68.05983512609215, 77.23801662301258, 
+                86.93499552417934, 97.69313955399427, 111.30525743962511`, 
+                124.4465515181607, 140.08415036555834`, 157.19550738023477`, 
+                176.7000967701422, 199.40802679815366`, 225.185381217268, 
+                255.83073448849058`, 291.6895470710488, 334.79000016120597`, 
+                387.8369830053195, 453.4157089947676, 537.1412905601984, 
+                646.6483870308422, 796.5268796071572, 999.7840955999725, 
+                1419.041278684159, 1985.911088142312, 
+                2818.029449987053}, {}}, {{148.87297834056616`, 
+               148.87297834056616`, 148.87297834056616`, 148.87297834056616`, 
+               151.689719294927, 153.09808977210741`, 154.50646024928784`, 
+               155.91483072646827`, 157.3232012036487, 158.7315716808291, 
+               160.1399421580095, 161.54831263518992`, 162.95668311237034`, 
+               164.36505358955077`, 165.7734240667312, 167.18179454391162`, 
+               168.59016502109205`, 169.99853549827245`, 171.40690597545284`, 
+               172.81527645263327`, 174.2236469298137, 175.63201740699412`, 
+               177.04038788417455`, 178.44875836135495`, 179.85712883853537`, 
+               181.2654993157158, 182.6738697928962, 184.08224027007662`, 
+               185.49061074725705`, 186.89898122443748`, 188.3073517016179, 
+               189.7157221787983, 192.53246313315915`, 192.53246313315915`, 
+               192.53246313315915`, 192.53246313315915`}}, {0}, 
+               MachinePrecision, "Unevaluated"], {}}, {Automatic}][
+            PT2GW`Private`T$], 
+            Inequality[
+            148.87297834056616`, LessEqual, PT2GW`Private`T$, Less, 
+             192.53246313315915`]}}, Indeterminate]], "ActionMethod" -> 
+       "PWLaurent", "Domain" -> {148.87297834056616`, 197.98989873223329`}, 
+       "Tc" -> 197.98989873223329`, "StandardDeviation" -> 
+       0.00003620672109833112, "NActionPoints" -> 32, "Unit" -> "GeV", 
+       "Data" -> CompressedData["
+1:eJwBEQLu/SFib1JlAgAAACAAAAACAAAAI9tFcO+bYkCiimhLFuotQK1fPM8A
+yWJAYyLBWUwSM0A35DIuEvZiQN82idCEXTdAwGgpjSMjY0Cl3ANKFlM8QErt
+H+w0UGNAB2OiU9rDQEDUcRZLRn1jQATV0q7RuENAXvYMqleqY0AQsB6+jaBG
+QOd6Awlp12NApPqXcggUSkBx//lnegRkQGk7Ry5z+U1A+oPwxosxZEA6VMJh
+vg5RQIQI5yWdXmRAHcq+U8RUU0AOjd2ErotkQDldqKcox1VAmBHU47+4ZEBQ
+l1SmzYpYQCKWykLR5WRA9MbNrIPOW0CsGsGh4hJlQJLqVOA0N19ANZ+3APQ/
+ZUDkDuyHjYphQL8jrl8FbWVAEIQJKAWzY0BIqKS+FpplQF3HC9J8J2ZA0iyb
+HSjHZUA2m8xXbf1oQFyxkXw59GVAzRKDFeU/bEDmNYjbSiFmQOB+TL4xC3BA
+cLp+OlxOZkDCbOoCWE5yQPk+dZlte2ZA691FASoHdUCDw2v4fqhmQBNQJEnP
+XnhADUhiV5DVZkAq01j/Cod8QJbMWLahAmdAls4XdIHrgEAhUU8Vsy9nQP25
+9f8Da4RAqtVFdMRcZ0DV4q38YiuJQDNaPNPViWdAOhcfNIXSj0C+3jIy57Zn
+QAewNwEZ+ZRAR2MpkfjjZ0AX4I3wAy+dQNHnH/AJEWhAhZYRFA8EpkAVr+PE
+
+        "]|>], "Domain" -> {148.87297834056616`, 197.98989873223329`}, "Tn" -> 
+    170.05229281884584`, "NucleationAction" -> 140.9571523000086, 
+    "NucleationDecayOverHubble" -> 1979.1476530867283`, 
+    "NucleationIntegralDecay" -> 0.99989891654535, "Tp" -> 168.3654445326382, 
+    "PercolationAction" -> 122.59638162702801`, "PercolationIntegralValue" -> 
+    0.3400000000000292, "TpCondition" -> -2.344304644766823*^-11, 
+    "TransitionTemperature" -> "Tp", "\[Alpha]" -> 0.00154778937383443, 
+    "\[Beta]/H" -> 1677.1033887941285`, "\[Kappa]col" -> Indeterminate, 
+    "Kcol" -> Indeterminate, "\[Alpha]eff" -> 0.00154778937383443, 
+    "\[Kappa]sw" -> 0.0027777775584667355`, "Ksw" -> 2.575662170184735*^-6, 
+    "fp" -> 0.005181045518281545, "Treh" -> 168.43055531464088`, "H*0" -> 
+    0.000028084382941009768`, "HR" -> 0.001571915849210865, "f1sw" -> 
+    0.0035746498555424104`, "f2sw" -> 0.024927844057918605`, 
+    "\[CurlyEpsilon]" -> 0.5, "\[ScriptCapitalN]" -> 2, "\[CapitalOmega]s" -> 
+    1.2878310850923672`*^-6, "f1mhd" -> 8.78281227891213*^-6, "f2mhd" -> 
+    0.03932114841096652, "Amhd" -> 0.00435731177561978, 
+    "h2Omega" -> <|
+     "Soundwaves" -> (
+       6.364816488961093*^-14 #^3 ((1 + 78258.76385491327 #^2)^(-1)/(1 + 
+        2.58976956856626*^6 #^4))& ), 
+      "Turbulence" -> (
+       3.080874519455274*^-13 #^3 (1 + 
+         1050.881349222809 #^2.15)^(-1.7054263565891472`) (1 + 
+         1.6806047957030093`*^20 #^4)^Rational[-1, 2]& ), 
+      "Combined" -> (#^3 (
+        6.364816488961093*^-14 ((1 + 78258.76385491327 #^2)^(-1)/(1 + 
+          2.58976956856626*^6 #^4)) + 
+        3.080874519455274*^-13 (1 + 
+           1050.881349222809 #^2.15)^(-1.7054263565891472`) (1 + 
+           1.6806047957030093`*^20 #^4)^Rational[-1, 2])& )|>, "fPeak" -> 
+    0.01935341596339277, "h2OmegaPeak" -> 1.116492577627163*^-20|>],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellLabel->"Out[1]=",
+ CellID->1472016307,ExpressionUUID->"1bb96165-5dbf-4823-9c48-18a53f53702d"]
+}, Open  ]],
+
+Cell[TextData[{
+ "The efficiency coefficient for sound waves ",
+ Cell[BoxData[
+  SubscriptBox["\[Kappa]", "sw"]],ExpressionUUID->
+  "6945805e-3442-478f-afbb-82fe3be0e2ad"],
+ " can be calculated as:"
+}], "ExampleText",
+ CellID->252616079,ExpressionUUID->"69abe921-cb32-4073-be24-f918149437d9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[Kappa]sw", "=", 
+  RowBox[{"kappaSoundwaves", "[", 
+   RowBox[{
+    RowBox[{"tr", "[", "\"\<\[Alpha]\>\"", "]"}], ",", 
+    RowBox[{"tr", "[", "\"\<WallVelocity\>\"", "]"}]}], "]"}]}]], "Input",
+ CellProlog:>Needs["PT2GW`"],
+ CellLabel->"In[2]:=",
+ CellID->176702447,ExpressionUUID->"bdc829df-d29f-4e68-bc13-ce372f7f5446"],
+
+Cell[BoxData["0.0027777775584667355`"], "Output",
+ CellLabel->"Out[2]=",
+ CellID->2106617161,ExpressionUUID->"1bfdd3c1-0180-43c6-9f25-c871293eb00d"]
+}, Open  ]],
+
+Cell["\<\
+Compute the fractional energy density available to soundwaves:\
+\>", "ExampleText",
+ CellID->579338137,ExpressionUUID->"8eb9b73d-6704-4f8d-8483-98bd85c281a9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"KSoundwaves", "[", 
+  RowBox[{
+   RowBox[{"tr", "[", "\"\<\[Alpha]\>\"", "]"}], ",", 
+   RowBox[{"tr", "[", "\"\<\[Kappa]col\>\"", "]"}]}], "]"}]], "Input",
+ CellProlog:>Needs["PT2GW`"],
+ CellLabel->"In[3]:=",
+ CellID->1266787238,ExpressionUUID->"02a564df-a7dd-4ba9-a016-06a78f90e5cd"],
+
+Cell[BoxData["1.6845631352183096`*^-12"], "Output",
+ CellLabel->"Out[3]=",
+ CellID->1643400317,ExpressionUUID->"1678ba72-a7f2-4e8a-aae7-83084e3eeae5"]
+}, Open  ]]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"}, 
+  Closed]]]]
 }, Dynamic[CurrentValue[
  EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
   Closed]]]],
@@ -185,16 +971,177 @@ Cell[BoxData[GridBox[{
      ImageSizeCache->{50., {27., 33.}}], GridBox[{
       {
        StyleBox[
-        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]},
+      {Cell[TextData[{
+        Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["kappaSoundwaves"]], "paclet:PT2GW/ref/kappaSoundwaves"},
+          
+          "RefLink",
+          BaseStyle->{"InlineFormula", "TI"}]], "InlineFormula",
+         FontFamily->"Source Sans Pro",
+         CellTags->"94246c3e-c578-4e21-a73f-f58d6c9e1a77",ExpressionUUID->
+         "5a62da10-e1d5-4ee4-b6fc-5e5a62ff494d"],
+        "\[NonBreakingSpace]",
+        StyleBox[
+        "\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+         "InlineSeparator"],
+        " ",
+        Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["ComputeGW"]], "paclet:PT2GW/ref/ComputeGW", 
+           "PT2GW Package Symbol"},
+          "PackageLink",
+          BaseStyle->"InlineFormula"]], "InlineFormula",
+         FontFamily->"Source Sans Pro",
+         CellTags->"7dffedc1-cdc0-4066-b9f8-1872f38045e5",ExpressionUUID->
+         "86ad19d1-278f-42f0-831f-0bbfeaba0ba4"],
+        "\[NonBreakingSpace]",
+        StyleBox[
+        "\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+         "InlineSeparator"],
+        " ",
+        Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["kappaCollision"]], "paclet:PT2GW/ref/kappaCollision"},
+          "RefLink",
+          BaseStyle->{"InlineFormula", "TI"}]], "InlineFormula",
+         FontFamily->"Source Sans Pro",ExpressionUUID->
+         "8e21bcfa-5fe6-4374-9d86-ed8f19b464bc"],
+        "\[NonBreakingSpace]",
+        StyleBox[
+        "\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+         "InlineSeparator"],
+        " ",
+        Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["KCollision"]], "paclet:PT2GW/ref/KCollision", 
+           "PT2GW Package Symbol"},
+          "PackageLink",
+          BaseStyle->"InlineFormula"]], "InlineFormula",
+         FontFamily->"Source Sans Pro",ExpressionUUID->
+         "c152d147-299d-4744-b709-d0f91f8d7239"],
+        "\[NonBreakingSpace]",
+        StyleBox[
+        "\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+         "InlineSeparator"],
+        " ",
+        Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["HRFun"]], "paclet:PT2GW/ref/HRFun", 
+           "PT2GW Package Symbol"},
+          "PackageLink",
+          BaseStyle->"InlineFormula"]], "InlineFormula",
+         FontFamily->"Source Sans Pro",ExpressionUUID->
+         "b9b2f6c9-f6d3-4257-8050-160f00bfe2d0"],
+        "\[NonBreakingSpace]",
+        StyleBox[
+        "\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+         "InlineSeparator"],
+        " ",
+        Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["nBFun"]], "paclet:PT2GW/ref/nBFun"},
+          "RefLink",
+          BaseStyle->{"InlineFormula", "TI"}]], "InlineFormula",
+         FontFamily->"Source Sans Pro",ExpressionUUID->
+         "60258192-6db5-4e7b-9f7e-c7a5cffcbc5a"],
+        "\[NonBreakingSpace]",
+        StyleBox[
+        "\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+         "InlineSeparator"],
+        " ",
+        Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["HRFromBetaH"]], "paclet:PT2GW/ref/HRFromBetaH", 
+           "PT2GW Package Symbol"},
+          "PackageLink",
+          BaseStyle->"InlineFormula"]], "InlineFormula",
+         FontFamily->"Source Sans Pro",ExpressionUUID->
+         "908b6a59-c955-4883-942f-e15da51200d1"],
+        "\[NonBreakingSpace]",
+        StyleBox[
+        "\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+         "InlineSeparator"],
+        " ",
+        Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["BetaHFromHR"]], "paclet:PT2GW/ref/BetaHFromHR", 
+           "PT2GW Package Symbol"},
+          "PackageLink",
+          BaseStyle->"InlineFormula"]], "InlineFormula",
+         FontFamily->"Source Sans Pro",
+         CellTags->"e339fdc4-fe28-41ab-8f83-85262d0df088",ExpressionUUID->
+         "5a04d19b-e18c-43a7-9d16-4e50b2a9391a"]
+       }], "SeeAlso",ExpressionUUID->"c58f6325-0dc7-470b-a95d-3f498e7ccc86"]}
      }]}
-  }]], "SeeAlsoSection",ExpressionUUID->"1722501e-2100-49ea-87ea-\
-2f3e30178ae7"],
+  }]], "SeeAlsoSection",ExpressionUUID->"bedab8fa-f34f-4420-bb3e-\
+17b0d49484a3"],
 
-Cell[" ", "FooterCell",ExpressionUUID->"498447f9-c6aa-4c5d-a03a-cd46862af4e0"]
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedTechNote.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"Tech", " ", "Notes"}], "TechNotesSection"]},
+      {
+       RowBox[{"\[FilledVerySmallSquare]", Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["Coupled Fluid-Field Model"]], 
+           "paclet:PT2GW/tutorial/CoupledFluid-FieldModel"},
+          "RefLinkPlain",
+          BaseStyle->{"Tutorials"}]], "Tutorials",ExpressionUUID->
+         "1cba839f-4872-41ef-a890-c129c69fd39b"]}]}
+     }]}
+  }]], "TechNotesSection",ExpressionUUID->"59687c1c-5222-4899-bc27-\
+90184f7f15e2"],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, "RelatedGuide.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"Related", " ", "Guides"}], "MoreAboutSection"]},
+      {
+       RowBox[{"\[FilledVerySmallSquare]", Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["Gravitational Wave Template"]], 
+           "paclet:PT2GW/guide/GravitationalWaveTemplate"},
+          "RefLinkPlain",
+          BaseStyle->{"MoreAbout"}]], "MoreAbout",ExpressionUUID->
+         "ca9f2e6a-1ad8-4cd6-8100-2396f93e2053"]}]},
+      {
+       RowBox[{"\[FilledVerySmallSquare]", Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["PT2GWFinder"]], "paclet:PT2GW/guide/PT2GWFinder"},
+          "RefLinkPlain",
+          BaseStyle->{"MoreAbout"}]], "MoreAbout",ExpressionUUID->
+         "13b4d09d-ac4e-4a3c-83c6-f8dbd1a9dbef"]}]}
+     }]}
+  }]], "MoreAboutSection",ExpressionUUID->"8aae86cf-a7e4-40cf-b858-\
+05342ab8b713"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"f3ed497a-5810-4536-89e8-273dec308c2e"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
-WindowSize->{900, 592.5},
+WindowSize->{900, 830.25},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 WindowTitle->"KSoundwaves",
 TaggingRules->{
@@ -202,20 +1149,21 @@ TaggingRules->{
   "ExampleCounter" -> 1, 
   "Openers" -> {
    "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
-    "AllOptsTable" -> Closed}, "NewStyles" -> True, 
+    "AllOptsTable" -> Closed, "NotesSection" -> Closed}, "NewStyles" -> True, 
   "CitationPopupData" -> $Failed, "ShowCitation" -> False, "HasOptions" -> 
   True, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
   "Metadata" -> {
-   "built" -> "{2025, 4, 8, 18, 13, 48.919408}", 
+   "built" -> "{2025, 5, 9, 10, 45, 7.141189}", 
     "history" -> {"XX", "", "", ""}, "context" -> "PT2GW`", "keywords" -> {}, 
     "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
      "label" -> "P T2G W Symbol", "language" -> "en", "paclet" -> "PT2GW", 
     "status" -> "None", "summary" -> 
-    "KSoundwaves[\\[Alpha],SubscriptBox[\\[Xi],\\ w],SubscriptBox[c,\\ s]] \
-gives the fractional energy density available to soundwaves.", 
-    "synonyms" -> {}, "tabletags" -> {}, "title" -> "KSoundwaves", 
-    "titlemodifier" -> "", "metadescription" -> "", "windowtitle" -> 
-    "KSoundwaves", "type" -> "Symbol", "uri" -> "PT2GW/ref/KSoundwaves"}},
+    "KSoundwaves[\\[Alpha], \\[Kappa]sw, \\[Delta]] gives the fractional \
+energy density available to soundwaves. KSoundwaves[\\[Alpha], \\[Kappa]sw] \
+assumes \\[Delta] = 0, proper to the bag E.o.S.", "synonyms" -> {}, 
+    "tabletags" -> {}, "title" -> "KSoundwaves", "titlemodifier" -> "", 
+    "metadescription" -> "", "windowtitle" -> "KSoundwaves", "type" -> 
+    "Symbol", "uri" -> "PT2GW/ref/KSoundwaves"}},
 CellContext->"Global`",
 FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
 StyleDefinitions->Notebook[{
@@ -228,7 +1176,7 @@ StyleDefinitions->Notebook[{
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
   FrontEndVersion -> "14.0 for Linux x86 (64-bit) (December 12, 2023)", 
   StyleDefinitions -> "Default.nb"],
-ExpressionUUID->"c26f5d10-24b3-413d-acb1-ed3d9d7edbc9"
+ExpressionUUID->"511919c7-44d4-4d05-a635-5b1d292c00cb"
 ]
 (* End of Notebook Content *)
 
@@ -236,35 +1184,76 @@ ExpressionUUID->"c26f5d10-24b3-413d-acb1-ed3d9d7edbc9"
 (*CellTagsOutline
 CellTagsIndex->{
  "PrimaryExamplesSection"->{
-  Cell[4920, 132, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"c123412c-a920-4624-9035-706a3eda2818",
+  Cell[12508, 334, 1421, 37, 35, "PrimaryExamplesSection",ExpressionUUID->"a571c1cd-1b93-4105-97f1-b68174708a0d",
    CellTags->"PrimaryExamplesSection",
-   CellID->1945093503]}
+   CellID->1188910059]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"PrimaryExamplesSection", 9020, 237}
+ {"PrimaryExamplesSection", 51868, 1185}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[583, 21, 3273, 77, 70, "AnchorBarGrid",ExpressionUUID->"ed53ecf8-c854-4528-a2f4-cdf0510e1ba0",
+Cell[583, 21, 6904, 168, 57, "AnchorBarGrid",ExpressionUUID->"654ee874-6402-47b4-835d-c9752f3383ef",
  CellID->1],
-Cell[3859, 100, 88, 0, 70, "ContextNameCell",ExpressionUUID->"1f00226f-0149-45e5-924a-aef4efc341ce"],
+Cell[7490, 191, 88, 0, 23, "ContextNameCell",ExpressionUUID->"7ff26234-0b2c-498d-a703-2fc535859c8c"],
 Cell[CellGroupData[{
-Cell[3972, 104, 554, 14, 70, "ObjectNameGrid",ExpressionUUID->"9d33aa41-f34e-4f86-bceb-e99b73377c43"],
-Cell[4529, 120, 354, 7, 70, "Usage",ExpressionUUID->"ccb2e722-ff89-40fb-93f3-967fa4147249",
+Cell[7603, 195, 554, 14, 59, "ObjectNameGrid",ExpressionUUID->"01c47270-a31e-4a51-8765-671833fb7bbc"],
+Cell[8160, 211, 1205, 30, 182, "Usage",ExpressionUUID->"ccb2e722-ff89-40fb-93f3-967fa4147249",
  CellID->664245130]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4920, 132, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"c123412c-a920-4624-9035-706a3eda2818",
+Cell[9402, 246, 1919, 48, 37, "NotesSection",ExpressionUUID->"836efdaf-7853-41fc-a2cb-011bbc5078e1",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->286820504],
+Cell[11324, 296, 451, 13, 70, "Notes",ExpressionUUID->"432dd1ca-99dd-4008-bd6b-0a9792ccef4f",
+ CellID->910044408],
+Cell[11778, 311, 603, 17, 70, "Notes",ExpressionUUID->"a4c31a9a-38e2-4fdc-b9b5-09e7bb63b1f2",
+ CellID->857016407]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
+Cell[CellGroupData[{
+Cell[12508, 334, 1421, 37, 35, "PrimaryExamplesSection",ExpressionUUID->"a571c1cd-1b93-4105-97f1-b68174708a0d",
  CellTags->"PrimaryExamplesSection",
- CellID->1945093503],
-Cell[6344, 171, 194, 3, 70, "Input",ExpressionUUID->"9d875693-2590-4be2-bb71-5ae66403d2bd",
- CellID->168084015]
+ CellID->1188910059],
+Cell[13932, 373, 194, 3, 27, "Input",ExpressionUUID->"9d875693-2590-4be2-bb71-5ae66403d2bd",
+ CellID->168084015],
+Cell[CellGroupData[{
+Cell[14151, 380, 1398, 36, 30, "ExampleSection",ExpressionUUID->"8ff5a52b-54ce-40ee-ba68-fc41f6441a0f",
+ CellID->208949784],
+Cell[15552, 418, 141, 1, 39, "ExampleText",ExpressionUUID->"dafc4834-ad38-4c8a-b1ae-cd8da9c04acd",
+ CellID->1420648156],
+Cell[CellGroupData[{
+Cell[15718, 423, 315, 7, 44, "Input",ExpressionUUID->"cc449723-63ca-43b2-b468-73f2df3885d5",
+ CellID->436753814],
+Cell[16036, 432, 246, 4, 23, "Print",ExpressionUUID->"2f0ca6d1-067f-4be3-a283-838e5ddf68ef",
+ CellID->1219804566],
+Cell[16285, 438, 25436, 471, 70, "Output",ExpressionUUID->"1bb96165-5dbf-4823-9c48-18a53f53702d",
+ CellID->1472016307]
+}, Open  ]],
+Cell[41736, 912, 292, 7, 39, "ExampleText",ExpressionUUID->"69abe921-cb32-4073-be24-f918149437d9",
+ CellID->252616079],
+Cell[CellGroupData[{
+Cell[42053, 923, 348, 8, 27, "Input",ExpressionUUID->"bdc829df-d29f-4e68-bc13-ce372f7f5446",
+ CellID->176702447],
+Cell[42404, 933, 148, 2, 36, "Output",ExpressionUUID->"1bfdd3c1-0180-43c6-9f25-c871293eb00d",
+ CellID->2106617161]
+}, Open  ]],
+Cell[42567, 938, 168, 3, 39, "ExampleText",ExpressionUUID->"8eb9b73d-6704-4f8d-8483-98bd85c281a9",
+ CellID->579338137],
+Cell[CellGroupData[{
+Cell[42760, 945, 309, 7, 27, "Input",ExpressionUUID->"02a564df-a7dd-4ba9-a016-06a78f90e5cd",
+ CellID->1266787238],
+Cell[43072, 954, 150, 2, 36, "Output",ExpressionUUID->"1678ba72-a7f2-4e8a-aae7-83084e3eeae5",
+ CellID->1643400317]
+}, Open  ]]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"}, Closed]]]]
 }, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
-Cell[6656, 179, 380, 11, 70, "SeeAlsoSection",ExpressionUUID->"1722501e-2100-49ea-87ea-2f3e30178ae7"],
-Cell[7039, 192, 78, 0, 70, "FooterCell",ExpressionUUID->"498447f9-c6aa-4c5d-a03a-cd46862af4e0"]
+Cell[43464, 965, 4505, 121, 128, "SeeAlsoSection",ExpressionUUID->"bedab8fa-f34f-4420-bb3e-17b0d49484a3"],
+Cell[47972, 1088, 751, 20, 70, "TechNotesSection",ExpressionUUID->"59687c1c-5222-4899-bc27-90184f7f15e2"],
+Cell[48726, 1110, 1069, 27, 70, "MoreAboutSection",ExpressionUUID->"8aae86cf-a7e4-40cf-b858-05342ab8b713"],
+Cell[49798, 1139, 78, 0, 70, "FooterCell",ExpressionUUID->"f3ed497a-5810-4536-89e8-273dec308c2e"]
 }
 ]
 *)

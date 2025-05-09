@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     10199,        263]
-NotebookOptionsPosition[      7171,        195]
-NotebookOutlinePosition[      9261,        249]
-CellTagsIndexPosition[      9177,        244]
+NotebookDataLength[     28943,        776]
+NotebookOptionsPosition[     22853,        651]
+NotebookOutlinePosition[     24971,        705]
+CellTagsIndexPosition[     24886,        700]
 WindowTitle->$PlanckMass
 WindowFrame->Normal*)
 
@@ -27,78 +27,138 @@ Cell[BoxData[GridBox[{
           TemplateBox[{12},
            "Spacer1"], Cell["P T2G W SYMBOL", "PacletNameCell",
            TextAlignment->Center,ExpressionUUID->
-           "4e790716-78cf-4ebc-87b7-feea420e2481"], 
+           "f3915a73-d7a9-48a1-9682-9cc56c72583c"], 
           TemplateBox[{8},
            "Spacer1"]}]],
          TextAlignment->Center,ExpressionUUID->
-         "59afb7c5-ca6a-4914-8b37-15c55fb83dd4"],
+         "d548d629-bba9-444c-85a1-a6094fe1047e"],
         Background->RGBColor[0.490196, 0.576471, 0.690196],
         ItemSize->Full], ""}
      },
      GridBoxAlignment->{"Rows" -> {{Center}}},
      GridBoxItemSize->{"Columns" -> {Full, 
-         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
-     TagBox[
-      ActionMenuBox[
-       FrameBox[Cell[TextData[{
-         "URL",
-         " ",
-         Cell[BoxData[
-          GraphicsBox[
-           {GrayLevel[0.66667], Thickness[0.13], 
-            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
-           AspectRatio->1,
-           ImageSize->20,
-           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
-          "8f8b685e-0848-4a30-9108-83e1801817ce"]
-        }],ExpressionUUID->"1dab0d1f-248c-46fc-b1b9-ce6fd9c1c1fd"],
-        StripOnInput->False],{
-       "\"PT2GW/ref/$PlanckMass\"" :> None, 
-        "\"Copy Wolfram Documentation Center URL\"" :> 
-        Module[{DocumentationSearch`Private`nb$}, 
-          DocumentationSearch`Private`nb$ = 
-           NotebookPut[
-            Notebook[{Cell["PT2GW/ref/$PlanckMass"]}, Visible -> False]]; 
-          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
-          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
-          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
-        "\"Copy web URL\"" :> 
-        Module[{DocumentationSearch`Private`nb$}, 
-          DocumentationSearch`Private`nb$ = 
-           NotebookPut[
-            Notebook[{
-              Cell[BoxData[
-                MakeBoxes[
-                 Hyperlink[
-                  "http://reference.wolfram.com/language/PT2GW/ref/$\
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[{
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "See Also",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "e528a1eb-0feb-4bfd-a4b1-ccf182a04488"]
+         }],ExpressionUUID->"e1362871-162d-46e4-9d68-9c91e6df3f6e"],
+         StripOnInput->False],{
+        "\"$PlanckMassN\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/$PlanckMassN"], 
+         "\"$Unit\"" :> Documentation`HelpLookup["paclet:PT2GW/ref/$Unit"], 
+         "\"DefineUnits\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/DefineUnits"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"SeeAlso"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "5c01e4e7-a2de-45ae-9e0d-c5d477f8923c"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "Related Guides",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "15dbdbe2-a93a-46e3-951b-7453307a3a41"]
+         }],ExpressionUUID->"d000b41d-1a9a-4c68-ab34-b8b9087519b3"],
+         StripOnInput->False],{
+        "\"PT2GWFinder\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/guide/PT2GWFinder"], 
+         "\"Gravitational Wave Template\"" :> 
+         Documentation`HelpLookup[
+          "paclet:PT2GW/guide/GravitationalWaveTemplate"], "\"PT2GWFinder\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/guide/PT2GWFinder"], 
+         "\"Gravitational Wave Template\"" :> 
+         Documentation`HelpLookup[
+          "paclet:PT2GW/guide/GravitationalWaveTemplate"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"MoreAbout"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "4dcf4b64-6119-4ad1-97d8-7d59d068647e"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "URL",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "aa116cd9-1948-4b3c-ad56-8124958f5646"]
+         }],ExpressionUUID->"d0e5da58-3a5c-4eea-a678-1b9e073567c8"],
+         StripOnInput->False],{
+        "\"PT2GW/ref/$PlanckMass\"" :> None, 
+         "\"Copy Wolfram Documentation Center URL\"" :> 
+         Module[{DocumentationSearch`Private`nb$}, 
+           DocumentationSearch`Private`nb$ = 
+            NotebookPut[
+             Notebook[{Cell["PT2GW/ref/$PlanckMass"]}, Visible -> False]]; 
+           SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+           FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+           NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+         "\"Copy web URL\"" :> 
+         Module[{DocumentationSearch`Private`nb$}, 
+           DocumentationSearch`Private`nb$ = 
+            NotebookPut[
+             Notebook[{
+               Cell[BoxData[
+                 MakeBoxes[
+                  Hyperlink[
+                   "http://reference.wolfram.com/language/PT2GW/ref/$\
 PlanckMass.html"], StandardForm]], "Input", TextClipboardType -> 
-                "PlainText"]}, Visible -> False]]; 
-          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
-          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
-          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
-        "\"Go to web URL\"" :> 
-        FrontEndExecute[{
-          NotebookLocate[{
-            URL[If[TrueQ[False], 
-                "http://reference.wolfram.com/system-modeler/", 
-                "http://reference.wolfram.com/language/"] <> 
-              "PT2GW/ref/$PlanckMass" <> ".html"], None}]}]},
-       Appearance->None,
-       MenuAppearance->Automatic,
-       MenuStyle->"URLMenu"],
-      MouseAppearanceTag["LinkHand"]]],
-     LineSpacing->{1.4, 0},ExpressionUUID->
-     "46c4f218-46bd-495e-859b-898052548a4a"]], "AnchorBar",
+                 "PlainText"]}, Visible -> False]]; 
+           SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+           FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+           NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+         "\"Go to web URL\"" :> 
+         FrontEndExecute[{
+           NotebookLocate[{
+             URL[If[TrueQ[False], 
+                 "http://reference.wolfram.com/system-modeler/", 
+                 "http://reference.wolfram.com/language/"] <> 
+               "PT2GW/ref/$PlanckMass" <> ".html"], None}]}]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"URLMenu"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "1d5047fe-7b08-4b32-a55e-bf874f506e1a"]
+    }], "AnchorBar",
      CacheGraphics->False,ExpressionUUID->
-     "a2a033e1-cb20-434d-9325-d42a9108981c"]}
+     "b34ac712-62e7-46c1-8af7-c76a2369c61e"]}
   }]], "AnchorBarGrid",
- GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
-     Scaled[0.65], {
-      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
-   "RowsIndexed" -> {}}},
- CellID->1,ExpressionUUID->"eefdcaec-3d28-4ef4-bc22-d1db1af680f0"],
+ CellID->1,ExpressionUUID->"84a6dc11-7e1e-4120-818b-f030389c6d1a"],
 
-Cell["PT2GW`", "ContextNameCell",ExpressionUUID->"13678ca7-a3ee-4afc-8f8a-6989b59e5b5b"],
+Cell["PT2GW`", "ContextNameCell",ExpressionUUID->"50a4e48e-1373-45e3-bab7-cb1009696e75"],
 
 Cell[CellGroupData[{
 
@@ -106,17 +166,17 @@ Cell[BoxData[GridBox[{
    {Cell[TextData[{
      Cell[
      "$PlanckMass", "ObjectName",ExpressionUUID->
-      "57549c89-f3a1-4956-8cc4-d1f09f71ecca"],
+      "d506f95e-c7d1-4907-b978-58c4ce25bb6e"],
      Cell[BoxData[
       TemplateBox[{8},
-       "Spacer1"]],ExpressionUUID->"55a4a097-0738-4fda-b9fa-ec82624293db"],
+       "Spacer1"]],ExpressionUUID->"b142b523-7fbb-42df-bff2-8bd402264561"],
      Cell[BoxData[
      ""], "ObjectNameTranslation",ExpressionUUID->
-      "d8d5dcfc-0f52-486b-9c1a-4a4700a713f3"]
-    }],ExpressionUUID->"b05df16d-9add-44ac-a7c6-584ffbbdca98"], 
+      "f42c8cd6-8162-4a32-871b-89a60cc6c27e"]
+    }],ExpressionUUID->"bf09265a-d2b8-4aee-a165-167cf19fbaf7"], 
     "\[SpanFromLeft]"}
-  }]], "ObjectNameGrid",ExpressionUUID->"f55d202c-0263-4f81-a122-\
-08dd267b3d18"],
+  }]], "ObjectNameGrid",ExpressionUUID->"d1f4a0c9-1133-4679-9134-\
+d82e364cd993"],
 
 Cell[BoxData[GridBox[{
    {"", Cell[TextData[{
@@ -124,10 +184,111 @@ Cell[BoxData[GridBox[{
       FontFamily->"Source Sans Pro",ExpressionUUID->
       "0303eaae-9a64-43ac-9873-8196f2e34720"],
      "\[LineSeparator]is the reduced Planck mass."
-    }],ExpressionUUID->"c75804dd-4bbc-4627-8e70-27c1701bfd32"]}
+    }],ExpressionUUID->"d097b2af-5676-49e9-8548-e651dde5241d"]}
   }]], "Usage",
  CellID->1329752175,ExpressionUUID->"939cb6df-581b-4d02-9f2c-5638f798fd1d"]
 }, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ ButtonBox[Cell[TextData[{
+   Cell[BoxData[
+    DynamicBox[ToBoxes[
+      If[
+       MatchQ[
+        CurrentValue[
+         EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, 
+         Closed], 
+        Alternatives[Open, True]], 
+       Style[
+        Graphics[{
+          Thickness[0.18], 
+          RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+          Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+         PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+        0.68 Inherited], 
+       Rotate[
+        Style[
+         Graphics[{
+           Thickness[0.18], 
+           RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+           Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+          PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+         0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+     ImageSizeCache->{
+      13.600000000000001`, {0.5800000000000001, 13.020000000000001`}}]],
+    ExpressionUUID->"cfb16f75-6143-4d65-bf75-4da2ba58594e"],
+   Cell[BoxData[
+    TemplateBox[{1},
+     "Spacer1"]],ExpressionUUID->"691678d9-2036-4011-a196-f1baaba5793c"],
+   "Details and Options"
+  }], "NotesFrameText",ExpressionUUID->"ce8637ad-2359-4192-92c1-84640ea8a1bb"],
+  Appearance->{Automatic, None, "Normal", Automatic},
+  BaseStyle->None,
+  ButtonFunction:>(FrontEndExecute[{
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], All, ButtonCell], 
+     FrontEndToken["OpenCloseGroup"], 
+     FrontEnd`SelectionMove[
+      FrontEnd`SelectedNotebook[], After, CellContents]}]& ),
+  Evaluator->None,
+  Method->
+   "Preemptive"]],ExpressionUUID->"425c2148-d1c3-4e83-8eaa-9c1a65d3e114"]], \
+"NotesSection",
+ WholeCellGroupOpener->True,
+ CellGroupingRules->{"SectionGrouping", 50},
+ CacheGraphics->False,
+ CellID->1351627170,ExpressionUUID->"0c2760c9-cd17-4fa2-aa19-e504b7604344"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["$PlanckMass"]], "paclet:PT2GW/ref/$PlanckMass", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFormula"]], "InlineFormula",
+  FontFamily->"Source Sans Pro",ExpressionUUID->
+  "f777354d-94ac-43a6-b57d-8e53034663c2"],
+ " stores the built-in symbol for the reduced Planck mass ",
+ Cell[BoxData[
+  TemplateBox[{
+    InterpretationBox["\[InvisibleSpace]", 1], 
+    SubscriptBox[
+     OverscriptBox["\"M\"", "^"], "\"P\""], "reduced Planck mass", 
+    "\"ReducedPlanckMass\""},
+   "Quantity"]], "Output",ExpressionUUID->
+  "6ff5f738-1605-4d7b-b1b5-b2b222b789dd"],
+ "."
+}], "Notes",
+ CellID->1386293587,ExpressionUUID->"68d6ed13-2df4-4cf3-86e7-7880118836eb"],
+
+Cell[TextData[{
+ "Its numerical value, ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["$PlanckMassN"]], "paclet:PT2GW/ref/$PlanckMassN", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFormula"]], "InlineFormula",
+  FontFamily->"Source Sans Pro",ExpressionUUID->
+  "8eae34cf-9420-4acc-b800-26b8df2ef5dd"],
+ ", depends on the energy ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["$Unit"]], "paclet:PT2GW/ref/$Unit", "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFormula"]], "InlineFormula",
+  FontFamily->"Source Sans Pro",ExpressionUUID->
+  "2bd925a5-e9a8-449d-8edf-0b1c7771a1b4"],
+ "."
+}], "Notes",
+ CellID->1733647263,ExpressionUUID->"38ff1d0d-e415-4c48-a6cf-f8306ee700f2"]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
 
 Cell[CellGroupData[{
 
@@ -156,24 +317,234 @@ Cell[TextData[{
         PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
        0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
    ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
-  ExpressionUUID->"761df207-b3e2-4ad8-84ae-c87c7edcb935"],
+  ExpressionUUID->"f179394f-6cf4-43da-85eb-9a7026f71b45"],
  Cell[BoxData[
   TemplateBox[{1},
-   "Spacer1"]],ExpressionUUID->"b720a56d-c7ae-4dee-a568-3f34eaa52bec"],
+   "Spacer1"]],ExpressionUUID->"3a69e963-7e57-4ddf-82fc-d31d1b45017e"],
  "Examples",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
- Cell["(0)", "ExampleCount",ExpressionUUID->
-  "7efc9d5e-66c9-4e98-acfe-3bb89751081f"]
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "801feb9e-5597-4b6a-946e-54b36e847eb5"]
 }], "PrimaryExamplesSection",
  WholeCellGroupOpener->True,
  CacheGraphics->False,
  CellTags->"PrimaryExamplesSection",
- CellID->1675329461,ExpressionUUID->"6fd7a782-e351-4c67-9c31-3aa3071c5467"],
+ CellID->1618264388,ExpressionUUID->"b218fdbe-349a-4fe8-bdbf-92d0faeb4222"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<PT2GW`\>\"", "]"}]], "Input", "ExampleInitialization",
  CellLabel->"In[1]:=",
- CellID->659198437,ExpressionUUID->"1369d670-b4ff-41b9-8822-2e57b34c68de"]
+ CellID->659198437,ExpressionUUID->"1369d670-b4ff-41b9-8822-2e57b34c68de"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"},
+        Closed], 
+      Alternatives[Open, True]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{13.600000000000001`, {5., 8.600000000000001}}]],
+  ExpressionUUID->"fd44a82f-07c2-4cf1-9c5c-55a66e95ede2"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"ad2a16c5-4801-4555-8a48-984a01c24b06"],
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "2d9ea7c1-0d46-4e2c-b120-beaa8c185405"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellID->1413908719,ExpressionUUID->"5d38f09d-de14-4b59-af97-545bd9d18267"],
+
+Cell[TextData[{
+ "The ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["$PlanckMass"]], "paclet:PT2GW/ref/$PlanckMass", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFormula"]], "InlineFormula",
+  FontFamily->"Source Sans Pro",ExpressionUUID->
+  "5c13d89c-d21b-459f-a4c6-5eb536de82d0"],
+ " can be converted to a numerical value in a given energy ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["$Unit"]], "paclet:PT2GW/ref/$Unit", "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFormula"]], "InlineFormula",
+  FontFamily->"Source Sans Pro",ExpressionUUID->
+  "b3a46458-397f-4935-8847-5d09691a8261"],
+ ":"
+}], "ExampleText",
+ CellID->532543981,ExpressionUUID->"58371ec4-237c-4fd7-b19f-eb18b0120bc9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"QuantityMagnitude", "[", 
+  RowBox[{
+   RowBox[{"$PlanckMass", " ", 
+    RowBox[{
+     RowBox[{"Quantity", "[", "\"\<SpeedOfLight\>\"", "]"}], "^", "2"}]}], 
+   ",", "$Unit"}], "]"}]], "Input",
+ CellProlog:>Needs["PT2GW`"],
+ CellLabel->"In[1]:=",
+ CellID->582084696,ExpressionUUID->"2559acf9-066c-420d-b4df-8760cc543d72"],
+
+Cell[BoxData["2.435323460084288277`4.657577319177793*^18"], "Output",
+ CellLabel->"Out[1]=",
+ CellID->1110063969,ExpressionUUID->"811b0f4a-42d6-483a-a0b6-de2c99950c08"]
+}, Open  ]],
+
+Cell[TextData[{
+ "The numerical value is defined as ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["$PlanckMassN"]], "paclet:PT2GW/ref/$PlanckMassN", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFormula"]], "InlineFormula",
+  FontFamily->"Source Sans Pro",ExpressionUUID->
+  "30986bb5-52ae-4c3c-8a06-0687689c8ba3"],
+ ":"
+}], "ExampleText",
+ CellID->1614965802,ExpressionUUID->"81ba9b1c-4160-49b3-9999-864da2989789"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["$PlanckMassN"], "Input",
+ CellProlog:>Needs["PT2GW`"],
+ CellLabel->"In[2]:=",
+ CellID->1808727524,ExpressionUUID->"480f6695-45b1-4c4f-93f8-b9104f944865"],
+
+Cell[BoxData["2.435323460084288277`4.657577319177793*^18"], "Output",
+ CellLabel->"Out[2]=",
+ CellID->1578819548,ExpressionUUID->"d4adbc9e-4294-4e6d-ae50-89fc9e3ad90b"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Modify the energy unit to ",
+ StyleBox["megaelectronvolt",
+  FontSlant->"Italic"],
+ ": "
+}], "ExampleText",
+ CellID->1908528605,ExpressionUUID->"77341529-1677-4d56-917a-33e0ba5dc04b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DefineUnits", "[", "\"\<MeV\>\"", "]"}]], "Input",
+ CellProlog:>Needs["PT2GW`"],
+ CellLabel->"In[3]:=",
+ CellID->1157388660,ExpressionUUID->"71ccbcef-f88f-49a5-b377-fcde00567814"],
+
+Cell[BoxData[
+ RowBox[{
+  TagBox["\<\"Energy units set to\"\>",
+   "EchoLabel"], "  ", 
+  TemplateBox[{"1", "\"MeV\"", "megaelectronvolt", "\"Megaelectronvolts\""},
+   "Quantity"]}]], "Echo",
+ CellID->1961695401,ExpressionUUID->"4b4c8373-f87c-4b71-a041-248701402d63"]
+}, Open  ]],
+
+Cell["The Planck mass value changes accordingly:", "ExampleText",
+ CellID->1846162866,ExpressionUUID->"e7b2362c-661b-49ba-b9f5-67ed78d4030b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["$PlanckMassN"], "Input",
+ CellProlog:>Needs["PT2GW`"],
+ CellLabel->"In[4]:=",
+ CellID->255713218,ExpressionUUID->"eeca82b6-7961-482c-8eb7-abcfc41c0865"],
+
+Cell[BoxData["2.435323460084288277269`4.657577319177793*^21"], "Output",
+ CellLabel->"Out[4]=",
+ CellID->175837772,ExpressionUUID->"128dbdfc-2b50-4308-81dd-4c9c44fd0e96"]
+}, Open  ]],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["PrintPlanckMass"]], "paclet:PT2GW/ref/PrintPlanckMass", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFormula"]], "InlineFormula",
+  FontFamily->"Source Sans Pro",ExpressionUUID->
+  "cb111261-b088-4737-823f-7b9369a80b24"],
+ " returns the corresponding ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["Quantity"]], "paclet:ref/Quantity"},
+   "RefLink",
+   BaseStyle->{"InlineFormula"}]], "InlineFormula",
+  FontFamily->"Source Sans Pro",ExpressionUUID->
+  "05421f80-f931-4b43-9e85-25b1ef08e08d"],
+ ":"
+}], "ExampleText",
+ CellID->1410794407,ExpressionUUID->"daef05a4-5bea-445f-a4d8-ab0e1984be90"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PrintPlanckMass", "[", "]"}]], "Input",
+ CellProlog:>Needs["PT2GW`"],
+ CellLabel->"In[5]:=",
+ CellID->1043063725,ExpressionUUID->"cb65bb0a-ee0f-4579-8cc8-9728a8ed3aee"],
+
+Cell[BoxData[
+ RowBox[{
+  TagBox[
+   TemplateBox[{
+     TemplateBox[{
+       InterpretationBox["\[InvisibleSpace]", 1], 
+       SubscriptBox[
+        OverscriptBox["\"M\"", "^"], "\"P\""], "reduced Planck mass", 
+       "\"ReducedPlanckMass\""}, "Quantity", SyntaxForm -> Mod], 
+     "\" \[Rule]\""},
+    "RowDefault"],
+   "EchoLabel"], "  ", 
+  TemplateBox[{
+   "2.435323460084288277269`4.657577319177793*^21", "\"MeV\"", 
+    "megaelectronvolts", "\"Megaelectronvolts\""},
+   "Quantity"]}]], "Echo",
+ CellID->1763018536,ExpressionUUID->"a6ebc37f-e88d-4c6d-b40e-7b1f26022edc"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "2.435323460084288277269`4.657577319177793*^21", "\"MeV\"", 
+   "megaelectronvolts", "\"Megaelectronvolts\""},
+  "Quantity"]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->2113545736,ExpressionUUID->"bb94702f-3f50-4d41-b333-99ec9c515956"]
+}, Open  ]]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"}, 
+  Closed]]]]
 }, Dynamic[CurrentValue[
  EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
   Closed]]]],
@@ -186,16 +557,101 @@ Cell[BoxData[GridBox[{
      ImageSizeCache->{50., {27., 33.}}], GridBox[{
       {
        StyleBox[
-        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]},
+      {Cell[TextData[{
+        Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["$Unit"]], "paclet:PT2GW/ref/$Unit", 
+           "PT2GW Package Symbol"},
+          "PackageLink",
+          BaseStyle->"InlineFormula"]], "InlineFormula",
+         FontFamily->"Source Sans Pro",
+         CellTags->"197c4d1b-2971-453e-8647-7bc8e2fa80b1",ExpressionUUID->
+         "bab91be6-d1b3-4835-93c9-2187770a9cb5"],
+        "\[NonBreakingSpace]",
+        StyleBox[
+        "\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
+         "InlineSeparator"],
+        " ",
+        Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["DefineUnits"]], "paclet:PT2GW/ref/DefineUnits", 
+           "PT2GW Package Symbol"},
+          "PackageLink",
+          BaseStyle->"InlineFormula"]], "InlineFormula",
+         FontFamily->"Source Sans Pro",
+         CellTags->"8bf00eb6-4cf4-4e4d-af34-43e603e5246b",ExpressionUUID->
+         "86ee011f-e297-40ea-93b5-67023806877f"]
+       }], "SeeAlso",ExpressionUUID->"37d277e1-2668-41f5-a768-99690752b428"]}
      }]}
-  }]], "SeeAlsoSection",ExpressionUUID->"3d898a6a-ecda-4a4c-991e-\
-730c5598a7ad"],
+  }]], "SeeAlsoSection",ExpressionUUID->"f33fd2d7-fda3-4661-b9f9-\
+827431af9434"],
 
-Cell[" ", "FooterCell",ExpressionUUID->"4f22729c-86e8-410f-b573-adb05b049972"]
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, "RelatedGuide.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"Related", " ", "Guides"}], "MoreAboutSection"]},
+      {
+       RowBox[{"\[FilledVerySmallSquare]", Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["PT2GWFinder"]], "paclet:PT2GW/guide/PT2GWFinder"},
+          "RefLinkPlain",
+          BaseStyle->{"MoreAbout"}]], "MoreAbout",ExpressionUUID->
+         "007bd85d-392b-4ddf-b5f3-260305a0a06c"]}]},
+      {
+       RowBox[{"\[FilledVerySmallSquare]", Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["Gravitational Wave Template"]], 
+           "paclet:PT2GW/guide/GravitationalWaveTemplate"},
+          "RefLinkPlain",
+          BaseStyle->{"MoreAbout"}]], "MoreAbout",ExpressionUUID->
+         "6e66ac6a-a7d7-493e-97a2-c638fb92679e"]}]}
+     }]}
+  }]], "MoreAboutSection",ExpressionUUID->"7df61751-7897-4051-969a-\
+a15706d9e381"],
+
+Cell[BoxData[GridBox[{
+   {
+    TemplateBox[{29},
+     "Spacer1"], GridBox[{
+      {
+       RowBox[{
+        TemplateBox[{17},
+         "Spacer1"], 
+        StyleBox[
+         RowBox[{"Related", " ", "Links"}], "RelatedLinksSection"]}]},
+      {Cell[BoxData[
+        TemplateBox[{
+          Cell[
+           TextData["PT2GWFinder"]], "paclet:PT2GW/guide/PT2GWFinder"},
+         "RefLinkPlain",
+         BaseStyle->{"MoreAbout"}]], "MoreAbout",ExpressionUUID->
+        "872c0c51-374c-4139-bc3c-a7ecdad3df7b"]},
+      {Cell[BoxData[
+        TemplateBox[{
+          Cell[
+           TextData["Gravitational Wave Template"]], 
+          "paclet:PT2GW/guide/GravitationalWaveTemplate"},
+         "RefLinkPlain",
+         BaseStyle->{"MoreAbout"}]], "MoreAbout",ExpressionUUID->
+        "9383a82e-74f4-4fcd-ad1c-a890af7e1081"]}
+     }]}
+  }]], "RelatedLinksSection",ExpressionUUID->"ed2fbfbd-ee9f-462d-9061-\
+33842109fe87"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"471bbb6e-8a8f-4be3-861e-723396eb8c81"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
-WindowSize->{900, 592.5},
+WindowSize->{900, 830.25},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 WindowTitle->"$PlanckMass",
 TaggingRules->{
@@ -203,11 +659,11 @@ TaggingRules->{
   "ExampleCounter" -> 1, 
   "Openers" -> {
    "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
-    "AllOptsTable" -> Closed}, "NewStyles" -> True, 
+    "AllOptsTable" -> Closed, "NotesSection" -> Closed}, "NewStyles" -> True, 
   "CitationPopupData" -> $Failed, "ShowCitation" -> False, "HasOptions" -> 
   True, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
   "Metadata" -> {
-   "built" -> "{2025, 4, 8, 18, 13, 55.927957}", 
+   "built" -> "{2025, 5, 8, 12, 43, 8.346686}", 
     "history" -> {"XX", "", "", ""}, "context" -> "PT2GW`", "keywords" -> {}, 
     "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
      "label" -> "P T2G W Symbol", "language" -> "en", "paclet" -> "PT2GW", 
@@ -228,7 +684,7 @@ StyleDefinitions->Notebook[{
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
   FrontEndVersion -> "14.0 for Linux x86 (64-bit) (December 12, 2023)", 
   StyleDefinitions -> "Default.nb"],
-ExpressionUUID->"e23c2158-f51d-44f5-b053-818d28680e3e"
+ExpressionUUID->"bed46cd7-122b-4f03-b3fa-53ec6058d2aa"
 ]
 (* End of Notebook Content *)
 
@@ -236,35 +692,92 @@ ExpressionUUID->"e23c2158-f51d-44f5-b053-818d28680e3e"
 (*CellTagsOutline
 CellTagsIndex->{
  "PrimaryExamplesSection"->{
-  Cell[4970, 133, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"6fd7a782-e351-4c67-9c31-3aa3071c5467",
+  Cell[10892, 294, 1421, 37, 35, "PrimaryExamplesSection",ExpressionUUID->"b218fdbe-349a-4fe8-bdbf-92d0faeb4222",
    CellTags->"PrimaryExamplesSection",
-   CellID->1675329461]}
+   CellID->1618264388]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"PrimaryExamplesSection", 8977, 237}
+ {"PrimaryExamplesSection", 24685, 693}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[583, 21, 3273, 77, 70, "AnchorBarGrid",ExpressionUUID->"eefdcaec-3d28-4ef4-bc22-d1db1af680f0",
+Cell[583, 21, 5660, 137, 57, "AnchorBarGrid",ExpressionUUID->"84a6dc11-7e1e-4120-818b-f030389c6d1a",
  CellID->1],
-Cell[3859, 100, 88, 0, 70, "ContextNameCell",ExpressionUUID->"13678ca7-a3ee-4afc-8f8a-6989b59e5b5b"],
+Cell[6246, 160, 88, 0, 23, "ContextNameCell",ExpressionUUID->"50a4e48e-1373-45e3-bab7-cb1009696e75"],
 Cell[CellGroupData[{
-Cell[3972, 104, 554, 14, 70, "ObjectNameGrid",ExpressionUUID->"f55d202c-0263-4f81-a122-08dd267b3d18"],
-Cell[4529, 120, 404, 8, 70, "Usage",ExpressionUUID->"939cb6df-581b-4d02-9f2c-5638f798fd1d",
+Cell[6359, 164, 554, 14, 59, "ObjectNameGrid",ExpressionUUID->"d1f4a0c9-1133-4679-9134-d82e364cd993"],
+Cell[6916, 180, 404, 8, 107, "Usage",ExpressionUUID->"939cb6df-581b-4d02-9f2c-5638f798fd1d",
  CellID->1329752175]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4970, 133, 1421, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"6fd7a782-e351-4c67-9c31-3aa3071c5467",
+Cell[7357, 193, 1920, 48, 37, "NotesSection",ExpressionUUID->"0c2760c9-cd17-4fa2-aa19-e504b7604344",
+ CellGroupingRules->{"SectionGrouping", 50},
+ CellID->1351627170],
+Cell[9280, 243, 745, 21, 70, "Notes",ExpressionUUID->"68d6ed13-2df4-4cf3-86e7-7880118836eb",
+ CellID->1386293587],
+Cell[10028, 266, 737, 22, 70, "Notes",ExpressionUUID->"38ff1d0d-e415-4c48-a6cf-f8306ee700f2",
+ CellID->1733647263]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "NotesSection"}, Closed]]]],
+Cell[CellGroupData[{
+Cell[10892, 294, 1421, 37, 35, "PrimaryExamplesSection",ExpressionUUID->"b218fdbe-349a-4fe8-bdbf-92d0faeb4222",
  CellTags->"PrimaryExamplesSection",
- CellID->1675329461],
-Cell[6394, 172, 194, 3, 70, "Input",ExpressionUUID->"1369d670-b4ff-41b9-8822-2e57b34c68de",
- CellID->659198437]
+ CellID->1618264388],
+Cell[12316, 333, 194, 3, 27, "Input",ExpressionUUID->"1369d670-b4ff-41b9-8822-2e57b34c68de",
+ CellID->659198437],
+Cell[CellGroupData[{
+Cell[12535, 340, 1399, 36, 30, "ExampleSection",ExpressionUUID->"5d38f09d-de14-4b59-af97-545bd9d18267",
+ CellID->1413908719],
+Cell[13937, 378, 756, 22, 41, "ExampleText",ExpressionUUID->"58371ec4-237c-4fd7-b19f-eb18b0120bc9",
+ CellID->532543981],
+Cell[CellGroupData[{
+Cell[14718, 404, 345, 9, 29, "Input",ExpressionUUID->"2559acf9-066c-420d-b4df-8760cc543d72",
+ CellID->582084696],
+Cell[15066, 415, 168, 2, 36, "Output",ExpressionUUID->"811b0f4a-42d6-483a-a0b6-de2c99950c08",
+ CellID->1110063969]
+}, Open  ]],
+Cell[15249, 420, 450, 13, 41, "ExampleText",ExpressionUUID->"81ba9b1c-4160-49b3-9999-864da2989789",
+ CellID->1614965802],
+Cell[CellGroupData[{
+Cell[15724, 437, 167, 3, 27, "Input",ExpressionUUID->"480f6695-45b1-4c4f-93f8-b9104f944865",
+ CellID->1808727524],
+Cell[15894, 442, 168, 2, 36, "Output",ExpressionUUID->"d4adbc9e-4294-4e6d-ae50-89fc9e3ad90b",
+ CellID->1578819548]
+}, Open  ]],
+Cell[16077, 447, 201, 6, 39, "ExampleText",ExpressionUUID->"77341529-1677-4d56-917a-33e0ba5dc04b",
+ CellID->1908528605],
+Cell[CellGroupData[{
+Cell[16303, 457, 203, 4, 27, "Input",ExpressionUUID->"71ccbcef-f88f-49a5-b377-fcde00567814",
+ CellID->1157388660],
+Cell[16509, 463, 267, 6, 34, "Echo",ExpressionUUID->"4b4c8373-f87c-4b71-a041-248701402d63",
+ CellID->1961695401]
+}, Open  ]],
+Cell[16791, 472, 141, 1, 39, "ExampleText",ExpressionUUID->"e7b2362c-661b-49ba-b9f5-67ed78d4030b",
+ CellID->1846162866],
+Cell[CellGroupData[{
+Cell[16957, 477, 166, 3, 27, "Input",ExpressionUUID->"eeca82b6-7961-482c-8eb7-abcfc41c0865",
+ CellID->255713218],
+Cell[17126, 482, 170, 2, 36, "Output",ExpressionUUID->"128dbdfc-2b50-4308-81dd-4c9c44fd0e96",
+ CellID->175837772]
+}, Open  ]],
+Cell[17311, 487, 700, 21, 41, "ExampleText",ExpressionUUID->"daef05a4-5bea-445f-a4d8-ab0e1984be90",
+ CellID->1410794407],
+Cell[CellGroupData[{
+Cell[18036, 512, 192, 4, 27, "Input",ExpressionUUID->"cb65bb0a-ee0f-4579-8cc8-9728a8ed3aee",
+ CellID->1043063725],
+Cell[18231, 518, 577, 16, 70, "Echo",ExpressionUUID->"a6ebc37f-e88d-4c6d-b40e-7b1f26022edc",
+ CellID->1763018536],
+Cell[18811, 536, 266, 6, 47, "Output",ExpressionUUID->"bb94702f-3f50-4d41-b333-99ec9c515956",
+ CellID->2113545736]
+}, Open  ]]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"}, Closed]]]]
 }, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
-Cell[6706, 180, 380, 11, 70, "SeeAlsoSection",ExpressionUUID->"3d898a6a-ecda-4a4c-991e-730c5598a7ad"],
-Cell[7089, 193, 78, 0, 70, "FooterCell",ExpressionUUID->"4f22729c-86e8-410f-b573-adb05b049972"]
+Cell[19319, 551, 1457, 38, 70, "SeeAlsoSection",ExpressionUUID->"f33fd2d7-fda3-4661-b9f9-827431af9434"],
+Cell[20779, 591, 1069, 27, 70, "MoreAboutSection",ExpressionUUID->"7df61751-7897-4051-969a-a15706d9e381"],
+Cell[21851, 620, 917, 27, 70, "RelatedLinksSection",ExpressionUUID->"ed2fbfbd-ee9f-462d-9061-33842109fe87"],
+Cell[22771, 649, 78, 0, 70, "FooterCell",ExpressionUUID->"471bbb6e-8a8f-4be3-861e-723396eb8c81"]
 }
 ]
 *)

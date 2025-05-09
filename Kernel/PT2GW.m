@@ -99,7 +99,7 @@ Clear@@DeleteCases[Names@"`*", "$PT2GWPrint"]; (* clear all except $PT2GWPrint *
 Begin["`Private`"];
 
 
-(* ::Subsection:: *)
+(* ::Subsection::Closed:: *)
 (*Utilities*)
 
 
@@ -298,7 +298,7 @@ PlotPotential[V_,\[Phi]Range_,T_,opt:OptionsPattern[{PlotPotential,Plot,Manipula
 AutoComplete[PlotPotential,{PlotPotential,Plot,Manipulate}];
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Printing*)
 
 
@@ -324,8 +324,8 @@ With[{icon=Import[FileNameJoin[{PacletObject["PT2GW"]["Location"],"FrontEnd","ic
 	},Spacer[20]];]
 
 
-(* ::Subsubsection:: *)
-(*Messagess*)
+(* ::Subsubsection::Closed:: *)
+(*Messages*)
 
 
 (* ::Text:: *)
@@ -368,7 +368,7 @@ msg["UnboundedV"]=StringTemplate["Solution did not converge for T\[Element]``. P
 msg["actionValue"][asc_Association]:=If[asc["Action/T"],StringTemplate["\!\(\*FractionBox[SubscriptBox[\(S\), \(3\)], \(T\)]\)(``)"],StringTemplate["S(``)"]][asc["T"]]
 msg["stopAtFailure"]="Stopping at first action failure (turn off this option with \"StopAtFailure\"\[Rule]False).";
 msg["ActionFilter"]=StringTemplate["`1` filtered action points (<* #1/#2//N[#,2]&//PercentForm *>)"];
-msg["PhaseShift"]="!! Phase shift obsolete: use Check[Veff,Limit[Veff,\[Phi]\[Rule]0.] instead !!";
+msg["PhaseShift"]="!! Phase shift obsolete: use Check[V,Limit[V,\[Phi]\[Rule]0.] instead !!";
 msg["analyticAction"]="Using analytic action to determine \!\(\*SubscriptBox[\(T\), \(n\)]\)";
 
 
@@ -432,7 +432,7 @@ DefineUnits::usage="DefineUnits[\"unit\"] defines the energy unit symbol $Unit, 
 DefineUnits[] resets $Unit to \"GeV\".";
 DefineUnits[u_:"GeV"]:=Module[{},
 	Unprotect[$Unit,$PlanckMassN];
-	$Unit=PT2GWEcho[u,"Energy units set to",Quantity];
+	$Unit=PT2GWEcho[u,"Energy unit set to",Quantity];
 	$PlanckMassN=$PlanckMass Quantity["SpeedOfLight"]^2//UnitConvert[#,u]&//QuantityMagnitude;
 	Protect[$Unit,$PlanckMassN];
 	]
@@ -448,6 +448,7 @@ PrintPlanckMass[]:=PT2GWEcho[Quantity[$PlanckMassN,$Unit],Row@{$PlanckMass," \[R
 
 
 (* vacuum energy radiation density *)
+RadiationEnergyDensity::usage="RadiationEnergyDensity[T] gives the radiation energy density \!\(\*SubscriptBox[\(\[Rho]\), \(\[Gamma]\)]\)(T).";
 RadiationEnergyDensity[T_]:=\[Pi]^2/30 RelativisticDOF T^4
 
 
@@ -497,7 +498,7 @@ IntegralFalseVacuum[action_,T_?NumericQ,Tc_,vw_,V_,phases_]:=4\[Pi]/3 vw^3 NInte
 IntegralFalseVacuumRadiation[action_,T_?NumericQ,Tc_,vw_]:=4\[Pi]/3 (vw/T)^3 NIntegrate[((T2-T)^3/T2^9)(DecayRate[T2,action]/Hc^4),{T2,T,Tc}]
 
 
-(* ::Subsection:: *)
+(* ::Subsection::Closed:: *)
 (*Action*)
 
 
@@ -602,7 +603,7 @@ ShiftToExitPoint[T_,V_,minima_,max_,opt:OptionsPattern[{ShiftToExitPoint,Action,
 ]
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Filter & Refine*)
 
 
@@ -648,7 +649,7 @@ ActionRefine[V_,data_,phases_,opt:OptionsPattern[]]:=Module[{optAction,badTemps,
 	{Tlist,STlist}=data\[Transpose];
 	filData=ActionFilter[data];
 	badTemps=Complement[data,filData][[All,1]];
-	newData={badTemps,Action[V,badTemps,phases,optAction]}\[Transpose];
+	newData={badTemps,Action[badTemps,V,phases,optAction]}\[Transpose];
 	SortBy[filData~Join~newData,First]
 ]
 
@@ -680,7 +681,7 @@ ActionRefineInflection[V_,phases_,{Tmiss_,Thit_},opt:OptionsPattern[{ActionRefin
 	]
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Fit Functions*)
 
 
@@ -772,12 +773,11 @@ StripWrapperBoxes->True]\)//Evaluate]
 ]
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Fit Module*)
 
 
-ActionFit::usage="ActionFit[V,{\!\(\*SubscriptBox[\(\[Phi]\), \(1\)]\),\!\(\*SubscriptBox[\(\[Phi]\), \(2\)]\)},{\!\(\*SubscriptBox[\(T\), \(min\)]\),\!\(\*SubscriptBox[\(T\), \(max\)]\)}] fits and/or interpolate the 3D Euclidean action Subscript[S, 3]/T.";
-ActionFit::usage="ActionFit[V,{\!\(\*SubscriptBox[\(\[Phi]\), \(1\)]\),\!\(\*SubscriptBox[\(\[Phi]\), \(2\)]\)},{\!\(\*SubscriptBox[\(T\), \(min\)]\),\!\(\*SubscriptBox[\(T\), \(max\)]\)},\!\(\*SubscriptBox[\(T\), \(c\)]\)] enables polynomial and Laurent fitting about \!\(\*SubscriptBox[\(T\), \(c\)]\).";
+ActionFit::usage="ActionFit[V,{\!\(\*SubscriptBox[\(\[Phi]\), \(1\)]\),\!\(\*SubscriptBox[\(\[Phi]\), \(2\)]\)},{\!\(\*SubscriptBox[\(T\), \(min\)]\),\!\(\*SubscriptBox[\(T\), \(max\)]\)},\!\(\*SubscriptBox[\(T\), \(c\)]\)] fits the Euclidean action for the transition between the phases \!\(\*SubscriptBox[\(\[Phi]\), \(1, 2\)]\) in the given temperature range.";
 Options[ActionFit]={
 	"Data"->None,
 	"NActionPoints"->31,
@@ -859,7 +859,7 @@ ActionFit[V_,phases_,{Tmin_,Tmax_},Tc_:0,opt:OptionsPattern[{ActionFit,Action,In
 	(* plot (optional) *)
 	If[OptionValue["PlotAction"],
 		Print@PlotAction[actionFun,{Tmin,Tc},"Data"->data,
-			"Tlines"-><|"Tc"->{Dashed,Red,InfiniteLine[{{Tc,0},{Tc,1}}],
+			"Temperatures"-><|"Tc"->{Dashed,Red,InfiniteLine[{Tc,100},{0,1}],
 				Text[Style["\!\(\*SubscriptBox[\(T\), \(c\)]\)",Medium],{Tc-2,1},Scaled@{.5,-.5}]}
 				|>
 		]];
@@ -884,8 +884,8 @@ AutoComplete[ActionFit,{ActionFit,Action,Interpolation,laurentFitFun,pwLaurentFu
 
 PlotAction::usage="PlotAction[ActionFunction,{\!\(\*SubscriptBox[\(T\), \(min\)]\),\!\(\*SubscriptBox[\(T\), \(max\)]\)}] plot the Euclidean action Subscript[S, 3]/T in the given temperature range.
 PlotAction[ActionFunction] plots the action \!\(\*SubscriptBox[\(S\), \(3\)]\)(T)/T for the given ActionFunction object.
-PlotAction[Transition] \!\(\*SubscriptBox[\(S\), \(3\)]\)(T)/T for the given Transition object.
-PlotAction[Associaton] \!\(\*SubscriptBox[\(S\), \(3\)]\)(T)/T for the given Association.";
+PlotAction[Transition] extracts the action from a Transition object.
+PlotAction[Associaton] extracts the action from an Association.";
 TlinesStyle[lab_String]:=Directive[Dashed,lab/.<|"Tc"->Red,"Tn"->Orange,"Tp"->Hue[.12,1,.9]|>];
 TlinesFun[lab_String,T_]:={TlinesStyle[lab],InfiniteLine[{T,0},{0,1}]};
 Options[PlotAction]={"Data"->{},"Temperatures"-><||>,PlotLegends->Automatic};
@@ -1002,18 +1002,17 @@ ActionFunction/:MakeBoxes[obj:ActionFunction[asc_Association],form:(StandardForm
 	];
 
 
-(* ::Subsection:: *)
+(* ::Subsection::Closed:: *)
 (*Phase Transition Parameters*)
 
 
-(* ::Subsubsection:: *)
+(* ::Subsubsection::Closed:: *)
 (*Phase tracing*)
 
 
-TracePhases::usage="TracePhases[V,\"TRange\"->{\!\(\*SubscriptBox[\(T\), \(min\)]\),\!\(\*SubscriptBox[\(T\), \(max\)]\)}] numerically traces the phases of a thermal potential V in the range list.
-TracePhases[V,\"TRange\"->{\!\(\*SubscriptBox[\(T\), \(min\)]\),\!\(\*SubscriptBox[\(T\), \(max\)]\)},\*StyleBox[\\\"TracingMethod\\\", ShowStringCharacters->True]->\*StyleBox[\\\"SimpleFieldDependence\\\", ShowStringCharacters->True]] numerically traces the phases of a thermal potential V in the range list.
-TracePhases[V,\"TracingMethod\"->NSolve] traces the phases analytically, for simple potentials with numerical parameters.
-TracePhases[V,\"TracingMethod\"->Solve] traces the phases analytically, for simple potentials.
+TracePhases::usage="TracePhases[V,\"TRange\"->{\!\(\*SubscriptBox[\(T\), \(min\)]\),\!\(\*SubscriptBox[\(T\), \(max\)]\)}] numerically traces the phases of a thermal potential V in the given temperature range.
+TracePhases[V,\"TRange\"->{\!\(\*SubscriptBox[\(T\), \(min\)]\),\!\(\*SubscriptBox[\(T\), \(max\)]\)},\*StyleBox[\\\"TracingMethod\\\", ShowStringCharacters->True]->\*StyleBox[\\\"SimpleFieldDependence\\\", ShowStringCharacters->True]] assumes the potential V has a simple dependence on the field, such that \!\(\*SubscriptBox[\(\[PartialD]\), \(\[Phi]\)]\)V(\[Phi],T)=0 can be solved at fixed T.
+TracePhases[V,\"TracingMethod\"->NSolve] races the phases semi-analytically, assuming {\!\(\*SubscriptBox[\(\[PartialD]\), \(\[Phi]\)]\)V(\[Phi],T)=0,\!\(\*SubsuperscriptBox[\(\[PartialD]\), \(\[Phi]\), \(2\)]\)V(\[Phi],T)>0 } is solvable.
 ";
 TracePhases::optTrace=msg["optTrace"];
 TracePhases::noTRange=msg["noTRange"];
@@ -1024,10 +1023,10 @@ Options[TracePhases]={"TracingMethod"->"Numeric","PlotPhaseDiagram"->True,
 	ProgressIndicator->True,Print->True
 };
 TracePhases[V_,opt:OptionsPattern[{TracePhases,Solve,Plot}]]:=Module[{
-	phases,\[Phi],Tmin,Tmax,Tlist,n,\[Phi]S,\[Phi]B,\[Phi]th,\[Phi]Bscale,\[Phi]max,
+	phases,\[Phi],Tmin,Tmax,Tlist,n,\[Phi]S,\[Phi]B,\[Phi]th,\[Phi]Bscale,
 	overlaps,printProg,printTracing,optPlot,
 	unboundedV={},
-	methods={Solve,NSolve,"Numeric","SimpleFieldDependence"},
+	methods={NSolve,"Numeric","SimpleFieldDependence"},
 	method=OptionValue["TracingMethod"],
 	TRange=OptionValue["TRange"],
 	print=OptionValue[Print]
@@ -1043,9 +1042,13 @@ TracePhases[V_,opt:OptionsPattern[{TracePhases,Solve,Plot}]]:=Module[{
 					"   Determining phase structure"
 					]
 				];
-			phases=Function[Global`T,#//Evaluate]&/@(\[Phi]/.method[{\!\(
+			phases=Function[Global`T,#//Evaluate]&/@(\[Phi]/.Check[
+				method[{\!\(
 \*SubscriptBox[\(\[PartialD]\), \(\[Phi]\)]\(V[\[Phi], Global`T]\)\)==0,\!\(
-\*SubscriptBox[\(\[PartialD]\), \({\[Phi], 2}\)]\(V[\[Phi], Global`T]\)\)>0,Global`T>0},\[Phi]]),
+\*SubscriptBox[\(\[PartialD]\), \({\[Phi], 2}\)]\(V[\[Phi], Global`T]\)\)>0,Global`T>0},\[Phi]],
+				\[Phi]->"fail",
+				NSolve::nsmet
+				])/."fail"->{},
 		(* numerical methods *)
 		"Numeric"|"SimpleFieldDependence", (* interpolate between fixed-T minima *)
 			If[!MatchQ[TRange,{_?NumericQ,_?NumericQ}],
@@ -1091,12 +1094,12 @@ TracePhases[V_,opt:OptionsPattern[{TracePhases,Solve,Plot}]]:=Module[{
 				If[!FreeQ[V@@@Reverse[\[Phi]B,2],_Complex],PT2GWPrint@msg["Vcomplex"]["broken"]];
 				];
 			Which[\[Phi]S=={},PT2GWPrint["No symmetric phase."],\[Phi]B=={},PT2GWPrint["No broken phase."]];
-			phases={\[Phi]S,\[Phi]B}/.{}->Nothing;
 			(* shift symmetric phase, which might result in divergences *)
 			If[OptionValue["ShiftSymmetricPhase"],
 				PT2GWPrint@msg["PhaseShift"];
-				(*\[Phi]max=\[Phi]/.PT2GWEcho[MinimalBy[FindMaximum[V[\[Phi],#[[1]]],{\[Phi],#[[2]]}]&/@\[Phi]S,Abs[First#]&],"Subscript[\[Phi], max]"][[2]];*)
-				\[Phi]S=#+{0,10^-6(*\[Phi]max[[1]]*)Min[Abs[\[Phi]B[[All,2]]]]}&/@\[Phi]S];
+				\[Phi]S=#+{0,10^-6 Min[Abs[\[Phi]B[[All,2]]]]}&/@\[Phi]S;
+				];
+			phases={\[Phi]S,\[Phi]B}/.{}->Nothing;
 			(* interpolation: avoid extrapolation and warning message *)
 			phases=Interpolation[#,"ExtrapolationHandler"->{Indeterminate &,"WarningMessage"->False}]&/@phases,
 		(* bad tracing method *)
@@ -1148,6 +1151,16 @@ Overlap[phases_,OptionsPattern[]]:=Module[{res},
 	]
 
 
+MinMaxPhases[{phase_},opt___]:=Module[{res},
+	Off[Reduce::ratnz]; (* Reduce complaints with Real number input *)
+	res=Flatten[RegionBounds[ImplicitRegion[#,T]]]&@Reduce[
+			If[Head[#]===InterpolatingFunction,
+				Between[T,#[[1]]],            (* if InterpolationFunction *)
+				FunctionDomain[{#[T],T>0},T]]&    (* if Function or Symbol *)
+			@phase,T];
+	On[Reduce::ratnz];
+	res
+	]
 MinMaxPhases[phases_List,opt___]:=Module[{overlaps},
 	overlaps=Overlap/@Subsets[phases,{2}];
 	MinMax[overlaps//Flatten,opt]
@@ -1170,11 +1183,10 @@ FindCritical[V_,phases_]:=Module[{sol,phasesTOverlap,Tguess,\[CapitalDelta]V},
 		(* If overlap between phases, solve V(T,\[Phi]1)=V(T,\[Phi]2) for T *)
 		\[CapitalDelta]V[T_]:=Subtract@@(V[#[T],T]&/@phases);
 		Tguess=phasesTOverlap//Mean;
-		sol=Check[
+		sol=Quiet[Check[
 			T/.FindRoot[\[CapitalDelta]V[T],{T,Tguess,Sequence@@phasesTOverlap}],(*NSolve[{\[CapitalDelta]V[T]==0,T>0},T]*)
 			None,{FindRoot::reged,FindRoot::nlnum} (* FindRoot returns the last iteration: instead, return empty solution if reged message appears *)
-		];
-		(*DeleteCases[sol,t_->(x_/;x==phasesTOverlap[[1]] \[Or] x==phasesTOverlap[[2]])]; (* FindRoot might return edges with no warning *)*)
+			],{FindRoot::reged,FindRoot::nlnum}];
 		Which[sol==None,Message[FindCritical::empty,V,phases],
 			Length[sol]>1,Message[FindCritical::multiTc,V,phases](* NB FindRoot is a local solver: no multiple solutions! *)]
 		];
@@ -1192,7 +1204,7 @@ Options[FindNucleation]={
 	"NucleationCriterion"->"DecayOverHubble","NucleationMethod"->"Bisection",
 	AccuracyGoal->1,PrecisionGoal->\[Infinity],Return->"TnRule",
 	ProgressIndicator->True,Print->False
-	};f
+	};
 (*SetOptions[FindNucleation,{"FieldPoints"->201}];*)
 FindNucleation[V_,{Tmin_,Tmax_},phases_,opt:OptionsPattern[{FindNucleation,Action,Bisection,FindRoot}]]:=Module[{
 	nucleationFun,phasesTOverlap,Tlow,TnRule,Tn,nucFun,
@@ -1280,12 +1292,12 @@ AutoComplete[FindNucleation,{FindNucleation,Action,Bisection,FindRoot}];
 
 FindPercolation::usage="FindPercolation[ActionFunction,{\!\(\*SubscriptBox[\(T\), \(pGuess\)]\),\!\(\*SubscriptBox[\(T\), \(c\)]\)},\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\)] searches for a percolation temperature for the given Euclidean action function Subscript[S, 3](T)/T.
 FindPercolation[ActionFunction,{\!\(\*SubscriptBox[\(T\), \(pGuess\)]\),\!\(\*SubscriptBox[\(T\), \(c\)]\)},\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\),V,{Subscript[\[Phi], 1],Subscript[\[Phi], 2]}] includes the vacuum energy \[CapitalDelta]V in the Hubble parameter.";
-Options[FindPercolation]={Method->FindRoot,"Target"->0.34,"TRange"->{},\[Epsilon]->0.01,Return->"Tp",ProgressIndicator->True};
-FindPercolation::method="The Method `1` is not FindRoot or \"Bisection\".";
-FindPercolation::TRange="Invalid option \"TRange\"\[Rule]`1`. With Method\[Rule]\"Bisection\", a valid temperature range must be provided.";
+Options[FindPercolation]={"PercolationMethod"->FindRoot,"Target"->0.34,"TRange"->{},Return->"Tp",ProgressIndicator->True};
+FindPercolation::method="The \"PercolationMethod\" `1` is not FindRoot or \"Bisection\".";
+FindPercolation::TRange="Invalid option \"TRange\"\[Rule]`1`. With \"PercolationMethod\"\[Rule]\"Bisection\", a valid temperature range must be provided.";
 FindPercolation[actionFun_,{TpGuess_,Tc_},vw_,V_:None,phases_:None,opt:OptionsPattern[{FindPercolation,FindRoot,Bisection}]]:=Module[{
 	Tp,TpFun,TpRule,int,Trange,Tmin,Tmax,printProg,simpleInt,
-	target=OptionValue["Target"],method=OptionValue[Method],
+	target=OptionValue["Target"],method=OptionValue["PercolationMethod"],
 	optBis
 	},
 	optBis=Evaluate@FilterRules[{opt}~Join~Options[FindPercolation]~Join~Options[Bisection],Options[Bisection]]//DeleteDuplicatesBy[#,First]&;
@@ -1307,7 +1319,7 @@ FindPercolation[actionFun_,{TpGuess_,Tc_},vw_,V_:None,phases_:None,opt:OptionsPa
 			Tp=(\[ScriptCapitalT]/.First@FindRoot[Log[TpFun[\[ScriptCapitalT]]]==Log[target],{\[ScriptCapitalT],TpGuess}]), (* NB Sensitive to variable name !!! *)
 		"Bisection", (* alternative bisection method *)
 			PT2GWPrint[msg["searchingTp"][<|"simple"->If[simpleInt,"simplified ",""],"target"->target,"method"->"bisection"|>]];
-			Trange=OptionValue["TRange"]//PT2GWEcho; (* in principle we should extract the T range from the action function *)
+			Trange=OptionValue["TRange"]; (* in principle we should extract the T range from the action function *)
 			If[Length[Trange]=!=2,Message[FindPercolation::TRange,Trange];Return[]];
 			Tp=Bisection[Log[TpFun[#]]-Log[target]&,Trange,10^-4(Trange[[2]]-Trange[[1]]),.1,Return->"x",optBis],
 		_,
@@ -1317,12 +1329,13 @@ FindPercolation[actionFun_,{TpGuess_,Tc_},vw_,V_:None,phases_:None,opt:OptionsPa
 	If[OptionValue[ProgressIndicator],NotebookDelete[printProg]];
 	If[!NumericQ[Tp],PT2GWPrint@msg["NoTperc"]];
 	TpRule=T->Tp;
-	OptionValue[Return]/.{"TpRule":>TpRule,"Tp":>Tp,"Value":>TpFun[Tp],"Action":>actionFun[Tp]}
+	OptionValue[Return]/.{"TpRule":>TpRule,"Tp":>Tp,"PercolationIntegral":>TpFun[Tp],"PercolationAction":>actionFun[Tp]}
 ]
+AutoComplete[FindPercolation,{FindPercolation,FindRoot,Bisection}];
 
 
 (* check on percolation *)
-PercolationCheck::usage="PercolationCheck[ActionFunction,T,\!\(\*SubscriptBox[\(T\), \(c\)]\),\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\),V,phases] returns a negative number if percolation effectively occured, accounting for the Universe expansion.";
+PercolationCheck::usage="PercolationCheck[ActionFunction,\!\(\*SubscriptBox[\(T\), \(p\)]\),\!\(\*SubscriptBox[\(T\), \(c\)]\),\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\),V,phases] returns a negative number if percolation effectively occured, accounting for the Universe expansion.";
 PercolationCheck[Action_,T_,Tc_,vw_,V_,phases_,opt:OptionsPattern[]]:=
 H[T,V,phases](3+T ND[IntegralFalseVacuum[Action,t,Tc,vw,V,phases],t,T,opt])
 
@@ -1426,7 +1439,7 @@ PlotGW[h2Omega_Association,opt:OptionsPattern[{PlotGW,LogLogPlot}]]:=Module[{
 			PlotStyle->(sources/.{"Combined":>Dashing[None],x_String->Dashed}),
 			Epilog->If[OptionValue["GWPeak"],
 				With[{peak=Log@{fPeak,\[CapitalOmega]Peak}},{Red,Gray,Dashed,HalfLine[peak,{-1,0}],HalfLine[peak,{0,-1}]}],
-				None]
+				{}]
 			],
 		(* include detector sensitivities (optional) *)
 		(*minSens=AssociationThread[dets->
@@ -1456,7 +1469,7 @@ PlotGW[tr_Transition,opt:OptionsPattern[]]:=Module[{h2Omega},
 (*PlotTransition*)
 
 
-PlotTransition::usage="PlotTransition[T,{\!\(\*SubscriptBox[\(\[Phi]\), \(1\)]\),\!\(\*SubscriptBox[\(\[Phi]\), \(2\)]\)}] plots the diagram of the phases \!\(\*SubscriptBox[\(\[Phi]\), \(1, 2\)]\), with an arrow indicating the transition temperature.
+PlotTransition::usage="PlotTransition[T,{\!\(\*SubscriptBox[\(\[Phi]\), \(1\)]\),\!\(\*SubscriptBox[\(\[Phi]\), \(2\)]\)}] plots a diagram of the phases \!\(\*SubscriptBox[\(\[Phi]\), \(1, 2\)]\), with an arrow indicating the transition temperature.
 PlotTransition[Transition] plots a phase diagram for the Transition object.";
 PlotTransition[T_?NumericQ,phases_List,opt:OptionsPattern[]]:=Module[{},
 	PlotPhases[phases,opt,Epilog->Arrow[{T,#[T]}&/@phases]]
@@ -1573,7 +1586,7 @@ AssociateTo[a,asc];Transition[a]]
 (*SearchPhases*)
 
 
-SearchPhases::usage="SearchPhases[V,{\!\(\*SubscriptBox[\(\[Phi]\), \(1\)]\),\!\(\*SubscriptBox[\(\[Phi]\), \(2\)]\)},\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\)] finds first order phase transitions(if any) and derive associated gravitational wave spectra from a given particle physics potential V and two phases Subscript[\[Phi], 1,2](T).";
+SearchPhases::usage="SearchPhases[V,{\!\(\*SubscriptBox[\(\[Phi]\), \(1\)]\),\!\(\*SubscriptBox[\(\[Phi]\), \(2\)]\)},\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\)] searches for 1st order phase transitions and derives the associated gravitational wave spectrum, provided two phases \!\(\*SubscriptBox[\(\[Phi]\), \(1, 2\)]\)(T) of the potential V and the bubble wall velocity \!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\).";
 Options[SearchPhases]={
 	"TransitionTemperature"->"Tp",
 	"TnEstimate"->Automatic,
@@ -1581,14 +1594,13 @@ Options[SearchPhases]={
 	"ActionFunction"->Automatic,
 	"Metadata"->{},
 	UpTo->All,
-	"PlotGW"->False,
 	"Plots"->None
 	};
 $dependencies[SearchPhases]={SearchPhases,ActionFit,FindNucleation,Bisection,ComputeGW};
 SearchPhases[V:(_Function|_Symbol),phases_List,vw_?NumericQ,opt:OptionsPattern[$dependencies[SearchPhases]]]:=Module[{
 	phasesTOverlap,Tlow,
 	Tc,Tn,Tp,
-	\[Alpha],\[Kappa],K,Kstr,\[Beta]H,h2\[CapitalOmega],fPeak,\[CapitalOmega]Peak,
+	\[Alpha],\[Kappa],K,\[Beta]H,h2\[CapitalOmega],fPeak,\[CapitalOmega]Peak,
 	TcRule,Tn0,STn0,\[CapitalGamma]H40,goodTn0,STn,\[CapitalGamma]H4,Int\[CapitalGamma]H4,Ip,STp,
 	actionFit,actionFun,analyticAction,STlist,optAction,optActionFit,optFindTnuc,optFindTperc,optGW,
 	\[CapitalDelta]T,Tmin,Tmax,TpCond,
@@ -1609,7 +1621,7 @@ SearchPhases[V:(_Function|_Symbol),phases_List,vw_?NumericQ,opt:OptionsPattern[$
 	optFindTperc=Evaluate@FilterRules[{opt}~Join~Options[FindPercolation],Options[FindPercolation]]//DeleteDuplicatesBy[#,First]&;
 	optGW=Evaluate@FilterRules[{opt},Options[ComputeGW]]//DeleteDuplicatesBy[#,First]&;
 	plotAction=plots/.{None->False,All->True,{__}->MemberQ[plots,"Action"],_->OptionValue["PlotAction"]};
-	plotGW=plots/.{None->False,All->True,{__}->MemberQ[plots,"GW"],_->OptionValue["PlotGW"]};
+	plotGW=plots/.{None->False,All->True,{__}->MemberQ[plots,"GW"],_->False};
 	(* extract options for analytic action *)
 	analyticAction=First[optAnalyticAction/.x_->{x}//Flatten];
 	analyticApply=If[analyticAction=!=Automatic,"ApplyTo"/.({Rest[{optAnalyticAction}//Flatten]}//Flatten)/."ApplyTo"->{"TnEstimate","Tn","Tp"},{}];
@@ -1623,7 +1635,7 @@ SearchPhases[V:(_Function|_Symbol),phases_List,vw_?NumericQ,opt:OptionsPattern[$
 		"Unit" -> _String, "RelativisticDOF" -> _?NumericQ, "Phases" -> _List, "WallVelocity" -> _Real,
 		"Tc" -> _Real, "TnEstimate" -> _Real, "ActionFunction" -> _ActionFunction|_Function|_Symbol,
 		"Tn" -> _Real, "Tp" -> _Real,"Domain" -> {_?NumericQ,_?NumericQ},
-		"\[Alpha]" -> _Real, "K"->_Real, "Kstr"->_Real, "\[Kappa]"->_Real, "\[Beta]/H" -> _Real, "TpCondition" -> _Real,
+		"\[Alpha]" -> _Real, "\[Beta]/H" -> _Real, "TpCondition" -> _Real,
 		"fPeak"->_Real, "h2OmegaPeak"->_Real,
 		"NucleationAction" -> _Real, "NucleationDecayOverHubble" -> _Real, "NucleationIntegralDecay"->_Real,
 		"PercolationAction" -> _Real, "PercolationIntegralValue" -> _Real
@@ -1723,7 +1735,7 @@ SearchPhases[V:(_Function|_Symbol),phases_List,vw_?NumericQ,opt:OptionsPattern[$
 		"Tp":>(
 			PT2GWPrint["Computing phase transition parameters..."];
 			actionFun=If[MemberQ[analyticApply,"Tp"],analyticAction,actionFit["Function"]];
-			{Tp,Ip,STp}=FindPercolation[actionFun,{Tn,Tc},vw,V,phases,Return->{"Tp","Value","Action"},optFindTperc];
+			{Tp,Ip,STp}=FindPercolation[actionFun,{Tn,Tc},vw,V,phases,Return->{"Tp","PercolationIntegral","PercolationAction"},optFindTperc];
 			If[!NumericQ[Tp],Throw@out];
 			PT2GWEcho[Tp,"\!\(\*SubscriptBox[\(T\), \(p\)]\)  \[Rule]",Quantity[#,$Unit]&]
 			),
@@ -1814,7 +1826,10 @@ SearchPotential[V_,Optional[vw_/;NumericQ[vw],.9],opt:OptionsPattern[$dependenci
 	phases=TracePhases[V,"PlotPhaseDiagram"->plotPhaseDiagram,optTrace]//Simplify;
 	(* only one phase found *)
 	If[Length[phases]<2,PT2GWPrint@msg["SinglePhase"];Return[If[dataset,Dataset[{}],{}]]];
-	If[\[Not]OptionValue["PrintNoCritical"],Off[FindCritical::empty,FindCritical::noOverlap]];
+	If[OptionValue["PrintNoCritical"],
+		On[FindCritical::empty,FindCritical::noOverlap],
+		Off[FindCritical::empty,FindCritical::noOverlap]
+		];
 	(* loop over pairs of phases *)
 	PT2GWPrint@msg["loopPhases"];
 	Do[

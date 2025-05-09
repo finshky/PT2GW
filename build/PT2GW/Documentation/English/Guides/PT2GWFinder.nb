@@ -1,0 +1,1547 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     62330,       1537]
+NotebookOptionsPosition[     55914,       1413]
+NotebookOutlinePosition[     57834,       1456]
+CellTagsIndexPosition[     57791,       1453]
+WindowTitle->PT2GWFinder
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell["P T2G W GUIDE", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "8025ed3b-4a01-4b4a-aa18-6b95510351cc"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "94af265d-c786-42b7-b3e5-510aeab2920c"],
+        Background->RGBColor[0.85098, 0.396078, 0],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[{
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "Functions",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "4f448a01-079f-456e-8bd6-ee82e02d12be"]
+         }],ExpressionUUID->"b8d75411-eb46-4114-a022-aec5d8850016"],
+         StripOnInput->False],{
+        "\"Action\"" :> Documentation`HelpLookup["paclet:PT2GW/ref/Action"], 
+         "\"ActionFit\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/ActionFit"], 
+         "\"ActionFunction\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/ActionFunction"], 
+         "\"Alpha\"" :> Documentation`HelpLookup["paclet:PT2GW/ref/Alpha"], 
+         "\"BetaHubble\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/BetaHubble"], 
+         "\"DefineUnits\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/DefineUnits"], 
+         "\"FindNucleation\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/FindNucleation"], 
+         "\"FindPercolation\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/FindPercolation"], 
+         "\"H\"" :> Documentation`HelpLookup["paclet:PT2GW/ref/H"], 
+         "\"PercolationCheck\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/PercolationCheck"], 
+         "\"PrintPlanckMass\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/PrintPlanckMass"], 
+         "\"RadiationEnergyDensity\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/RadiationEnergyDensity"], 
+         "\"RelativisticDOF\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/RelativisticDOF"], 
+         "\"SearchPhases\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/SearchPhases"], 
+         "\"SearchPotential\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/SearchPotential"], 
+         "\"TracePhases\"" :> 
+         Documentation`HelpLookup["paclet:PT2GW/ref/TracePhases"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"GuideFunction"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "23cfef57-d216-4eda-8a5e-3ec88049827f"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "Related Guides",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "ba5d161f-b095-4bc7-a8bc-76bca11aefb2"]
+         }],ExpressionUUID->"60c78915-f33e-4572-90ba-c96de38f93e5"],
+         StripOnInput->False],{
+        "\"Gravitational Wave Template\"" :> 
+         Documentation`HelpLookup[
+          "paclet:PT2GW/guide/GravitationalWaveTemplate"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"GuideMoreAbout"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "9307730a-a986-400a-9255-ada49558e8ef"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "URL",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "6583c450-9509-45c8-aace-4730bf612175"]
+         }],ExpressionUUID->"93249c25-301b-4b12-82a0-7841d86c7b90"],
+         StripOnInput->False],{
+        "\"PT2GW/guide/PT2GWFinder\"" :> None, 
+         "\"Copy Wolfram Documentation Center URL\"" :> 
+         Module[{DocumentationSearch`Private`nb$}, 
+           DocumentationSearch`Private`nb$ = 
+            NotebookPut[
+             Notebook[{Cell["PT2GW/guide/PT2GWFinder"]}, Visible -> False]]; 
+           SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+           FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+           NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+         "\"Copy web URL\"" :> 
+         Module[{DocumentationSearch`Private`nb$}, 
+           DocumentationSearch`Private`nb$ = 
+            NotebookPut[
+             Notebook[{
+               Cell[BoxData[
+                 MakeBoxes[
+                  Hyperlink[
+                   "http://reference.wolfram.com/language/PT2GW/guide/\
+PT2GWFinder.html"], StandardForm]], "Input", TextClipboardType -> 
+                 "PlainText"]}, Visible -> False]]; 
+           SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+           FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+           NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+         "\"Go to web URL\"" :> 
+         FrontEndExecute[{
+           NotebookLocate[{
+             URL[If[TrueQ[False], 
+                 "http://reference.wolfram.com/system-modeler/", 
+                 "http://reference.wolfram.com/language/"] <> 
+               "PT2GW/guide/PT2GWFinder" <> ".html"], None}]}]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"URLMenu"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "3184e1e7-ebaa-4ed0-980c-9ded6aa27ce0"]
+    }], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "1693860f-66e5-4037-8d0d-70f92ccd86c6"]}
+  }]], "AnchorBarGrid",
+ CellID->1,ExpressionUUID->"e7d2f84f-672e-484b-be4c-d61c4c51b80d"],
+
+Cell[CellGroupData[{
+
+Cell["PT2GWFinder", "GuideTitle",
+ CellID->952308269,ExpressionUUID->"b8a12390-00f4-4b39-b4fc-5897b3bd4b76"],
+
+Cell[TextData[{
+ ButtonBox["PT2GWFinder",
+  BaseStyle->"Link",
+  ButtonData->"paclet:PT2GW/guide/PT2GWFinder"],
+ " is a package that searches for ",
+ Cell[BoxData[
+  SuperscriptBox["1", "st"]], "InlineFormula",
+  FontFamily->"Source Sans Pro",ExpressionUUID->
+  "b85bd1a4-79e8-4966-9fc1-792c9c0cd59d"],
+ " order phase transitions  and computes the spectrum of the generated \
+gravitational waves. It requires a thermal, single-field potential in the \
+form ",
+ Cell[BoxData[
+  RowBox[{"V", 
+   RowBox[{"(", 
+    RowBox[{"\[Phi]", ",", "T"}], ")"}]}]], "InlineFormula",
+  FontFamily->"Source Sans Pro",ExpressionUUID->
+  "c99bcd91-cf9b-4077-98ae-0a217fedce6e"],
+ ", and automatizes the following steps\[LineSeparator]\[Bullet] phase \
+tracing\[LineSeparator]\[Bullet] search for transitions and derivation of the \
+relative parameters\[LineSeparator]\[Bullet] computation of gravitational \
+wave spectra from templates found in the literature."
+}], "GuideAbstract",
+ CellID->76580288,ExpressionUUID->"0723f1c1-77e5-406f-beaa-754545a059aa"],
+
+Cell[TextData[{
+ "The accompanying paper ",
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["2505.04744"]], "https://arxiv.org/abs/2505.04744"},
+   "WebLink",
+   BaseStyle->{"GuideAbstract"}]],ExpressionUUID->
+  "5e936362-3012-4a73-8d89-d3871bb639bf"],
+ " serves as a user manual. Please cite this paper if the analysis you \
+perform with ",
+ ButtonBox["PT2GWFinder",
+  BaseStyle->"Link",
+  ButtonData->"paclet:PT2GW/guide/PT2GWFinder"],
+ " results in a publication."
+}], "GuideAbstract",
+ CellID->332193791,ExpressionUUID->"41001f53-53ed-4894-8c08-b04d90a85089"],
+
+Cell["\t", "GuideDelimiterSubsection",ExpressionUUID->"c93febf0-8e26-43f8-b143-5346035f713c"],
+
+Cell[CellGroupData[{
+
+Cell["Main functions", "GuideFunctionsSubsection",
+ CellID->1759353520,ExpressionUUID->"bb887f34-444c-41a5-8ddf-b9b0f2a83755"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["SearchPotential"]], "paclet:PT2GW/ref/SearchPotential", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"c40ac8e4-27e1-4161-a8df-4d4f38357a23",ExpressionUUID->
+  "639748c4-950b-4a50-be1d-96604b275683"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " the main function to search for phase transitions"
+}], "GuideText",
+ CellID->1046196996,ExpressionUUID->"72b342e8-a52b-45df-a768-7809223bcf33"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["SearchPhases"]], "paclet:PT2GW/ref/SearchPhases", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"c5c6736a-1ff4-4e4e-8fcf-2d9846cbae62",ExpressionUUID->
+  "a8cdbe65-c57b-46dd-9b3e-2f8575330a07"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " the sub-function searching for transitions between two given phases"
+}], "GuideText",
+ CellID->2055495914,ExpressionUUID->"13ee93ef-fc2a-4cb8-ad0d-47886e1807c4"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["TracePhases"]], "paclet:PT2GW/ref/TracePhases", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"04152273-10fb-47ff-8eca-4d3ebd97380a",ExpressionUUID->
+  "32baae95-09b6-d142-a673-88e3e2bab22f"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " the sub-function tracing the phases of a potential"
+}], "GuideText",
+ CellID->167236916,ExpressionUUID->"81eb04cc-84c5-f94b-ac7a-44af86795ad7"],
+
+Cell["\t", "GuideDelimiterSubsection",
+ CellID->605761811,ExpressionUUID->"8c468255-f595-4ea7-bdd6-162950accfc8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Euclidean action", "GuideFunctionsSubsection",
+ CellID->1459267361,ExpressionUUID->"4576fb20-cf62-4ae4-9081-c1544f6fa64a"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["Action"]], "paclet:PT2GW/ref/Action", "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "bda9a010-dd8b-46e8-8b88-0b50eeaf3790"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["ActionFit"]], "paclet:PT2GW/ref/ActionFit", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"64165281-3ced-433d-b358-2de9bfc07814",ExpressionUUID->
+  "0309dd27-9ad8-44c2-a730-83802c2816b2"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["ActionFunction"]], "paclet:PT2GW/ref/ActionFunction", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"9d98792d-d0f8-43d5-bd96-2095654b0f61",ExpressionUUID->
+  "c14ac49c-79f4-42e5-88ea-7f9f25bcb4ac"]
+}], "InlineGuideFunctionListing",
+ CellID->219574529,ExpressionUUID->"9b96a04c-a075-4fe7-9249-010f201d32b0"],
+
+Cell["\t", "GuideDelimiterSubsection",
+ CellID->277196550,ExpressionUUID->"ed7cabf4-29cb-45f8-9433-e8c7c37dfafc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Phase transition parameters", "GuideFunctionsSubsection",
+ CellID->1341477175,ExpressionUUID->"fcd0ca54-e277-48a7-8eed-c97159f83228"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["FindNucleation"]], "paclet:PT2GW/ref/FindNucleation", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "dbd71988-0d8f-46b5-b755-cb72433436cc"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["FindPercolation"]], "paclet:PT2GW/ref/FindPercolation", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"e8d6f9fa-6722-44c5-90e3-63f3d09eb05d",ExpressionUUID->
+  "1e19cac7-5196-49e7-8005-93191f868dc9"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["PercolationCheck"]], "paclet:PT2GW/ref/PercolationCheck", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"efb9f53f-66a1-4517-afa8-4c3cc627bf52",ExpressionUUID->
+  "cefef85d-a2cb-4319-8313-8d7291ce002c"]
+}], "InlineGuideFunctionListing",
+ CellID->96863601,ExpressionUUID->"48c4b791-8e92-4691-bbc7-38d4f99192f4"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["Alpha"]], "paclet:PT2GW/ref/Alpha", "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "90dfe888-53a0-4356-b06f-6088f947ca8a"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["BetaHubble"]], "paclet:PT2GW/ref/BetaHubble", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"cca07480-f5f4-4100-885c-6a12e68a67d1",ExpressionUUID->
+  "2e76cb87-eec1-4c60-9953-eca7f85fc193"]
+}], "InlineGuideFunctionListing",
+ CellID->399360910,ExpressionUUID->"044b931a-8b4b-4e1c-b498-c4f66215b8d3"],
+
+Cell["\t", "GuideDelimiterSubsection",
+ CellID->1213636383,ExpressionUUID->"249836be-00b1-41d2-945c-bb09c330a3ec"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Cosmological definitions", "GuideFunctionsSubsection",
+ CellID->116053203,ExpressionUUID->"b10e7c5d-0a70-4314-8dbf-f6c00011c2c6"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["RelativisticDOF"]], "paclet:PT2GW/ref/RelativisticDOF", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "bb0c0a9c-4440-490f-af99-300f70d35f84"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["RadiationEnergyDensity"]], 
+    "paclet:PT2GW/ref/RadiationEnergyDensity", "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"229de80c-f24e-48e1-930e-357e75be2844",ExpressionUUID->
+  "9e628597-a4f5-4d6b-a84b-b04c187ce579"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["H"]], "paclet:PT2GW/ref/H", "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"becc552d-a9f6-4d6b-85af-34288fe88599",ExpressionUUID->
+  "4694d3c0-4f32-4d81-91f3-046634c71c3b"]
+}], "InlineGuideFunctionListing",
+ CellID->1175310174,ExpressionUUID->"eb793192-f96b-48db-9d56-b7daea4b8b8e"],
+
+Cell["\t", "GuideDelimiterSubsection",
+ CellID->1168511311,ExpressionUUID->"4b1f5d31-07d7-4f10-ab9a-c96821b3aa6a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Units", "GuideFunctionsSubsection",
+ CellID->15323760,ExpressionUUID->"0c51e60b-ef72-4a05-9399-4d48185c43bd"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["DefineUnits"]], "paclet:PT2GW/ref/DefineUnits", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "d7a051f5-aee7-4f05-9931-3044cff4cd7f"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["$Unit"]], "paclet:PT2GW/ref/$Unit", "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"ad9e6e83-f860-456e-92bf-be44fad21066",ExpressionUUID->
+  "aebee30d-fb99-4cfa-bb7e-d8c53e449a0c"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["$PlanckMass"]], "paclet:PT2GW/ref/$PlanckMass", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"eecda67d-b5dc-4f57-8934-53db4aafdbc9",ExpressionUUID->
+  "14a07c43-9a24-4638-830a-0ebe4a804178"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["$PlanckMassN"]], "paclet:PT2GW/ref/$PlanckMassN", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"e772042d-f360-4615-acd5-6d16dce664f4",ExpressionUUID->
+  "500c3bfb-19fd-4f99-af82-b507815e2517"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["PrintPlanckMass"]], "paclet:PT2GW/ref/PrintPlanckMass", 
+    "PT2GW Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"f1c9b2f6-d5d9-42aa-8d3f-eab4ffa7c555",ExpressionUUID->
+  "1bf22058-d2c3-469b-8f99-dfd2c638588e"]
+}], "InlineGuideFunctionListing",
+ CellID->689642491,ExpressionUUID->"78d24dcd-d9fb-41ca-b7e4-cdd1da523df3"],
+
+Cell["\t", "GuideDelimiterSubsection",
+ CellID->176643626,ExpressionUUID->"bae844cf-ef6e-9a41-906c-d60f903f5666"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Using functions from PT2GWFinder", "GuideFunctionsSubsection",
+ CellID->180026922,ExpressionUUID->"5dc6ea68-d88c-c14b-9589-2fa58cb7a6e7"],
+
+Cell[TextData[{
+ "All ",
+ ButtonBox["PT2GWFinder",
+  BaseStyle->"Link",
+  ButtonData->"paclet:PT2GW/guide/PT2GWFinder"],
+ " functions feature usage messages"
+}], "Text",
+ CellID->702982483,ExpressionUUID->"6978fe75-abde-c846-9518-bc6efcbd3ee1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "SearchPhases"}]], "Input",
+ CellLabel->"In[29]:=",
+ CellID->131404692,ExpressionUUID->"cbb62008-229f-054e-b4f2-3b6b79f3249d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = False, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox[
+             TagBox[
+              TooltipBox[
+               StyleBox["\<\" Symbol\"\>", "InformationRowLabel",
+                StripOnInput->False],
+               "\"Symbol\"",
+               TooltipStyle->"TextStyling"],
+              Annotation[#, "Symbol", "Tooltip"]& ], "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:PT2GW/ref/SearchPhases",
+              ButtonNote->"paclet:PT2GW/ref/SearchPhases"],
+             "\"paclet:PT2GW/ref/SearchPhases\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"SearchPhases[V,{\\!\\(\\*SubscriptBox[\\(\[Phi]\\), \
+\\(1\\)]\\),\\!\\(\\*SubscriptBox[\\(\[Phi]\\), \
+\\(2\\)]\\)},\\!\\(\\*SubscriptBox[\\(\[Xi]\\), \\(w\\)]\\)] finds first \
+order phase transitions(if any) and derive associated gravitational wave \
+spectra from a given particle physics potential V and two phases Subscript[\
+\[Phi], 1,2](T).\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    
+                    TemplateBox[{
+                    "\"Local \[RightGuillemet]\"", 
+                    "paclet:PT2GW/ref/SearchPhases", 
+                    "paclet:PT2GW/ref/SearchPhases", "Link", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   PaneSelectorBox[{True->
+                    ButtonBox[
+                    PaneSelectorBox[{False->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "DownPointerOpener"]]},
+                    "RowWithSeparators"], True->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "DownPointerOpenerHot"]]},
+                    "RowWithSeparators"]}, Dynamic[
+                    CurrentValue["MouseOver"]],
+                    FrameMargins->0,
+                    ImageSize->Automatic],
+                    Appearance->None,
+                    BaseStyle->None,
+                    
+                    ButtonFunction:>(Part[System`InformationDump`open$$, 3] = 
+                    False),
+                    Evaluator->Automatic,
+                    FrameMargins->0,
+                    ImageMargins->0,
+                    Method->"Preemptive"], False->
+                    ButtonBox[
+                    PaneSelectorBox[{False->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "RightPointerOpener"]]},
+                    "RowWithSeparators"], True->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "RightPointerOpenerHot"]]},
+                    "RowWithSeparators"]}, Dynamic[
+                    CurrentValue["MouseOver"]],
+                    FrameMargins->0,
+                    ImageSize->Automatic],
+                    Appearance->None,
+                    BaseStyle->None,
+                    
+                    ButtonFunction:>(Part[System`InformationDump`open$$, 3] = 
+                    True),
+                    Evaluator->Automatic,
+                    FrameMargins->0,
+                    ImageMargins->0,
+                    Method->"Preemptive"]}, Dynamic[
+                    FEPrivate`Part[System`InformationDump`open$$, 3]]], 
+                   PaneSelectorBox[{True->GridBox[{
+                    {
+                    
+                    RowBox[{"\<\"TransitionTemperature\"\>", 
+                    "\[Rule]", "\<\"Tp\"\>"}]},
+                    {
+                    RowBox[{"\<\"TnEstimate\"\>", "\[Rule]", "Automatic"}]},
+                    {
+                    
+                    RowBox[{"\<\"\[CapitalDelta]TFraction\"\>", "\[Rule]", 
+                    "0.8`"}]},
+                    {
+                    
+                    RowBox[{"\<\"ActionFunction\"\>", "\[Rule]", 
+                    "Automatic"}]},
+                    {
+                    RowBox[{"\<\"Metadata\"\>", "\[Rule]", 
+                    RowBox[{"{", "}"}]}]},
+                    {
+                    RowBox[{"UpTo", "\[Rule]", "All"}]},
+                    {
+                    RowBox[{"\<\"PlotGW\"\>", "\[Rule]", "False"}]},
+                    {
+                    RowBox[{"\<\"Plots\"\>", "\[Rule]", "None"}]},
+                    {
+                    StyleBox[
+                    
+                    TemplateBox[{
+                    "\"(\"", "\"\[InvisibleSpace]\"", "8", "\" total)\""},
+                    "RowDefault"], "InformationRowOpener",
+                    StripOnInput->False]}
+                    },
+                    BaselinePosition->{Baseline, {1, 1}},
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{1.}}}], False->
+                    RowBox[{
+                    
+                    RowBox[{"\<\"TransitionTemperature\"\>", 
+                    "\[Rule]", "\<\"Tp\"\>"}], "\[ThinSpace]", 
+                    StyleBox["\<\"\[Ellipsis]\"\>", "InformationRowOpener",
+                    StripOnInput->False], "\[ThinSpace]", 
+                    StyleBox[
+                    
+                    TemplateBox[{
+                    "\"(\"", "\"\[InvisibleSpace]\"", "8", "\" total)\""},
+                    "RowDefault"], "InformationRowOpener",
+                    StripOnInput->False]}]}, Dynamic[
+                    FEPrivate`Part[System`InformationDump`open$$, 3]],
+                    BaselinePosition->Baseline,
+                    ImageSize->Automatic]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", "ReadProtected", "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"PT2GW`SearchPhases\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox[
+             TagBox[
+              TooltipBox[
+               StyleBox["\<\" Symbol\"\>", "InformationRowLabel",
+                StripOnInput->False],
+               "\"Symbol\"",
+               TooltipStyle->"TextStyling"],
+              Annotation[#, "Symbol", "Tooltip"]& ], "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:PT2GW/ref/SearchPhases",
+              ButtonNote->"paclet:PT2GW/ref/SearchPhases"],
+             "\"paclet:PT2GW/ref/SearchPhases\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"SearchPhases[V,{\\!\\(\\*SubscriptBox[\\(\[Phi]\\), \
+\\(1\\)]\\),\\!\\(\\*SubscriptBox[\\(\[Phi]\\), \
+\\(2\\)]\\)},\\!\\(\\*SubscriptBox[\\(\[Xi]\\), \\(w\\)]\\)] finds first \
+order phase transitions(if any) and derive associated gravitational wave \
+spectra from a given particle physics potential V and two phases Subscript[\
+\[Phi], 1,2](T).\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "SearchPhases[V,{\!\(\*SubscriptBox[\(\[Phi]\), \
+\(1\)]\),\!\(\*SubscriptBox[\(\[Phi]\), \
+\(2\)]\)},\!\(\*SubscriptBox[\(\[Xi]\), \(w\)]\)] finds first order phase \
+transitions(if any) and derive associated gravitational wave spectra from a \
+given particle physics potential V and two phases Subscript[\[Phi], 1,2](T).",
+     "Documentation" -> <|"Local" -> "paclet:PT2GW/ref/SearchPhases"|>, 
+    "OwnValues" -> None, "UpValues" -> None, "DownValues" -> None, 
+    "SubValues" -> None, "DefaultValues" -> None, "NValues" -> None, 
+    "FormatValues" -> None, 
+    "Options" -> {
+     "TransitionTemperature" -> "Tp", "TnEstimate" -> Automatic, 
+      "\[CapitalDelta]TFraction" -> 0.8, "ActionFunction" -> Automatic, 
+      "Metadata" -> {}, UpTo -> All, "PlotGW" -> False, "Plots" -> None}, 
+    "Attributes" -> {ReadProtected}, "FullName" -> "PT2GW`SearchPhases"|>, 
+   False]]], "Output",
+ CellLabel->"Out[29]=",
+ CellID->1356163442,ExpressionUUID->"1acb748a-abcd-7446-86cd-74e5586045ab"]
+}, Open  ]],
+
+Cell["\<\
+A  template for the function arguments can be pasted from the popup menu \
+(Ctrl + Shift + K, Cmd + Shift + K  on  Mac)\
+\>", "Text",
+ CellID->1396095345,ExpressionUUID->"a698404b-d797-cd41-b5f9-b6b9a02edb3e"],
+
+Cell[BoxData[
+ RowBox[{"SearchPhases", "[", 
+  RowBox[{
+   TagBox[
+    FrameBox["V"],
+    "Placeholder"], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     TagBox[
+      FrameBox[
+       SubscriptBox["\[Phi]", "1"]],
+      "Placeholder"], ",", 
+     TagBox[
+      FrameBox[
+       SubscriptBox["\[Phi]", "2"]],
+      "Placeholder"]}], "}"}], ",", 
+   TagBox[
+    FrameBox[
+     SubscriptBox["\[Xi]", "w"]],
+    "Placeholder"]}], "]"}]], "Input",
+ CellID->802624355,ExpressionUUID->"33044f76-91f7-814a-9288-b6eae87ccb96"],
+
+Cell["To list all PT2GW functions, use", "Text",
+ CellID->643629685,ExpressionUUID->"8ce040d3-207c-a144-80e8-59ac6221a904"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "PT2GW`*"}]], "Input",
+ CellLabel->"In[28]:=",
+ CellID->881652351,ExpressionUUID->"f8196f3c-0cd5-0240-9aa1-b8e3bd8d341e"],
+
+Cell[BoxData[
+ StyleBox[
+  FrameBox[GridBox[{
+     {
+      DynamicModuleBox[{Typeset`open$$ = True}, 
+       PaneSelectorBox[{False->
+        ButtonBox[
+         RowBox[{
+          
+          DynamicBox[FEPrivate`FrontEndResource[
+           "FEBitmaps", "RightPointerOpener"]], " ", 
+          StyleBox["PT2GW`", "InformationGridGroupHeader"]}],
+         Appearance->None,
+         BaseStyle->"InformationGridLink",
+         ButtonFunction:>FEPrivate`Set[Typeset`open$$, True],
+         Evaluator->Automatic,
+         Method->"Preemptive"], True->
+        PaneBox[GridBox[{
+           {
+            ButtonBox[
+             RowBox[{
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], " ", 
+              StyleBox["PT2GW`", "InformationGridGroupHeader"]}],
+             Appearance->None,
+             BaseStyle->"InformationGridLink",
+             ButtonFunction:>FEPrivate`Set[Typeset`open$$, False],
+             Evaluator->Automatic,
+             Method->"Preemptive"]},
+           {
+            PaneBox[GridBox[{
+               {
+                ButtonBox[
+                 StyleBox["Action", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "Action", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["DecayOverHubble", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "DecayOverHubble", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["NewMessageGroup", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "NewMessageGroup", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["PlotPotential", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "PlotPotential", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["Transition", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "Transition", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["ActionFit", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "ActionFit", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["DefineUnits", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "DefineUnits", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["Overlap", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "Overlap", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["PlotTransition", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "PlotTransition", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["UpdateTransition", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "UpdateTransition", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["ActionFunction", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "ActionFunction", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["FindCritical", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "FindCritical", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["PercolationCheck", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "PercolationCheck", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["PrintPlanckMass", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "PrintPlanckMass", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["$PlanckMass", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "$PlanckMass", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["ActionRefineInflection", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "ActionRefineInflection", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["FindNucleation", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "FindNucleation", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["PlotAction", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "PlotAction", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["RelativisticDOF", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "RelativisticDOF", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["$PlanckMassN", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "$PlanckMassN", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["Alpha", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "Alpha", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["FindPercolation", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "FindPercolation", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["PlotGW", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "PlotGW", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["SearchPhases", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "SearchPhases", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["$Unit", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "$Unit", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic]},
+               {
+                ButtonBox[
+                 StyleBox["AutoComplete", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "AutoComplete", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["IntegralDecay", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "IntegralDecay", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["PlotGWSensitivities", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "PlotGWSensitivities", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["SearchPotential", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "SearchPotential", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], ""},
+               {
+                ButtonBox[
+                 StyleBox["Bisection", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "Bisection", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["MassFunction", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "MassFunction", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["PlotPhases", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "PlotPhases", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], 
+                ButtonBox[
+                 StyleBox["TracePhases", "InformationGridButton"],
+                 Appearance->None,
+                 BaseStyle->"InformationGridLink",
+                 
+                 ButtonData:>{
+                  "Info-af0c9b30-8b60-4868-9e56-bc4106dcaad4", {
+                   "TracePhases", "PT2GW`"}, False},
+                 ButtonNote->"PT2GW`",
+                 Evaluator->Automatic], ""}
+              },
+              DefaultBaseStyle->"Text",
+              
+              GridBoxAlignment->{
+               "Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+              GridBoxItemSize->{"Columns" -> {{
+                   Scaled[0.19]}}}],
+             ImageMargins->{{10, 0}, {0, 2}}]}
+          },
+          GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}],
+         FrameMargins->{{0, 0}, {8, 0}}]}, Dynamic[Typeset`open$$],
+        ImageSize->Automatic]]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+    GridBoxDividers->{"ColumnsIndexed" -> {{False}}, "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.5599999999999999]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.8]}, 
+        Offset[0.2]}}],
+   BaseStyle->"InformationTitleFrame"], "InformationGridPlain"]], "Output",
+ CellLabel->"Out[28]=",
+ CellID->1614313136,ExpressionUUID->"2c4a1600-c467-2c4a-926e-af8e595c34f3"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedTutorial.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"Tech", " ", "Notes"}], "GuideTutorialsSection"]},
+      {
+       RowBox[{"\[FilledVerySmallSquare]", Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["Coupled Fluid-Field Model"]], 
+           "paclet:PT2GW/tutorial/CoupledFluid-FieldModel"},
+          "RefLinkPlain",
+          BaseStyle->{"Tutorials"}]], "Tutorials",ExpressionUUID->
+         "ecac4c7a-5636-4455-9b69-f1e5fdafadd9"]}]}
+     }]}
+  }]], "GuideTutorialsSection",ExpressionUUID->"d22b786a-af76-44d2-9d1b-\
+315190cd5bcb"],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, "RelatedGuide.png"]],
+     ImageSizeCache->{50., {27., 33.}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"Related", " ", "Guides"}], "GuideMoreAboutSection"]},
+      {
+       RowBox[{"\[FilledVerySmallSquare]", Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["Gravitational Wave Template"]], 
+           "paclet:PT2GW/guide/GravitationalWaveTemplate"},
+          "RefLinkPlain",
+          BaseStyle->{"GuideMoreAbout"}]], "GuideMoreAbout",ExpressionUUID->
+         "1fcaab7f-5ba4-49c6-94b8-33699543467e"]}]}
+     }]}
+  }]], "GuideMoreAboutSection",ExpressionUUID->"f126b8f8-c943-40c0-9fd0-\
+9a3094192f8a"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"2c5e4e6a-642b-4857-8b6f-be28d5d6776a"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 830.25},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"PT2GWFinder",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}}, 
+  "NewStyles" -> True, "CitationPopupData" -> {$Failed, ""}, "ShowCitation" -> 
+  False, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 5, 9, 10, 45, 2.235692}", 
+    "history" -> {"XX", "", "", ""}, "context" -> "PT2GW`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "P T2G W Guide", "language" -> "en", "paclet" -> "PT2GW", 
+    "status" -> "None", "summary" -> 
+    "PT2GWFinder is a package that searches for 1^st order phase transitions \
+and computes the spectrum of the generated gravitational waves. It requires a \
+thermal, single-field potential in the form V(\\[Phi],T), and automatizes the \
+following steps \\[Bullet] phase tracing \\[Bullet] search for transitions \
+and derivation of the relative parameters \\[Bullet] computation of \
+gravitational wave spectra from templates found in the literature.", 
+    "synonyms" -> {}, "tabletags" -> {}, "title" -> "PT2GWFinder", 
+    "titlemodifier" -> "", "metadescription" -> "", "windowtitle" -> 
+    "PT2GWFinder", "type" -> "Guide", "uri" -> "PT2GW/guide/PT2GWFinder"}},
+CacheGraphics->False,
+FrontEndVersion->"14.0 for Linux x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"1a0d1ff9-82e3-4147-9935-6ac24de2454a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[583, 21, 6644, 155, 70, "AnchorBarGrid",ExpressionUUID->"e7d2f84f-672e-484b-be4c-d61c4c51b80d",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[7252, 180, 108, 1, 70, "GuideTitle",ExpressionUUID->"b8a12390-00f4-4b39-b4fc-5897b3bd4b76",
+ CellID->952308269],
+Cell[7363, 183, 1038, 23, 70, "GuideAbstract",ExpressionUUID->"0723f1c1-77e5-406f-beaa-754545a059aa",
+ CellID->76580288],
+Cell[8404, 208, 570, 16, 70, "GuideAbstract",ExpressionUUID->"41001f53-53ed-4894-8c08-b04d90a85089",
+ CellID->332193791],
+Cell[8977, 226, 93, 0, 70, "GuideDelimiterSubsection",ExpressionUUID->"c93febf0-8e26-43f8-b143-5346035f713c"],
+Cell[CellGroupData[{
+Cell[9095, 230, 126, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"bb887f34-444c-41a5-8ddf-b9b0f2a83755",
+ CellID->1759353520],
+Cell[9224, 233, 540, 14, 70, "GuideText",ExpressionUUID->"72b342e8-a52b-45df-a768-7809223bcf33",
+ CellID->1046196996],
+Cell[9767, 249, 552, 14, 70, "GuideText",ExpressionUUID->"13ee93ef-fc2a-4cb8-ad0d-47886e1807c4",
+ CellID->2055495914],
+Cell[10322, 265, 532, 14, 70, "GuideText",ExpressionUUID->"81eb04cc-84c5-f94b-ac7a-44af86795ad7",
+ CellID->167236916],
+Cell[10857, 281, 113, 1, 70, "GuideDelimiterSubsection",ExpressionUUID->"8c468255-f595-4ea7-bdd6-162950accfc8",
+ CellID->605761811]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11007, 287, 128, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"4576fb20-cf62-4ae4-9081-c1544f6fa64a",
+ CellID->1459267361],
+Cell[11138, 290, 1147, 29, 70, "InlineGuideFunctionListing",ExpressionUUID->"9b96a04c-a075-4fe7-9249-010f201d32b0",
+ CellID->219574529],
+Cell[12288, 321, 113, 1, 70, "GuideDelimiterSubsection",ExpressionUUID->"ed7cabf4-29cb-45f8-9433-e8c7c37dfafc",
+ CellID->277196550]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12438, 327, 139, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"fcd0ca54-e277-48a7-8eed-c97159f83228",
+ CellID->1341477175],
+Cell[12580, 330, 1183, 30, 70, "InlineGuideFunctionListing",ExpressionUUID->"48c4b791-8e92-4691-bbc7-38d4f99192f4",
+ CellID->96863601],
+Cell[13766, 362, 758, 19, 70, "InlineGuideFunctionListing",ExpressionUUID->"044b931a-8b4b-4e1c-b498-c4f66215b8d3",
+ CellID->399360910],
+Cell[14527, 383, 114, 1, 70, "GuideDelimiterSubsection",ExpressionUUID->"249836be-00b1-41d2-945c-bb09c330a3ec",
+ CellID->1213636383]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14678, 389, 135, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"b10e7c5d-0a70-4314-8dbf-f6c00011c2c6",
+ CellID->116053203],
+Cell[14816, 392, 1166, 29, 70, "InlineGuideFunctionListing",ExpressionUUID->"eb793192-f96b-48db-9d56-b7daea4b8b8e",
+ CellID->1175310174],
+Cell[15985, 423, 114, 1, 70, "GuideDelimiterSubsection",ExpressionUUID->"4b1f5d31-07d7-4f10-ab9a-c96821b3aa6a",
+ CellID->1168511311]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16136, 429, 115, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"0c51e60b-ef72-4a05-9399-4d48185c43bd",
+ CellID->15323760],
+Cell[16254, 432, 1919, 49, 70, "InlineGuideFunctionListing",ExpressionUUID->"78d24dcd-d9fb-41ca-b7e4-cdd1da523df3",
+ CellID->689642491],
+Cell[18176, 483, 113, 1, 70, "GuideDelimiterSubsection",ExpressionUUID->"bae844cf-ef6e-9a41-906c-d60f903f5666",
+ CellID->176643626]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18326, 489, 143, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"5dc6ea68-d88c-c14b-9589-2fa58cb7a6e7",
+ CellID->180026922],
+Cell[18472, 492, 244, 7, 70, "Text",ExpressionUUID->"6978fe75-abde-c846-9518-bc6efcbd3ee1",
+ CellID->702982483],
+Cell[CellGroupData[{
+Cell[18741, 503, 154, 3, 70, "Input",ExpressionUUID->"cbb62008-229f-054e-b4f2-3b6b79f3249d",
+ CellID->131404692],
+Cell[18898, 508, 17847, 421, 70, "Output",ExpressionUUID->"1acb748a-abcd-7446-86cd-74e5586045ab",
+ CellID->1356163442]
+}, Open  ]],
+Cell[36760, 932, 219, 4, 70, "Text",ExpressionUUID->"a698404b-d797-cd41-b5f9-b6b9a02edb3e",
+ CellID->1396095345],
+Cell[36982, 938, 511, 20, 70, "Input",ExpressionUUID->"33044f76-91f7-814a-9288-b6eae87ccb96",
+ CellID->802624355],
+Cell[37496, 960, 123, 1, 70, "Text",ExpressionUUID->"8ce040d3-207c-a144-80e8-59ac6221a904",
+ CellID->643629685],
+Cell[CellGroupData[{
+Cell[37644, 965, 149, 3, 70, "Input",ExpressionUUID->"f8196f3c-0cd5-0240-9aa1-b8e3bd8d341e",
+ CellID->881652351],
+Cell[37796, 970, 16465, 393, 70, "Output",ExpressionUUID->"2c4a1600-c467-2c4a-926e-af8e595c34f3",
+ CellID->1614313136]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[54300, 1368, 761, 20, 70, "GuideTutorialsSection",ExpressionUUID->"d22b786a-af76-44d2-9d1b-315190cd5bcb"],
+Cell[55064, 1390, 765, 19, 70, "GuideMoreAboutSection",ExpressionUUID->"f126b8f8-c943-40c0-9fd0-9a3094192f8a"],
+Cell[55832, 1411, 78, 0, 70, "FooterCell",ExpressionUUID->"2c5e4e6a-642b-4857-8b6f-be28d5d6776a"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

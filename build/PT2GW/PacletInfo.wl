@@ -3,11 +3,9 @@
 PacletObject[
     <|
         "Name" -> "PT2GW",
-        "Version" -> "0.2.2",
-        "IsPrereleaseVersion" -> True,
-        "Description" -> "Included example notebooks for dark Abelian Higgs.\nAdded scalar and vector mass extraction for DR implementation."
-        (*"Search for 1^st-order phase transitions\nand compute gravitational wave spectra."*)
-        (*"Run the BSM\[Rule]GW pipeline for a given temperature-dependent scalar potential V(\[Phi],T)."*),
+        "Version" -> "1.0.0",
+        "IsPrereleaseVersion" -> False,
+        "Description" -> "Search for 1^st-order phase transitions and compute gravitational wave spectra.",
         "WolframVersion" -> "13.+",
         "Creator" -> "\!\(\*TemplateBox[{RowBox[{\"Vedran\", \" \", \"Brdar\"}], {URL[\"https://inspirehep.net/authors/1495155\"], None}, \"https://inspirehep.net/authors/1495155\", \"HyperlinkActionRecycled\", {\"HyperlinkActive\"}, BaseStyle -> {\"Hyperlink\"}, HyperlinkAction -> \"Recycled\"},\"HyperlinkTemplate\"]\), \!\(\*TemplateBox[{RowBox[{\"Marco\", \" \", \"Finetti\"}], {URL[\"https://inspirehep.net/authors/1892891\"], None}, \"https://inspirehep.net/authors/1892891\", \"HyperlinkActionRecycled\", {\"HyperlinkActive\"}, BaseStyle -> {\"Hyperlink\"}, HyperlinkAction -> \"Recycled\"},\"HyperlinkTemplate\"]\), \!\(\*TemplateBox[{RowBox[{\"Marco\", \" \", \"Matteini\"}], {URL[\"https://inspirehep.net/authors/2030238\"], None}, \"https://inspirehep.net/authors/2030238\", \"HyperlinkActionRecycled\", {\"HyperlinkActive\"}, BaseStyle -> {\"Hyperlink\"}, HyperlinkAction -> \"Recycled\"},\"HyperlinkTemplate\"]\), \!\(\*TemplateBox[{RowBox[{\"Antonio\", \" \", \"Morais\"}], {URL[\"https://inspirehep.net/authors/1066701\"], None}, \"https://inspirehep.net/authors/1066701\", \"HyperlinkActionRecycled\", {\"HyperlinkActive\"}, BaseStyle -> {\"Hyperlink\"}, HyperlinkAction -> \"Recycled\"},\"HyperlinkTemplate\"]\), \!\(\*TemplateBox[{RowBox[{\"Miha\", \" \", \"Nemev\[SHacek]ek\"}], {URL[\"https://inspirehep.net/authors/1058763\"], None}, \"https://inspirehep.net/authors/1058763\", \"HyperlinkActionRecycled\", {\"HyperlinkActive\"}, BaseStyle -> {\"Hyperlink\"}, HyperlinkAction -> \"Recycled\"},\"HyperlinkTemplate\"]\)",
         "Icon" -> "FrontEnd/icon.png",

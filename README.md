@@ -48,7 +48,7 @@ When a first-order phase transition is identified, a `Transition` object is retu
 - Plot the transition diagram:\
   ```PlotTransition[transition]```
   
-  <img width="603" alt="transition_output_cff" src="https://github.com/user-attachments/assets/1385bed8-028f-4c9b-903c-202aebc81daa" />
+  <img width="373" alt="transition_plot_cff" src="https://github.com/user-attachments/assets/13303b7b-7a8d-4313-aa0b-619113e84890" />
 
 - Plot the Euclidean action as a function of temperature:\
   ```PlotAction[transition]```
